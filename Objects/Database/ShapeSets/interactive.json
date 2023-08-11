@@ -932,29 +932,29 @@
                {
                   "animationList" : [
                      {
-                        "file" : "$CHALLENGE_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_idle01.dae",
+                        "file" : "$CONTENT_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_idle01.dae",
                         "looping" : true,
                         "name" : "obeserbot_loop01"
                      },
                      {
-                        "file" : "$CHALLENGE_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_idle02.dae",
+                        "file" : "$CONTENT_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_idle02.dae",
                         "looping" : true,
                         "name" : "obeserbot_loop02"
                      },
                      {
-                        "file" : "$CHALLENGE_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_note.dae",
+                        "file" : "$CONTENT_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_note.dae",
                         "name" : "obeserbot_note"
                      },
                      {
-                        "file" : "$CHALLENGE_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_misc01.dae",
+                        "file" : "$CONTENT_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_misc01.dae",
                         "name" : "obeserbot_misc01"
                      },
                      {
-                        "file" : "$CHALLENGE_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_misc02.dae",
+                        "file" : "$CONTENT_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_misc02.dae",
                         "name" : "obeserbot_misc02"
                      },
                      {
-                        "file" : "$CHALLENGE_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_bpose.dae",
+                        "file" : "$CONTENT_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_bpose.dae",
                         "name" : "obeserbot_bpose"
                      }
                   ],
@@ -967,22 +967,22 @@
                      "BLEND_WEIGHTS"
                   ],
                   "maxViewDistance" : 1000.0,
-                  "mesh" : "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot.dae",
+                  "mesh" : "$CONTENT_DATA/Characters/Char_observerbot/char_observerbot.dae",
                   "subMeshMap" : {
                      "observerbot" : {
                         "material" : "SkelAnimDifAsgNor",
                         "textureList" : [
-                           "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot_dif.tga",
-                           "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot_asg.tga",
-                           "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot_nor.tga"
+                           "$CONTENT_DATA/Characters/Char_observerbot/char_observerbot_dif.tga",
+                           "$CONTENT_DATA/Characters/Char_observerbot/char_observerbot_asg.tga",
+                           "$CONTENT_DATA/Characters/Char_observerbot/char_observerbot_nor.tga"
                         ]
                      },
                      "observerbot_tool" : {
                         "material" : "SkelAnimDifAsgNor",
                         "textureList" : [
-                           "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot_tools_dif.tga",
-                           "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot_tools_asg.tga",
-                           "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot_tools_nor.tga"
+                           "$CONTENT_DATA/Characters/Char_observerbot/char_observerbot_tools_dif.tga",
+                           "$CONTENT_DATA/Characters/Char_observerbot/char_observerbot_tools_asg.tga",
+                           "$CONTENT_DATA/Characters/Char_observerbot/char_observerbot_tools_nor.tga"
                         ]
                      }
                   }

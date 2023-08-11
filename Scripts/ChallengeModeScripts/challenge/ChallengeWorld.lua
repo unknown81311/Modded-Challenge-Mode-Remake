@@ -431,7 +431,9 @@ function ChallengeWorld.server_loadSavedInventory( self, player )
 		print( tool_handbook )
 		print( tool_spudgun )
 		
-		local index = 1
+		local index = 2
+		inventoryList[1] = { uuid = sm.uuid.new("55abf9f8-5fd5-44c9-bd1e-207ca3bb9864"), quantity = 1 }
+
 		if getSettingValue( self.data.settings, "enable_handbook" ) then
 			inventoryList[index] = { uuid = tool_handbook, quantity = 1 }
 			index = index + 1

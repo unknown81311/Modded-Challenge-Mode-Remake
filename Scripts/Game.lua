@@ -12,12 +12,108 @@ function Game.server_onCreate( self )
 		self.sv.saved.world = sm.world.createWorld( "$CONTENT_DATA/Scripts/World.lua", "World" )
 	end
 
+    self.ChallengeData = LoadChallengeData()
+    
     self:server_updateGameState("PackMenu")
 end
 
-function Game.server_initializeChallengeGame( self )
-    local items = LoadChallengeData()
-    local pack = items.packs[1]
+function Game.client_initializePackMenu( self )
+    if self.ChallengeData == nil then
+        self.ChallengeData = LoadChallengeData()
+    end
+
+    self.MenuInstance = {
+        network = self.network,
+        challenge_packs = self.ChallengeData.packs
+    }
+
+    if sm.exists(self.MenuInstance.blur) then
+        self.MenuInstance.blur:open()
+    else
+        self.MenuInstance.blur = sm.gui.createGuiFromLayout("$CONTENT_DATA/Gui/Layouts/darken.layout", true, {
+            isHud = true,
+            isInteractive = false,
+            needsCursor = false,
+            hidesHotbar = false,
+            isOverlapped = true,
+            backgroundAlpha = 1,
+        })
+        self.MenuInstance.blur:setImage("BackgroundImage", "$CONTENT_DATA/preview.png")
+        self.MenuInstance.blur:open()
+    end
+
+    if not sm.isHost then
+        self.MenuInstance.gui = sm.gui.createGuiFromLayout("$CONTENT_DATA/Gui/Layouts/ClientLoadingScreen.layout", true, {
+            isHud = true,
+            isInteractive = false,
+            needsCursor = false,
+            hidesHotbar = false,
+            isOverlapped = true,
+            backgroundAlpha = 0.5,
+        })
+        self.MenuInstance.gui:open()
+    else
+        sm.localPlayer.setLockedControls( true )
+
+        _G["ChallengeModeMenuPack_LoadFunctions"](self.MenuInstance)
+
+        if sm.exists(self.MenuInstance.gui) then
+            self.MenuInstance.gui:open()
+        else
+            self.MenuInstance.gui = sm.gui.createGuiFromLayout("$CONTENT_DATA/Gui/Layouts/ChallengeModeMenuPack.layout")
+            self.MenuInstance.gui:setVisible("RecordContainer", false)
+            self.MenuInstance.gui_table = sm.json.open( "$CONTENT_DATA/Scripts/ChallengeModeMenuPack.json" )
+            for _,item in pairs(self.MenuInstance.gui_table.buttons) do
+                self.MenuInstance.gui:setButtonCallback( item.name, item.method )
+            end
+            for _,item in pairs(self.MenuInstance.gui_table.text) do
+                self.MenuInstance.gui:setTextChangedCallback( item.name, item.method )
+            end
+        end
+        self.MenuInstance.ChallengeModeMenuPack_LOADED( self.MenuInstance )
+    end
+end
+
+function Game.client_SelectChallenge( self, button )
+    self.MenuInstance.client_SelectChallenge( self.MenuInstance, button )
+end
+
+function Game.client_DeselectAll( self )
+    self.MenuInstance.client_DeselectAll( self.MenuInstance )
+end
+
+function Game.client_CloseMenu( self, button )
+    self.MenuInstance.client_CloseMenu( self.MenuInstance, button )
+end
+
+function Game.client_SelectPack( self, button )
+    self.MenuInstance.client_SelectPack( self.MenuInstance, button )
+end
+
+function Game.server_shutDownMenu( self )
+    if self.MenuInstance ~= nil then
+        if self.MenuInstance.gui ~= nil and self.MenuInstance.gui:isActive() then
+            self.MenuInstance.gui:close()
+        end
+        if self.MenuInstance.blur ~= nil and self.MenuInstance.blur:isActive() then
+            self.MenuInstance.blur:close()
+        end
+    end
+
+    sm.localPlayer.setLockedControls( false )
+end
+
+function Game.server_initializeChallengeGame( self, uuid )
+    self.network:sendToClients("server_shutDownMenu")
+    
+    local pack
+    for _,p in pairs(self.ChallengeData.packs) do
+        if p.uuid == uuid then
+            pack = p
+            break
+        end
+    end
+
     sm.challenge.setChallengeUuid(pack.uuid)
     
     pack.startLevelIndex = 1
@@ -77,6 +173,10 @@ function Game.server_updateGameState( self, State, caller )
     end
     -- Send to all Clients
     self.network:sendToClients("client_updateGameState", State)
+    -- Init items
+    if self.state == States.To("PackMenu") then
+        self.network:sendToClients("client_initializePackMenu")
+    end
     -- Update World Script
     sm.event.sendToWorld(self.sv.saved.world, "server_updateGameState", state)
     -- Update Player Scripts
@@ -96,15 +196,25 @@ end
 
 function Game.server_onPlayerJoined( self, player, isNewPlayer )
     print("Game.server_onPlayerJoined")
-    if isNewPlayer then
-        if not sm.exists( self.sv.saved.world ) then
-            sm.world.loadWorld( self.sv.saved.world )
+    if self.state == States.To("PackMenu") or self.state == States.To("LevelMenu") then
+        print(player.id)
+        if isNewPlayer then
+            if not sm.exists( self.sv.saved.world ) then
+                sm.world.loadWorld( self.sv.saved.world )
+            end
+            self.sv.saved.world:loadCell( 0, 0, player, "sv_createPlayerCharacter" )
         end
-        self.sv.saved.world:loadCell( 0, 0, player, "sv_createPlayerCharacter" )
+        -- Send to all Client
+        self.network:sendToClient(player, "client_updateGameState", State)
+        -- Init menu
+        if player.id ~= 1 then
+            print("Loading Menu For:", player:getName())
+            self.network:sendToClient(player,"client_initializePackMenu")
+        end
     end
 
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
-        ChallengeGame.server_onPlayerJoined( ChallengeGame )
+        ChallengeGame.server_onPlayerJoined( ChallengeGame, player, isNewPlayer )
     end
 end
 
@@ -117,14 +227,9 @@ function Game.sv_createPlayerCharacter( self, world, x, y, player, params )
     end
 end
 
-function Game.server_onFixedUpdate( self, timeStep )
-    if sm.game.getCurrentTick() - self.start_time > 200 then
-        if self.potato == nil then
-            self:server_initializeChallengeGame()
-            self.potato = true
-        end
-    end
+--self:server_initializeChallengeGame()
 
+function Game.server_onFixedUpdate( self, timeStep )
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
         ChallengeGame.server_onFixedUpdate(ChallengeGame, timeStep)
         -- if self.respawn_all then
@@ -188,15 +293,15 @@ function Game.server_onChallengeStarted( self )
     end
 end
 
-function Game.server_onChallengeCompleted( self )
+function Game.server_onChallengeCompleted( self, param )
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
-        ChallengeGame.server_onChallengeCompleted(ChallengeGame)
+        ChallengeGame.server_onChallengeCompleted(ChallengeGame, param)
     end
 end
 
-function Game.sv_e_respawn( self )
+function Game.sv_e_respawn( self, params )
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
-        ChallengeGame.sv_e_respawn(ChallengeGame)
+        ChallengeGame.sv_e_respawn(ChallengeGame, params)
     end
 end
 
@@ -242,9 +347,9 @@ function Game.client_onChallengeStarted( self, params )
     end
 end
 
-function Game.client_onChallengeCompleted( self )
+function Game.client_onChallengeCompleted( self, params )
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
-        ChallengeGame.client_onChallengeCompleted(ChallengeGame)
+        ChallengeGame.client_onChallengeCompleted(ChallengeGame, params)
     end
 end
 
@@ -298,7 +403,7 @@ end
 
 function Game.client_onUpdate( self, deltaTime )
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
-        ChallengeGame.client_onUpdate( ChallengeGame )
+        ChallengeGame.client_onUpdate( ChallengeGame, deltaTime )
     end
 end
 
@@ -369,6 +474,7 @@ function Game.server_onStopTest( self )
 end
 
 function Game.client_onLoadingScreenLifted( self )
+    sm.event.sendToPlayer(sm.localPlayer.getPlayer(), "_client_onLoadingScreenLifted")
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
         ChallengeGame.client_onLoadingScreenLifted( ChallengeGame )
     end

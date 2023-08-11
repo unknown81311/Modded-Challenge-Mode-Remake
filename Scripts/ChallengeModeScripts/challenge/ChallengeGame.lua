@@ -153,7 +153,10 @@ function ChallengeGame.server_onPlayerJoined( self, player )
 
 	--Create character if world is ready
 	if self.activeWorld then
-		sm.event.sendToWorld( self.activeWorld, "server_spawnNewCharacter", { players = { player } } )
+		
+
+		--sm.event.sendToWorld( self.activeWorld, "server_spawnNewCharacter", { players = { player } } )
+		self.activeWorld:loadCell( 0, 0, player, "server_spawnNewCharacter", { players = { player } } )
 		
 		self.network:sendToClients( "client_sessionStarted", { sessionID = self.server_sessionID } )
 		if self.server_challengeCompleted then
@@ -587,7 +590,7 @@ function ChallengeGame.client_onCreate( self )
 
 	-- Survival HUD, for HP (TODO: challengeHUD)
 	g_survivalHud = sm.gui.createSurvivalHudGui()
-	assert(g_survivalHud)
+	--assert(g_survivalHud)
 	g_survivalHud:setVisible( "FoodBar", false )
 	g_survivalHud:setVisible( "WaterBar", false )
 end

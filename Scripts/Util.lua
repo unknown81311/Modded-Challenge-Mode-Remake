@@ -1,3 +1,5 @@
+dofile("$CONTENT_DATA/Scripts/ChallengeModeMenuPack.lua")
+
 sm.old = { challenge = sm.challenge }
 
 sm.challenge = {
@@ -33,9 +35,14 @@ sm.challenge = {
     end,
     getCompletionTime = function(string, time, data)
         print("get level complete")
-        return sm.old.challenge.getCompletionTime(string, time, data)
-    end
+        return sm.old.challenge.getCompletionTime(string)
+    end,
+    isMasterMechanicTrial = function() return false end
 }
+
+sm.gui.exitToMenu = function()
+    
+end
 
 if _G.ChallengeGame == nil then
     dofile("$CONTENT_DATA/Scripts/ChallengeModeScripts/challenge/ChallengeGame.lua")
