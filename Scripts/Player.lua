@@ -175,6 +175,12 @@ function Player.client_onInteract( self, character, state )
 	end
 end
 
+function Player.sv_n_tryRespawn( self )
+	if self.state == States.To("Play") then
+		ChallengePlayer.sv_n_tryRespawn( ChallengePlayer, character, state )
+	end
+end
+
 function Player.client_onCancel( self )
 	if self.state == States.To("Play") then
 		ChallengePlayer.client_onCancel( ChallengePlayer )
