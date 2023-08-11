@@ -1,10 +1,10 @@
-dofile( "$CHALLENGE_DATA/Scripts/challenge/ChallengeBaseWorld.lua")
-dofile( "$CHALLENGE_DATA/Scripts/challenge/world_util.lua" )
-dofile( "$CHALLENGE_DATA/Scripts/game/challenge_shapes.lua" )
-dofile( "$CHALLENGE_DATA/Scripts/game/challenge_tools.lua" )
+dofile( "$CONTENT_DATA/Scripts/ChallengeModeScripts/challenge/ChallengeBaseWorld.lua")
+dofile( "$CONTENT_DATA/Scripts/ChallengeModeScripts/challenge/world_util.lua" )
+dofile( "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/challenge_shapes.lua" )
+dofile( "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/challenge_tools.lua" )
 
 BuilderWorld = class( ChallengeBaseWorld )
-BuilderWorld.terrainScript = "$CHALLENGE_DATA/Scripts/challenge/terrain_challengebuilder.lua"
+BuilderWorld.terrainScript = "$CONTENT_DATA/Scripts/ChallengeModeScripts/challenge/terrain_challengebuilder.lua"
 BuilderWorld.enableSurface = false
 BuilderWorld.enableAssets = true
 BuilderWorld.enableClutter = false
@@ -192,7 +192,7 @@ function BuilderWorld.server_export( self )
 	challengeLevel.data = {}
 	challengeLevel.data.levelCreations = {}
 	challengeLevel.data.startCreations = {}
-	challengeLevel.data.tiles = { "$CHALLENGE_DATA/Terrain/Tiles/ChallengeBuilderDefault.tile" }
+	challengeLevel.data.tiles = { "$CONTENT_DATA/Terrain/Tiles/ChallengeBuilderDefault.tile" }
 	challengeLevel.data.settings = sm.storage.load( "levelSettings" )
 
 	for i, creation in ipairs( levelCreations ) do

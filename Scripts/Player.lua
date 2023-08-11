@@ -37,7 +37,7 @@ function Player.server_onFixedUpdate( self, timeStep )
 	-- menu mode
 	if self.state == 0 or self.state == 1 then
 		if self.player.character ~= nil
-		and sm.game.getCurrentTick() - self.start > 80 then
+		and sm.game.getCurrentTick() - self.start > 50 then
 			self.player:setCharacter(nil)
 		end
 		if self.state == 0 then

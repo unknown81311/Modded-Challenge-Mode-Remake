@@ -1,0 +1,419 @@
+{
+	"Buildarea - Oncreate":
+	{
+		"parameterList":
+		{
+			"minColor":[0.0, 0.0, 1.0, 0.0], 
+			"maxColor":[0.4, 0.4, 1.0, 0.7],
+			"minColor2":[0.0, 0.0, 1.0, 0.0], 
+			"maxColor2":[0.4, 0.4, 1.0, 0.7],
+
+			"tag" : "ExpandPicture"
+			
+		},
+		"effectList":
+		[
+			{
+				"type": "renderable",
+				"name": "$CONTENT_DATA/Effects/Renderables/hologram_buildarea.rend",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters" : [ "minColor", "maxColor" ]
+			},
+			{
+				"type": "renderable",
+				"name": "$CONTENT_DATA/Effects/Renderables/hologram_buildarearim.rend",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters" : [ "minColor", "maxColor" ]
+			},
+			{
+				"type": "renderable",
+				"name": "$CONTENT_DATA/Effects/Renderables/hologram_buildzone.rend",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters" : [ "minColor2", "maxColor2" ]
+			}
+
+		]
+	},
+	"Goal - Oncreate":
+	{
+		"parameterList":
+		{
+			"minColor":[0.0, 0.0, 1.0, 0.0], 
+			"maxColor":[0.4, 0.4, 1.0, 0.7],
+
+			"tag" : "ExpandPicture"
+		},
+		"effectList":
+		[
+			{
+				"type": "renderable",
+				"name": "$CONTENT_DATA/Effects/Renderables/hologram_goal.rend",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters" : [ "minColor", "maxColor" ]
+			},
+			{
+				"type": "particle",
+				"name": "p_challengemode_goal_icon",
+				"offset": { "x": 0.0, "y": 9.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.0
+			}
+		]
+	},
+	"Goal - Activate":
+	{
+		"effectList":
+		[
+
+			{
+				"type": "particle",
+				"name": "p_challengemode_hologram_goal_activate",
+				"offset": { "x": 0.0, "y": 0.11, "z": 0.0 },
+				"attached": true,
+				"delay": 0.0
+			}
+		]
+	},
+	"SmallGoal - Activate":
+	{
+		"effectList":
+		[
+
+			{
+				"type": "particle",
+				"name": "p_challengemode_hologram_smallgoal_active",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.0
+			}
+		]
+	},
+	"Chest - Arrow":
+	{
+		"parameterList":{},
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "p_challengemode_treasurechest_icon",
+				"delay": 0.0
+			}
+		]
+	},
+	"Ball":
+	{
+		"parameterList":
+		{
+			"Velocity_max_50": 0.0
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "event:/props/challengeball_rolling",
+				"parameters": [ "Velocity_max_50" ]
+			}
+		]
+	},
+	"Supervisor - Cheer":
+	{
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "event:/char/npc/supervisor/monitor_bravo",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 }
+			}
+		]
+	},
+	"Supervisor - Fail":
+	{
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "event:/char/npc/supervisor/monitor_next",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 }
+			}
+		]
+	},
+	"Supervisor - Generic":
+	{
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "event:/char/npc/supervisor/monitor_generic",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 }
+			}
+		]
+	},
+	"CelebrationBot - Confetti":
+	{
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "p_challengemode_confetti",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 }
+			}
+		]
+	},
+	"CelebrationBot - Audio":
+	{
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "event:/char/npc/bots/confettibot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 }
+			}
+		]
+	},
+	"Soundcube - Activate":
+	{
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "event:/ui/challenge/chall_activation",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 }
+			}
+		]
+	},
+	"Balltrigger - Activate":
+	{
+		"parameterList":
+		{
+			"color": "007fff",
+			"Color": [1,1,1,1],
+			"radius": 1.5,
+			"intensity": 0.01
+		},
+		"effectList":
+		[
+			{
+			 	"type": "audio",
+			 	"name": "event:/props/challengeball_slot",
+			 	"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+			 	"delay": 0.0
+			 },
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.875 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "p_challengemode_ballactivation",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.5 },
+				"direction" : { "x": 0.0, "y": 0.0, "z": 1.0 },
+				"delay": 0.0,
+				"parameters":
+				[
+					"Color"
+				],
+				"attached": true
+			}
+		]
+	},
+	"Celebrationbot - Activate":
+	{
+		"parameterList":
+		{
+			"color": "007fff",
+			"radius": 1.5,
+			"intensity": 0.01
+		},
+		"effectList":
+		[
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.875 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "challengemode_animated_challengeball",
+				"offset": { "x": 0.0, "y": 0.5, "z": 0.0 },
+				"delay": 0.0,
+				"attached": true
+			}
+		]
+	},
+	"Ballspawner - Activate":
+	{
+		"parameterList":{},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "event:/props/challengeball_spawn",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	"ObserverBot - Write":
+	{
+		"parameterList":{},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "event:/char/npc/bots/observerbot_write",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	"ObserverBot - Move":
+	{
+		"parameterList":{},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "event:/char/npc/bots/observerbot_move",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	"ChallengeCrowd - Jump":
+	{
+		"parameterList":{},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "event:/props/challengecrowd_jump",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	"PlayerStart - Glow":
+	{
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "p_obj_interactive_startposition_glow",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"direction" : { "x": 0.0, "y": 1.0, "z": 0.0 }
+			}
+		]
+	},
+	"MapInspector - On":
+	{
+		"parameterList":{},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "event:/props/mapinspector/mi_on",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	"BuildMode - Floor":
+	{
+		"parameterList":
+		{
+			"minColor":[0.3, 0.1, 0.0, 0.0], 
+			"maxColor":[1.0, 0.7, 0.05, 0.85],
+			"minColor2":[0.06, 0.019, 0.0, 0.0], 
+			"maxColor2":[0.31, 0.21, 0.01, 0.3],
+			"minColor3":[0.06, 0.019, 0.0, 0.0], 
+			"maxColor3":[0.31, 0.21, 0.01, 0.1],
+
+			"tag": "ExcludeFromPicture"
+		},
+		"effectList":
+		[
+			{
+				"type": "renderable",
+				"name": "$CONTENT_DATA/Effects/Renderables/hologram_builderfloor.rend",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters" : [ "minColor", "maxColor" ]
+			},
+			{
+				"type": "renderable",
+				"name": "$CONTENT_DATA/Effects/Renderables/hologram_builderfloor02.rend",
+				"offset": { "x": 0.0, "y": 0.0, "z": -0.6 },
+				"parameters" : [ "minColor2", "maxColor2" ]
+			},
+			{
+				"type": "renderable",
+				"name": "$CONTENT_DATA/Effects/Renderables/hologram_builderfloor02.rend",
+				"offset": { "x": 0.0, "y": 0.0, "z": -1.5 },
+				"parameters" : [ "minColor3", "maxColor3" ]
+			}
+
+		]
+	},
+	"Boop - Floor":
+	{
+		"parameterList":
+		{
+			"minColor":[0.0, 0.0, 1.0, 0.0], 
+			"maxColor":[0.4, 0.4, 1.0, 0.7],
+			"minColor2":[0.0, 0.0, 1.0, 0.0], 
+			"maxColor2":[0.4, 0.4, 1.0, 0.4],
+			"minColor3":[0.0, 0.0, 1.0, 0.0], 
+			"maxColor3":[0.4, 0.4, 1.0, 0.1],
+
+			"tag": "ExcludeFromPicture"
+		},
+		"effectList":
+		[
+			{
+				"type": "renderable",
+				"name": "$CONTENT_DATA/Effects/Renderables/hologram_builderfloor02.rend",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters" : [ "minColor", "maxColor" ]
+			},
+			{
+				"type": "renderable",
+				"name": "$CONTENT_DATA/Effects/Renderables/hologram_builderfloor02.rend",
+				"offset": { "x": 0.0, "y": -5.0, "z": -5.0 },
+				"parameters" : [ "minColor2", "maxColor2" ]
+			},
+			{
+				"type": "renderable",
+				"name": "$CONTENT_DATA/Effects/Renderables/hologram_builderfloor02.rend",
+				"offset": { "x": 0.0, "y": -10.0, "z": -10.0 },
+				"parameters" : [ "minColor3", "maxColor3" ]
+			}
+		]
+	},
+	"Characterspawner - Activate":
+	{
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "p_characterspawn01",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.0
+			}
+		]
+	}
+}

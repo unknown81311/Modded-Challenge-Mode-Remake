@@ -1,0 +1,22 @@
+{
+	"lodList": [{
+		"animationList" : [
+
+			// Connecttool
+
+			{ "name" : "connecttool_idle", 				"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_idle.dae", "looping" : true },
+			{ "name" : "connecttool_idle_relaxed", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_idle.dae", "looping" : true },
+			{ "name" : "connecttool_use_idle", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_use_idle.dae", "looping" : true },
+			{ "name" : "connecttool_use_connect", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_use_connect.dae" },
+			{ "name" : "connecttool_use_disconnect", 	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_use_connect.dae" },
+			{ "name" : "connecttool_pickup", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_pickup.dae" },
+			{ "name" : "connecttool_putdown", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_putdown.dae" },
+			{ "name" : "connecttool_run_fwd", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_run.dae", "looping" : true },
+			{ "name" : "connecttool_run_bwd", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_run_bwd.dae", "looping" : true }
+			
+
+
+		],
+		"maxViewDistance": 1000.0
+	}]
+}

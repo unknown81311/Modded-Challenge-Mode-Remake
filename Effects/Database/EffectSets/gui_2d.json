@@ -1,0 +1,38 @@
+{
+	"Gui - Challengemode Approvedbannershine":
+	{
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "p_2d_challengemode_approvedbanner_shine",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"attached": false,
+				"delay": 0.0
+			}
+		]
+	},
+	"Gui - Challengemode Stuntmanbackgroundshine":
+	{
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "p_2d_challengemode_stuntmanoutfit_backgroundshine",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"attached": false,
+				"delay": 0.0
+			}
+		]
+	},
+	"Gui - Stuntmancollectpressed":
+	{
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "event:/ui/challenge/complete_collect"
+			}
+		]
+	}
+}

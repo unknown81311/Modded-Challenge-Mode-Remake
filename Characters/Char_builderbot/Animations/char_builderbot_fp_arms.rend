@@ -1,0 +1,18 @@
+{
+	"lodList": [{
+		"mesh": "$CONTENT_DATA/Characters/Char_builderbot/char_builderbot_fp.dae",
+		"includes" : ["POSITION", "UV0", "NORMAL", "TANGENTS", "BLEND_INDICES", "BLEND_WEIGHTS"],
+		"subMeshList" : [
+			{
+                "textureList": [
+					"$CONTENT_DATA/Characters/Char_builderbot/char_builderbot_arm_dif.tga",
+					"$CONTENT_DATA/Characters/Char_builderbot/char_builderbot_arm_asg.tga",
+					"$CONTENT_DATA/Characters/Char_builderbot/char_builderbot_arm_nor.tga"
+				],
+				"color": "ffffff",
+				"material": "DifAsgNor"
+			}
+		],
+		"maxViewDistance": 1000.0
+	}]
+}

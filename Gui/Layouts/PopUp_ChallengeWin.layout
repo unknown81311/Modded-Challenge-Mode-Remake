@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="BackgroundPromptNarrow" name="BackPanel" position_real="0 0 0.270313 0.480556">
+        <Property key="InheritsAlpha" value="false" />
+        <Widget type="Widget" skin="PanelEmpty" position_real="0.115607 0.0635838 0.768786 0.803468">
+            <Property key="NeedKey" value="false" />
+            <Property key="InheritsAlpha" value="false" />
+            <Widget type="ImageBox" skin="ImageBox" position_real="0.218045 0.0719424 0.56391 0.28777">
+                <Property key="ImageTexture" value="gui_challengemode_winnerflag.png" />
+            </Widget>
+            <Widget type="EditBox" skin="TextBox" name="Title" position_real="0 0.341727 1 0.201439">
+                <Property key="Caption" value="#{CHALLENGE_WIN}" />
+                <Property key="FontName" value="SM_HeaderLarge_Medium" />
+                <Property key="TextAlign" value="Center" />
+                <Property key="WordWrap" value="true" />
+                <Property key="Static" value="true" />
+                <Property key="MultiLine" value="true" />
+            </Widget>
+            <Widget type="ImageBox" skin="ImageBox" position_real="0.466165 0.521583 0.075188 0.0863309">
+                <Property key="ImageTexture" value="gui_icon_stopwatch_large.png" />
+            </Widget>
+            <Widget type="EditBox" skin="EditBoxEmpty" name="SubTitle" position_real="0 0.629496 1 0.0467626">
+                <Property key="FontName" value="SM_Label" />
+                <Property key="WordWrap" value="true" />
+                <Property key="TextAlign" value="Center" />
+                <Property key="TextColour" value="0.57 0.57 0.57" />
+                <Property key="ReadOnly" value="true" />
+                <Property key="Static" value="true" />
+                <Property key="Caption" value="#{TIME}" />
+            </Widget>
+            <Widget type="EditBox" skin="EditBoxEmpty" name="Message" position_real="0 0.701439 1 0.0467626">
+                <Property key="FontName" value="SM_Label" />
+                <Property key="Caption" value="123456:78:90" />
+                <Property key="WordWrap" value="true" />
+                <Property key="TextAlign" value="Center" />
+                <Property key="TextColour" value="1 0.8156863 0.2745098" />
+                <Property key="ReadOnly" value="true" />
+                <Property key="Static" value="true" />
+            </Widget>
+            <Widget type="Button" skin="PrimaryButton" name="Next" position_real="0.0902256 0.798561 0.398496 0.147482">
+                <Property key="Caption" value="#{CHALLENGE_NEXT}" />
+                <Property key="FontName" value="SM_Button" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SecondaryButton" name="Reset" position_real="0.530075 0.81295 0.368421 0.118705">
+                <Property key="Caption" value="#{CHALLENGE_RESET}" />
+                <Property key="FontName" value="SM_Button" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+    </Widget>
+    <CodeGeneratorSettings />
+</MyGUI>

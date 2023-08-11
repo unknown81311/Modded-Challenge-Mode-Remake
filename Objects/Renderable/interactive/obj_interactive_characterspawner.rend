@@ -1,0 +1,30 @@
+{
+   "lodList" : [
+      {
+         "mesh" : "$CONTENT_DATA/Objects/Mesh/interactive/obj_interactive_characterspawner.fbx",
+         "minViewSize" : 20,
+         "subMeshList" : [
+            {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$CONTENT_DATA/Objects/Textures/interactive/obj_interactive_characterspawner_dif.tga",
+                  "$CONTENT_DATA/Objects/Textures/interactive/obj_interactive_characterspawner_asg.tga",
+                  "$CONTENT_DATA/Objects/Textures/interactive/obj_interactive_characterspawner_nor.tga"
+               ]
+            }
+         ]
+      },
+      {
+         "mesh" : "$CONTENT_DATA/Objects/Mesh/interactive/obj_interactive_characterspawner_lod01.fbx",
+         "subMeshList" : [
+            {
+               "material" : "DifAsg",
+               "textureList" : [
+                  "$CONTENT_DATA/Objects/Textures/interactive/obj_interactive_characterspawner_dif.tga",
+                  "$CONTENT_DATA/Objects/Textures/interactive/obj_interactive_characterspawner_asg.tga"
+               ]
+            }
+         ]
+      }
+   ]
+}

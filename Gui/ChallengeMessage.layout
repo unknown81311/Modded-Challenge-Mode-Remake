@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="BackgroundPromptNarrow" name="MainPanel" position_real="0 0 0.270833 0.481481">
+        <Widget type="Widget" skin="PanelEmpty" position_real="0.115385 0.0615385 0.769231 0.807692">
+            <Property key="NeedKey" value="false" />
+            <Property key="InheritsAlpha" value="false" />
+            <Widget type="ImageBox" skin="ImageBox" name="AlertImage" position_real="0.4375 0.0714286 0.125 0.119048">
+                <Property key="ImageTexture" value="gui_icon_popup_alert.png" />
+            </Widget>
+            <Widget type="EditBox" skin="TextBox" name="Title" position_real="0 0.25 1 0.2">
+                <Property key="Caption" value="Y O U  W I N !" />
+                <Property key="FontName" value="ChooseGameModeHeader" />
+                <Property key="TextAlign" value="Center" />
+                <Property key="WordWrap" value="true" />
+                <Property key="Static" value="true" />
+                <Property key="MultiLine" value="true" />
+            </Widget>
+            <Widget type="ImageBox" skin="ImageBox" name="SubTitleImage" position_real="0.465 0.430952 0.075 0.0857143">
+                <Property key="ImageTexture" value="gui_icon_stopwatch_large.png" />
+            </Widget>
+            <Widget type="EditBox" skin="EditBoxEmpty" name="SubTitle" position_real="0 0.535714 1 0.047619">
+                <Property key="FontName" value="InteractionBindingText" />
+                <Property key="Caption" value="" />
+                <Property key="WordWrap" value="true" />
+                <Property key="TextAlign" value="Center" />
+                <Property key="TextColour" value="0.57 0.57 0.57" />
+                <Property key="ReadOnly" value="true" />
+                <Property key="Static" value="true" />
+            </Widget>
+            <Widget type="EditBox" skin="EditBoxEmpty" name="Message" position_real="0 0.590476 1 0.047619">
+                <Property key="FontName" value="InteractionBindingText" />
+                <Property key="Caption" value="" />
+                <Property key="WordWrap" value="true" />
+                <Property key="TextAlign" value="Center" />
+                <Property key="TextColour" value="1 0.8156863 0.2745098" />
+                <Property key="ReadOnly" value="true" />
+                <Property key="Static" value="true" />
+            </Widget>
+            <Widget type="Button" skin="PrimaryButton" name="Next" position_real="0.09 0.792857 0.4 0.147619">
+                <Property key="FontName" value="FeatureLabel" />
+                <Property key="Caption" value="#{CHALLENGE_NEXT}" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SecondaryButton" name="Reset" position_real="0.53 0.807143 0.37 0.119048">
+                <Property key="Caption" value="#{CHALLENGE_RESET}" />
+                <Property key="FontName" value="FeatureLabel" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

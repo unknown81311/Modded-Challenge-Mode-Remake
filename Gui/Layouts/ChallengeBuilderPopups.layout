@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position_real="0 0 1 1">
+        <Property key="NeedKey" value="true" />
+        <Property key="NeedMouse" value="true" />
+        <Widget type="Widget" skin="BackgroundPromptWide" name="ChallengeBuilderPackPanel"
+            position_real="0 0 0.375 0.683333">
+            <Property key="InheritsAlpha" value="false" />
+            <Widget type="TextBox" skin="TextBox"
+                position_real="0.0833333 0.104336 0.833333 0.0487805">
+                <Property key="Caption" value="#{CHALLENGE_BUILDER_CHALLENGE_PACKS}" />
+                <Property key="FontName" value="SM_HeaderLarge_Medium" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Widget" skin="PanelEmpty"
+                position_real="0.0833333 0.162602 0.833333 0.723577">
+                <Widget type="Widget" skin="PanelEmpty" name="ChallengeBuilderPackListContainer"
+                    position_real="0 0 1 0.91573">
+                    <Widget type="ItemBox" skin="InventoryItemBox2" name="ChallengeBuilderPackList"
+                        position_real="0.065 0.0797546 0.82 0.828221" />
+                    <Widget type="ScrollBar" skin="InventoryVSlider"
+                        name="ChallengeBuilderPackScroll"
+                        position_real="0.908333 0.0797546 0.05 0.828221" />
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" name="ChallengeBuilderNoPackContainer"
+                    position_real="0 0 1 0.91573">
+                    <Widget type="ImageBox" skin="ImageBox" name="Icon"
+                        position_real="0.461667 0.308793 0.0816667 0.100204">
+                        <Property key="ImageTexture" value="gui_icon_popup_alert.png" />
+                    </Widget>
+                    <Widget type="TextBox" skin="TextBox"
+                        position_real="0.141667 0.453988 0.715 0.159509">
+                        <Property key="Caption"
+                            value="#808383#{CHALLENGE_BUILDER_NO_PACKS_LINE_1}\n#{CHALLENGE_BUILDER_NO_PACKS_LINE_2}\n“#ffd046#{CHALLENGE_BUILDER_NEW_CHALLENGE_PACK}#808383”" />
+                        <Property key="FontName" value="SM_HeaderLarge_Medium" />
+                        <Property key="TextAlign" value="Center" />
+                    </Widget>
+                </Widget>
+                <Widget type="Button" skin="ActiveButton" name="NewChallengePack"
+                    position_real="0.06 0.870787 0.421667 0.0973783">
+                    <Property key="Caption" value="#{CHALLENGE_BUILDER_NEW_CHALLENGE_PACK}" />
+                    <Property key="FontName" value="SM_ButtonSmall" />
+                    <Property key="TextAlign" value="Center" />
+                </Widget>
+                <Widget type="Button" skin="SecondaryButton" name="Cancel"
+                    position_real="0.686667 0.882022 0.246667 0.0749064">
+                    <Property key="Caption" value="#{MENU_YN_CANCEL}" />
+                    <Property key="FontName" value="SM_ButtonSmall" />
+                    <Property key="TextAlign" value="Center" />
+                </Widget>
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="BackgroundPromptWide" name="ChallengeBuilderPackNamePanel"
+            position_real="0.375 0 0.375 0.37037">
+            <Property key="InheritsAlpha" value="false" />
+            <Widget type="Widget" skin="PanelEmpty" position_real="0.0833333 0 0.833333 0.3">
+                <Property key="NeedKey" value="false" />
+                <Property key="NeedMouse" value="false" />
+                <Widget type="TextBox" skin="TextBox" position_real="0 0.633333 1 0.3">
+                    <Property key="Caption" value="#{CHALLENGE_BUILDER_CHALLENGE_PACK_NAME_2}" />
+                    <Property key="FontName" value="SM_HeaderLarge_Medium" />
+                    <Property key="TextAlign" value="Center" />
+                </Widget>
+            </Widget>
+            <Widget type="Widget" skin="PanelEmpty" position_real="0.0833333 0.3875 0.833333 0.7">
+                <Widget type="Widget" skin="SearchBarBackground" name="ChallengePackName"
+                    position_real="0.05 0.0464286 0.9 0.142857">
+                    <Widget type="TextBox" skin="TextBox" name="DefaultText"
+                        position_real="0.0222222 0.125 0.955556 0.75">
+                        <Property key="Caption"
+                            value="#{CHALLENGE_BUILDER_NAME_YOUR_CHALLENGE_PACK}" />
+                        <Property key="TextAlign" value="Center" />
+                        <Property key="TextColour" value="0.29803921568 0.29803921568 0.29803921568" />
+                        <Property key="FontName" value="SM_TextSmall" />
+                        <UserString key="FontName" value="SM_TextSmall" />
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBoxEmpty" name="EditText"
+                        position_real="0.0222222 0.125 0.955556 0.75">
+                        <Property key="Caption" value="" />
+                        <Property key="TextAlign" value="Center" />
+                        <Property key="TextColour" value="0.99 0.99 0.99" />
+                        <Property key="MultiLine" value="false" />
+                        <Property key="FontName" value="SM_TextSmall" />
+                        <UserString key="FontName" value="SM_TextSmall" />
+                    </Widget>
+                </Widget>
+                <Widget type="Button" skin="PrimaryButton" name="Ok"
+                    position_real="0.226667 0.289286 0.266667 0.221429">
+                    <Property key="Caption" value="#{MENU_YN_OK}" />
+                    <Property key="FontName" value="SM_Button" />
+                    <Property key="TextAlign" value="Center" />
+                </Widget>
+                <Widget type="Button" skin="SecondaryButton" name="Cancel"
+                    position_real="0.515 0.310714 0.246667 0.178571">
+                    <Property key="Caption" value="#{MENU_YN_CANCEL}" />
+                    <Property key="FontName" value="SM_Button" />
+                    <Property key="TextAlign" value="Center" />
+                </Widget>
+            </Widget>
+        </Widget>
+        
+    </Widget>
+</MyGUI>

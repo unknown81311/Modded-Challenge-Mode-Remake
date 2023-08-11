@@ -1,0 +1,17 @@
+{
+   "lodList" : [
+      {
+         "mesh" : "$CONTENT_DATA/Effects/Meshes/char_handbook.fbx",
+         "subMeshMap" : {
+            "lambert1" : {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$GAME_DATA/Character/Char_Tools/Char_handbook/char_handbook_dif.tga",
+                  "$GAME_DATA/Character/Char_Tools/Char_handbook/char_handbook_asg.tga",
+                  "$GAME_DATA/Character/Char_Tools/Char_handbook/char_handbook_nor.tga"
+               ]
+            }
+         }
+      }
+   ]
+}

@@ -1,0 +1,7 @@
+{
+   "description" : "Large wall that rises and lowers.\nWhen the green logic gate is activated the wall is raised.",
+   "localId" : "a14f36fa-2331-4569-9e6e-0b22392244ea",
+   "name" : "Large Moving Wall",
+   "type" : "Blueprint",
+   "version" : 0
+}

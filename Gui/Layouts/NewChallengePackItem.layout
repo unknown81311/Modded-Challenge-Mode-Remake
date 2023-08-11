@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position_real="0 0 1 1">
+        <Property key="NeedKey" value="true" />
+        <Property key="NeedMouse" value="true" />
+        <Widget type="Widget" skin="PanelEmpty" name="MainPanel" position_real="0 0 1 1">
+            <Property key="NeedMouse" value="false" />
+            <Property key="NeedKey" value="false" />
+            <Widget type="Button" skin="SelectionFieldBox" name="Background"
+                position_real="0 0 0.960784 0.888889">
+                <Widget type="ImageBox" skin="ImageBox" name="Preview"
+                    position_real="0 0 0.285714 1">
+                    <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                    <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder"
+                        position_real="0 0 1.07143 1" />
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" name="Name"
+                    position_real="0.326531 0.1 0.530612 0.5">
+                    <Property key="Caption" value="Game Name" />
+                    <Property key="TextAlign" value="Left VCenter" />
+                    <Property key="FontName" value="SM_ListItem" />
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" name="ByLine"
+                    position_real="0.326531 0.4625 0.693878 0.5">
+                    <Property key="Caption" value="By line" />
+                    <Property key="TextAlign" value="Left VCenter" />
+                    <Property key="FontName" value="SM_TextTiny" />
+                </Widget>
+                <Widget type="ImageBox" skin="ImageBox" name="ModIcon"
+                    position_real="0.326531 0.5875 0.0408163 0.25">
+                    <Property key="ImageTexture" value="IconSteamDefault.png" />
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" name="ByLineModIcon"
+                    position_real="0.37551 0.4625 0.510204 0.5">
+                    <Property key="Caption" value="By line" />
+                    <Property key="TextAlign" value="Left VCenter" />
+                    <Property key="FontName" value="SM_TextTiny" />
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" name="Progress"
+                    position_real="0.836735 0.025 0.244898 0.75">
+                    <Widget type="TextBox" skin="TextBox" name="LeftValue"
+                        position_real="0 0.3 0.291667 0.333333">
+                        <Property key="Caption" value="999" />
+                        <Property key="FontName" value="SM_TextLabel" />
+                        <Property key="TextAlign" value="Right VCenter" />
+                        <Property key="TextColour" value="1 0.8156863 0.2745098" />
+                    </Widget>
+                    <Widget type="TextBox" skin="TextBox" name="RightValue"
+                        position_real="0.3 0.683333 0.291667 0.333333">
+                        <Property key="Caption" value="999" />
+                        <Property key="FontName" value="SM_TextLabel" />
+                        <Property key="TextAlign" value="Center VCenter" />
+                        <Property key="TextColour" value="1 0.8156863 0.2745098" />
+                    </Widget>
+                    <Widget type="ImageBox" skin="ImageBox"
+                        position_real="0.175 0.333333 0.333333 0.666667">
+                        <Property key="ImageTexture" value="IconLine45Degree.png" />
+                    </Widget>
+                </Widget>
+                <Widget type="Widget" skin="HighlightSelectionBox" name="SelectBorder"
+                    position_real="0 0 1 1" />
+            </Widget>
+        </Widget>
+        
+    </Widget>
+</MyGUI>

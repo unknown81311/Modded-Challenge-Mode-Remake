@@ -1,0 +1,21 @@
+{
+	"blockList": [
+		{
+			"uuid": "f5ceb7e3-5576-41d2-82d2-29860cf6e20e",
+			"name": "blk_crackedconcrete",
+			"dif": "$SURVIVAL_DATA/Objects/Textures/Blocks/blk_crackedconcrete01_dif.tga",
+			"asg": "$SURVIVAL_DATA/Objects/Textures/Blocks/blk_crackedconcrete01_asg.tga",
+			"nor": "$SURVIVAL_DATA/Objects/Textures/Blocks/blk_crackedconcrete01_nor.tga",
+			"tiling": 8,
+			"color": "8d8f89",
+			"physicsMaterial": "Rock",
+			"ratings": {
+				"density": 6,
+				"durability": 3,
+				"friction": 6,
+				"buoyancy": 4
+			},
+			"flammable": false
+		}
+	]
+}

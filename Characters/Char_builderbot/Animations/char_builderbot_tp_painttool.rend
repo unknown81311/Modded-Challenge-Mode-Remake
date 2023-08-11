@@ -1,0 +1,27 @@
+{
+	"lodList": [{
+		"animationList" : [
+
+			// paintool
+
+			{ "name" : "painttool_idle", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_idle.dae", "looping" : true },
+			{ "name" : "painttool_idle_select", 	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_idle.dae", "looping" : true },
+			{ "name" : "painttool_idle_relaxed", 	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_idle.dae", "looping" : true },
+
+			{ "name" : "painttool_pickup", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_pickup.dae" },
+			{ "name" : "painttool_putdown",		 	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_putdown.dae" },
+
+			{ "name" : "painttool_run_fwd", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_run.dae", "looping" : true },
+			{ "name" : "painttool_run_bwd", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_run_bwd.dae", "looping" : true },
+			
+			{ "name" : "painttool_paint", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_painttool_use.dae" },
+			{ "name" : "painttool_erase", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_painttool_use.dae" },
+			{ "name" : "painttool_colorpick",		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_painttool_colorpick_exit.dae" },
+			{ "name" : "painttool_colorpick_exit",	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_painttool_colorpick_exit.dae" },
+			{ "name" : "painttool_colorpick_idle",	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_painttool_colorpick_idle.dae" }
+
+
+		],
+		"maxViewDistance": 1000.0
+	}]
+}

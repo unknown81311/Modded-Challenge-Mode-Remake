@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position_real="0 0 1 1">
+        <Property key="NeedKey" value="true" />
+        <Property key="NeedMouse" value="true" />
+        <Widget type="Widget" skin="PanelEmpty" name="MainPanel" position_real="0 0 1 1">
+            <Property key="NeedMouse" value="false" />
+            <Property key="NeedKey" value="false" />
+            <Widget type="Widget" skin="PanelEmpty" name="NewChallengePanel"
+                position_real="0 0 0.885714 0.814815">
+                <Widget type="ImageBox" skin="ImageBox" name="BackgroundPlate"
+                    position_real="0 0 1 1">
+                    <Property key="ImageTexture" value="NewChallengeDefault.png" />
+                </Widget>
+                <Widget type="ImageBox" skin="ImageBox" name="BackgroundPlateSelected"
+                    position_real="0 0 1 1">
+                    <Property key="ImageTexture" value="NewChallengeSelected.png" />
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" name="Name"
+                    position_real="0.0322581 0.693182 0.935484 0.215909">
+                    <Property key="Caption" value="#{CHALLENGE_BUILDER_NEW_CHALLENGE}" />
+                    <Property key="TextAlign" value="Center" />
+                    <Property key="FontName" value="SM_ButtonTiny" />
+                </Widget>
+            </Widget>
+            <Widget type="Widget" skin="PanelEmpty" name="NormalPanel"
+                position_real="0 0 0.885714 0.814815">
+                <Widget type="ImageBox" skin="ImageBox" name="Preview" position_real="0 0 1 1">
+                    <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                    <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder"
+                        position_real="0 0 1 1" />
+                </Widget>
+            </Widget>
+        </Widget>
+        
+    </Widget>
+</MyGUI>

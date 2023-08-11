@@ -1,0 +1,29 @@
+{
+	"lodList": [{
+		"animationList" : [
+
+			// Sledgehammer
+
+			{ "name" : "sledgehammer_idle", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_idle.dae", "looping" : true },
+			{ "name" : "sledgehammer_idle_relaxed", 	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Sledgehammer/ani_char_builderbot_sledgehammer_idle.dae", "looping" : true },
+	
+			{ "name" : "sledgehammer_attack1", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Sledgehammer/ani_char_builderbot_sledgehammer_attack1.dae" },
+			{ "name" : "sledgehammer_exit1", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Sledgehammer/ani_char_builderbot_sledgehammer_attack1_exit.dae" },
+			{ "name" : "sledgehammer_attack2", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Sledgehammer/ani_char_builderbot_sledgehammer_attack1.dae" },
+			{ "name" : "sledgehammer_exit2", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Sledgehammer/ani_char_builderbot_sledgehammer_attack1_exit.dae" },
+
+			{ "name" : "sledgehammer_pickup", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_pickup.dae" },
+			{ "name" : "sledgehammer_putdown", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_putdown.dae" },
+
+
+			{ "name" : "sledgehammer_guard_into", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Sledgehammer/ani_char_builderbot_sledgehammer_guard_in.dae" },
+			{ "name" : "sledgehammer_guard_exit", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Sledgehammer/ani_char_builderbot_sledgehammer_guard_out.dae" },
+			{ "name" : "sledgehammer_guard_idle", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Sledgehammer/ani_char_builderbot_sledgehammer_guard_idle.dae" },
+
+			{ "name" : "sledgehammer_run_fwd", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_run.dae", "looping" : true },
+			{ "name" : "sledgehammer_run_bwd", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_run_bwd.dae", "looping" : true }
+
+		],
+		"maxViewDistance": 1000.0
+	}]
+}

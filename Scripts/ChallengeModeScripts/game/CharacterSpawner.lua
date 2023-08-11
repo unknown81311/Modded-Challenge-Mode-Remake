@@ -130,7 +130,7 @@ end
 
 function CharacterSpawner.client_onInteract( self, character, state )
 	if state == true then
-		self.cl.guiInterface = sm.gui.createGuiFromLayout( "$CHALLENGE_DATA/Gui/Layouts/Interactable_CharacterSpawner.layout" )
+		self.cl.guiInterface = sm.gui.createGuiFromLayout( "$CONTENT_DATA/Gui/Layouts/Interactable_CharacterSpawner.layout" )
 		self.cl.guiInterface:createDropDown( "DropDown", "cl_onDropDownChanged", BotNames )
 
 		if self.cl.spawntype then

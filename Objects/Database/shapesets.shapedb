@@ -1,3 +1,42 @@
 {
-   "shapeSetList" : [ "$CONTENT_DATA/Objects/Database/ShapeSets/example.shapeset" ]
+	"shapeSetList":
+	[
+		"$GAME_DATA/Objects/Database/ShapeSets/blocks.json",
+		"$GAME_DATA/Objects/Database/ShapeSets/interactive.json",
+		"$GAME_DATA/Objects/Database/ShapeSets/lights.json",
+		"$GAME_DATA/Objects/Database/ShapeSets/vehicle.json",
+		"$GAME_DATA/Objects/Database/ShapeSets/industrial.json",
+		"$GAME_DATA/Objects/Database/ShapeSets/spaceship.json",
+		"$GAME_DATA/Objects/Database/ShapeSets/fittings.json",
+		"$GAME_DATA/Objects/Database/ShapeSets/containers.json",
+		"$GAME_DATA/Objects/Database/ShapeSets/decor.json",
+		"$GAME_DATA/Objects/Database/ShapeSets/plants.json",
+		"$GAME_DATA/Objects/Database/ShapeSets/characterobject.json",
+		
+		"$CONTENT_DATA/Objects/Database/ShapeSets/blocks.json",
+		"$CONTENT_DATA/Objects/Database/ShapeSets/challenge.json",
+		"$CONTENT_DATA/Objects/Database/ShapeSets/interactive.json",
+		
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/interactive_upgradeable.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/interactivecontainers_shared.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/consumable_shared.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/component.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/blocks.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/powertools.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/tool_parts.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/lights.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/vehicle.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/industrial.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/fittings.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/containers.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/decor.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/warehouse.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/construction.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/building.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/manmade.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/character_shape.json",
+		"$SURVIVAL_DATA/Objects/Database/ShapeSets/robotparts.json",
+
+		"$CONTENT_DATA/Objects/Database/ShapeSets/override.json"
+	]
 }

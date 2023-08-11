@@ -1,0 +1,24 @@
+{
+	"lodList": [{
+		"animationList" : [
+
+			// Handbook
+
+			{ "name" : "handbook_idle", 				"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_idle.dae", "looping" : true},
+			{ "name" : "handbook_idle_relaxed", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_idle.dae", "looping" : true},
+
+			{ "name" : "handbook_run_fwd", 				"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_run.dae", "looping" : true},
+			{ "name" : "handbook_run_bwd", 				"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_run_bwd.dae", "looping" : true},
+
+			{ "name" : "handbook_pickup", 				"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_pickup.dae" },
+			{ "name" : "handbook_pickup_special", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_pickup.dae" },
+			{ "name" : "handbook_putdown", 				"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_putdown.dae" },
+			{ "name" : "handbook_use_exit", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_painttool_colorpick_exit.dae" },
+			{ "name" : "handbook_use_exit_special", 	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_painttool_colorpick_exit.dae" },
+			{ "name" : "handbook_use_idle", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_painttool_colorpick_into.dae" },
+			{ "name" : "handbook_use_into", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_painttool_colorpick_into.dae" }
+
+		],
+		"maxViewDistance": 1000.0
+	}]
+}

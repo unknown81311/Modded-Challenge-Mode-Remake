@@ -1,8 +1,8 @@
 {
-   "harvestableSetList" : [
-      {
-         "categories" : [],
-         "name" : "$CONTENT_DATA/Harvestables/Database/HarvestableSets/example.harvestableset"
-      }
-   ]
+	"harvestableSetList": [
+		{
+			"name": "$SURVIVAL_DATA/Harvestables/Database/HarvestableSets/hvs_loot.json",
+			"categories": ["HVS/Loot"]
+		}
+	]
 }

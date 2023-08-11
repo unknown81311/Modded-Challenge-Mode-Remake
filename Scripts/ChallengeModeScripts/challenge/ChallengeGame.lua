@@ -1,6 +1,6 @@
-dofile( "$CHALLENGE_DATA/Scripts/challenge/game_util.lua" )
-dofile( "$CHALLENGE_DATA/Scripts/challenge/world_util.lua" )
-dofile( "$CHALLENGE_DATA/Scripts/game/challenge_shapes.lua" )
+dofile( "$CONTENT_DATA/Scripts/ChallengeModeScripts/challenge/game_util.lua" )
+dofile( "$CONTENT_DATA/Scripts/ChallengeModeScripts/challenge/world_util.lua" )
+dofile( "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/challenge_shapes.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/game/survival_projectiles.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/game/survival_meleeattacks.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/game/managers/EffectManager.lua" )
@@ -27,7 +27,7 @@ function ChallengeGame.server_onCreate( self )
 		self.play.levelList = self.data.levelList
 		for _,level in ipairs( self.play.levelList ) do
 			resolveContentPaths( level.data )
-			level.data.tiles[#level.data.tiles + 1] = "$CHALLENGE_DATA/Terrain/Tiles/challengemode_env_DT.tile"
+			level.data.tiles[#level.data.tiles + 1] = "$CONTENT_DATA/Terrain/Tiles/challengemode_env_DT.tile"
 		end
 	else
 		-- Build mode
@@ -37,7 +37,7 @@ function ChallengeGame.server_onCreate( self )
 		self.build.level.uuid = self.data.uuid
 		self.build.level.data = self.data.data
 		resolveContentPaths( self.build.level.data )
-		self.build.level.data.tiles[#self.build.level.data.tiles + 1] = "$CHALLENGE_DATA/Terrain/Tiles/challengebuilder_env_DT.tile"
+		self.build.level.data.tiles[#self.build.level.data.tiles + 1] = "$CONTENT_DATA/Terrain/Tiles/challengebuilder_env_DT.tile"
 
 		sm.game.setLimitedInventory( false )
 		g_inventoriesBuildMode = {}
@@ -48,8 +48,6 @@ function ChallengeGame.server_onCreate( self )
 	end
 
 	--self.data = nil
-
-	print(self.play.levelList[self.play.currentLevelIndex].data)
 
 	self:server_start()
 	self.isNewLevel = true
@@ -97,7 +95,7 @@ function ChallengeGame.server_startTest( self, levelData )
 	self.build.testing = true
 	self.build.level.data = levelData
 	resolveContentPaths( self.build.level.data )
-	self.build.level.data.tiles[#self.build.level.data.tiles + 1] = "$CHALLENGE_DATA/Terrain/Tiles/challengemode_env_DT.tile"
+	self.build.level.data.tiles[#self.build.level.data.tiles + 1] = "$CONTENT_DATA/Terrain/Tiles/challengemode_env_DT.tile"
 
 	-- Prevent build mode world destroy
 	self.world = nil
@@ -325,8 +323,8 @@ function ChallengeGame.sv_loadVictoryLevel( self )
 
 	local worldData = {}
 	worldData.tiles = {}
-	worldData.tiles[#worldData.tiles+1] = "$CHALLENGE_DATA/Terrain/Challangemode_victoryscene.tile"
-	self.world = sm.world.createWorld( "$CHALLENGE_DATA/Scripts/challenge/ChallengeVictoryWorld.lua", "ChallengeVictoryWorld", worldData )
+	worldData.tiles[#worldData.tiles+1] = "$CONTENT_DATA/Terrain/Challangemode_victoryscene.tile"
+	self.world = sm.world.createWorld( "$CONTENT_DATA/Scripts/challenge/ChallengeVictoryWorld.lua", "ChallengeVictoryWorld", worldData )
 end
 
 function ChallengeGame.server_loadLevel( self, loadJsonData, loadSaveData )
@@ -371,7 +369,16 @@ function ChallengeGame.server_loadLevel( self, loadJsonData, loadSaveData )
 
 	self.world = sm.world.createWorld( worldScriptFilename, worldScriptClass, self:server_getLevelData() )
 
-	sm.event.sendToWorld( self.world, "server_spawnCharacter", { players = sm.player.getAllPlayers() } )
+	local players = sm.player.getAllPlayers()
+	local x = 0
+	local y = 0
+	--for x = -32, 32 do
+	--	for y = -32, 32 do
+	for _,player in pairs(players) do
+		self.world:loadCell( x, y, player)
+	end
+	--end
+	--end
 end
 
 function ChallengeGame.server_loadJsonData( self )
@@ -463,15 +470,15 @@ end
 
 
 function ChallengeGame.server_onCellLoadComplete( self, data )
-	if self.activeWorld ~= data.world then
-		self.activeWorld = data.world
-		local players = sm.player.getAllPlayers()
-		sm.event.sendToWorld( self.activeWorld, "server_spawnCharacter", { players = players, playCutscene = self.isNewLevel } )
-		sm.event.sendToWorld( self.activeWorld, "server_loadWorldContent" )
-		self.isNewLevel = false
-	else
-		self.loadingLevelFlag = false
-	end
+	--if self.activeWorld ~= data.world then
+	self.activeWorld = data.world
+	--local players = sm.player.getAllPlayers()
+	--sm.event.sendToWorld( self.activeWorld, "server_spawnCharacter", { players = players, playCutscene = self.isNewLevel } )
+	--sm.event.sendToWorld( self.activeWorld, "server_loadWorldContent" )
+	self.isNewLevel = false
+	--else
+	self.loadingLevelFlag = false
+	--end
 	
 	self.server_sessionID = self.server_sessionID + 1
 

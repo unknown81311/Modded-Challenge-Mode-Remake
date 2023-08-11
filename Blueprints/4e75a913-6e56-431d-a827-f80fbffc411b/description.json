@@ -1,0 +1,7 @@
+{
+   "description" : "Small push-button, can be activated with the sledgehammer.\nGreen logic gate is active when the button is active.\nRed logic gate is active when the buton is not active.",
+   "localId" : "4e75a913-6e56-431d-a827-f80fbffc411b",
+   "name" : "Button Small",
+   "type" : "Blueprint",
+   "version" : 0
+}

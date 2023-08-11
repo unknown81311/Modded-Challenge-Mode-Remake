@@ -1,0 +1,21 @@
+{
+	"lodList": [{
+		"animationList" : [	
+			{ "name": "spudgun_spine_bend", 			"file": "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Posetarget/ani_posetarget_spudgun_spine_bend.dae" },
+			{ "name": "spudgun_aim_spine_bend", 		"file": "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Posetarget/ani_posetarget_spudgun_aim_spine_bend.dae" },
+
+			{ "name": "spudgun_pickup", 				"file": "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_pickup.dae" },
+			{ "name": "spudgun_putdown", 				"file": "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_putdown.dae" },
+			{ "name": "spudgun_relax", 					"file": "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_idle.dae", "looping": true },
+			{ "name": "spudgun_idle", 					"file": "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_idle.dae", "looping": true },
+			{ "name": "spudgun_shoot", 					"file": "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_painttool_use.dae" },
+			{ "name": "spudgun_aim", 					"file": "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_idle.dae", "looping": true },
+			{ "name": "spudgun_aim_shoot", 				"file": "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_painttool_use.dae" },
+
+			{ "name": "spudgun_run_fwd", 				"file": "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_run.dae", "looping": true },
+			{ "name": "spudgun_run_bwd", 				"file": "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_run_bwd.dae", "looping": true }
+
+		],
+		"maxViewDistance": 1000.0
+	}]
+}

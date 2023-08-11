@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget name="MainPanel" skin="PanelEmpty" type="Widget" position_real="0 0 1 1">
+        <Widget skin="ImageBox" type="ImageBox" position_real="0 0 1 1">
+            <Property key="ImageTexture" value="t_mapinspectorscreen_gradient.png" />
+            <Widget skin="CameraBorder" type="Widget" position_real="0.0046875 0.00833333 0.990625 0.983333">
+                <Widget name="Icon" skin="ImageBox" type="ImageBox" position_real="0.00788644 0.0141243 0.0260252 0.039548">
+                    <Property key="ImageTexture" value="CameraIcon.png" />
+                </Widget>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

@@ -1,8 +1,10 @@
 {
-   "effectSetList" : [
-      {
-         "path" : "$CONTENT_DATA/Effects/Database/EffectSets/example.effectset",
-         "showInEditor" : true
-      }
-   ]
+	"effectSetList":
+	[
+		{ "path": "$CONTENT_DATA/Effects/Database/EffectSets/interactive.json", "showInEditor": false },
+		{ "path": "$CONTENT_DATA/Effects/Database/EffectSets/character.json",  "showInEditor": false },
+		{ "path": "$CONTENT_DATA/Effects/Database/EffectSets/cinematic_challegevictory.json", "showInEditor": true },
+		{ "path": "$CONTENT_DATA/Effects/Database/EffectSets/challengecutscenes.json",  "showInEditor": true },
+		{ "path": "$CONTENT_DATA/Effects/Database/EffectSets/gui_2d.json",  "showInEditor": false }		
+	]
 }

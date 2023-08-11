@@ -1,0 +1,7 @@
+{
+   "description" : "Cardboard target that is activated by shooting a spudgun at the bullseye.\nGreen logic gate is active if the target has been shot.\nRed logic gate is active if the target has not yet been shot.",
+   "localId" : "128f22fa-4abd-4aae-84a2-5803d43e60d4",
+   "name" : "Spudgun Target",
+   "type" : "Blueprint",
+   "version" : 0
+}

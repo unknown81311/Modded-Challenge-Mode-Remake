@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="BackgroundMenuInGame" name="ChallengePanel" position_real="0.395 0.15 0.209375 0.630556">
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+        <Property key="InheritsAlpha" value="false" />
+        <Property key="Visible" value="false" />
+        <Widget type="Button" skin="ActiveButton" name="Resume_CP" position_real="0.0895522 0.343612 0.813433 0.0903084">
+            <Property key="Caption" value="#{MENU_INGAME_RESUME}" />
+            <Property key="FontName" value="SM_Button" />
+            <Property key="TextAlign" value="Center" />
+        </Widget>
+        <Widget type="Button" skin="SettingsButton" name="Reset_CP" position_real="0.0895522 0.444934 0.813433 0.0903084">
+            <Property key="Caption" value="#{CHALLENGE_RESET}" />
+            <Property key="FontName" value="SM_Button" />
+            <Property key="TextAlign" value="Center" />
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" position_real="0.0895522 0.548458 0.813433 0.0903084">
+            <Property key="Alpha" value="0.5" />
+            <Widget type="TextBox" skin="SettingsButton" name="InviteFriend_CP" position_real="0 0 1 1">
+                <Property key="Caption" value="#{MENU_INGAME_INVITE_FRIEND}" />
+                <Property key="FontName" value="SM_Button" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" position_real="0.0895522 0.651982 0.813433 0.0903084">
+            <Property key="Alpha" value="0.5" />
+            <Widget type="TextBox" skin="SettingsButton" name="Options_CP" position_real="0 0 1 1">
+                <Property key="Caption" value="#{MENU_MAIN_OPTIONS}" />
+                <Property key="FontName" value="SM_Button" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Button" skin="SettingsButton" name="Restart_CP" position_real="0.0895522 0.753304 0.813433 0.0903084">
+            <Property key="Caption" value="#{CHALLENGE_RESTART}" />
+            <Property key="FontName" value="SM_Button" />
+            <Property key="TextAlign" value="Center" />
+        </Widget>
+        <Widget type="Button" skin="SettingsButton" name="Exit_CP" position_real="0.0895522 0.856828 0.813433 0.0903084">
+            <Property key="Caption" value="#{MENU_INGAME_EXIT}" />
+            <Property key="FontName" value="SM_Button" />
+            <Property key="TextAlign" value="Center" />
+        </Widget>
+    </Widget>
+    <Widget type="Widget" skin="BackgroundMenuInGame" name="ChallengeBuilderPanel" position_real="0.4 0.08 0.209375 0.758333">
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+        <Property key="InheritsAlpha" value="false" />
+        <Property key="Visible" value="false" />
+        <Widget type="Button" skin="ActiveButton" name="Resume_CBP" position_real="0.0895522 0.285714 0.813433 0.0750916">
+            <Property key="Caption" value="#{MENU_INGAME_RESUME}" />
+            <Property key="FontName" value="SM_Button" />
+            <Property key="TextAlign" value="Center" />
+        </Widget>
+        <Widget type="Button" skin="SettingsButton" name="Reset_CBP" position_real="0.0895522 0.369963 0.813433 0.0750916">
+            <Property key="Caption" value="#{CHALLENGE_RESET}" />
+            <Property key="FontName" value="SM_Button" />
+            <Property key="TextAlign" value="Center" />
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" position_real="0.0895522 0.456044 0.813433 0.0750916">
+            <Property key="Alpha" value="0.5" />
+            <Widget type="TextBox" skin="SettingsButton" name="InviteFriend_CBP" position_real="0 0 1 1">
+                <Property key="Caption" value="#{MENU_INGAME_INVITE_FRIEND}" />
+                <Property key="FontName" value="SM_Button" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" position_real="0.0895522 0.542125 0.813433 0.0750916">
+            <Property key="Alpha" value="0.5" />
+            <Widget type="TextBox" skin="SettingsButton" name="Options_CBP" position_real="0 0 1 1">
+                <Property key="Caption" value="#{MENU_MAIN_OPTIONS}" />
+                <Property key="FontName" value="SM_Button" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+        <Widget type="Button" skin="SettingsButton" name="Restart_CBP" position_real="0.0895522 0.626374 0.813433 0.0750916">
+            <Property key="Caption" value="#{CHALLENGE_RESTART}" />
+            <Property key="FontName" value="SM_Button" />
+            <Property key="TextAlign" value="Center" />
+        </Widget>
+        <Widget type="Button" skin="SettingsButton" name="Save_CBP" position_real="0.0895522 0.712454 0.813433 0.0750916">
+            <Property key="Caption" value="#{MENU_INGAME_SAVE}" />
+            <Property key="FontName" value="SM_Button" />
+            <Property key="TextAlign" value="Center" />
+        </Widget>
+        <Widget type="Button" skin="SettingsButton" name="SaveAndTest_CBP" position_real="0.0895522 0.798535 0.813433 0.0750916">
+            <Property key="Caption" value="#{MENU_INGAME_SAVE_AND_TEST}" />
+            <Property key="FontName" value="SM_Button" />
+            <Property key="TextAlign" value="Center" />
+        </Widget>
+        <Widget type="Button" skin="SettingsButton" name="StopTest_CBP" position_real="0.0895522 0.798535 0.813433 0.0750916">
+            <Property key="Caption" value="#{MENU_INGAME_STOP_TEST}" />
+            <Property key="FontName" value="SM_Button" />
+            <Property key="TextAlign" value="Center" />
+        </Widget>
+        <Widget type="Button" skin="SettingsButton" name="Exit_CBP" position_real="0.0895522 0.882784 0.813433 0.0750916">
+            <Property key="Caption" value="#{MENU_INGAME_EXIT}" />
+            <Property key="FontName" value="SM_Button" />
+            <Property key="TextAlign" value="Center" />
+        </Widget>
+    </Widget>
+    <CodeGeneratorSettings />
+</MyGUI>

@@ -1,0 +1,1141 @@
+{
+   "partList" : [
+      {
+         "box" : {
+            "x" : 4,
+            "y" : 3,
+            "z" : 4
+         },
+         "chest" : {
+            "slots" : 40
+         },
+         "color" : "df7f01",
+         "density" : 1250.0,
+         "name" : "obj_challenge_interactive_challengechest",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 4
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_challengechest_off.fbx",
+                  "pose0" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_challengechest_on.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "PoseAnimDifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_challengechest_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_challengechest_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_challengechest_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropY",
+         "sticky" : "-Z-Y-X+X",
+         "uuid" : "b3402155-e8a3-452d-b6fb-55c8d4e4e681"
+      },
+      {
+         "box" : {
+            "x" : 4,
+            "y" : 1,
+            "z" : 4
+         },
+         "color" : "4e9be3",
+         "density" : 1250.0,
+         "name" : "obj_challenge_interactive_startposition",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 7
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_startposition.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_startposition_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_startposition_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_startposition_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "StaticY",
+         "scripted" : {
+            "classname" : "PlayerStart",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/PlayerStart.lua"
+         },
+         "sticky" : "-Z+Z-Y-X+X",
+         "uuid" : "b5858089-b1f8-4d13-a485-fdaa204d9c6b"
+      },
+      {
+         "box" : {
+            "x" : 2,
+            "y" : 1,
+            "z" : 2
+         },
+         "color" : "9f2600",
+         "density" : 1250.0,
+         "name" : "obj_challenge_interactive_ballspawner",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 4
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_spawner.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_spawner_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_spawner_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_spawner_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "BallSpawner",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/BallSpawner.lua"
+         },
+         "sticky" : "-Z-Y-X+X",
+         "uuid" : "af130ba7-f0ed-4a5a-97f8-be78b54e972b"
+      },
+      {
+         "box" : {
+            "x" : 2,
+            "y" : 1,
+            "z" : 2
+         },
+         "color" : "cb0a00",
+         "density" : 1250.0,
+         "name" : "obj_challenge_interactive_explosivespawner",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 4
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_spawner.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_spawner_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_spawner_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_spawner_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "ExplosiveSpawner",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/ExplosiveSpawner.lua"
+         },
+         "sticky" : "-Z-Y-X+X",
+         "uuid" : "fa9de66b-fd92-4d67-bf68-6584937b736d"
+      },
+      {
+         "box" : {
+            "x" : 48,
+            "y" : 2,
+            "z" : 48
+         },
+         "color" : "df7f01",
+         "density" : 1250.0,
+         "name" : "obj_challenge_interactive_goal",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 7
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_goal.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_goal_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_goal_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_goal_nor.tga"
+                        ]
+                     },
+                     {
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_goaltile_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_goaltile_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_goaltile_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "StaticY",
+         "scripted" : {
+            "classname" : "Goal",
+            "data" : {
+               "activateEffect" : "Goal - Activate",
+               "onCreateEffect" : "Goal - Oncreate"
+            },
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/Goal.lua"
+         },
+         "uuid" : "7bbf53fd-2b5e-4717-9b9c-ba8962b611e1"
+      },
+      {
+         "box" : {
+            "x" : 48,
+            "y" : 2,
+            "z" : 48
+         },
+         "color" : "4e9be3",
+         "density" : 1250.0,
+         "name" : "obj_challenge_interactive_buildarea",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 7
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_buildarea.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_buildarea_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_buildarea_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_buildarea_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "StaticY",
+         "scripted" : {
+            "classname" : "BuildArea",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/BuildArea.lua"
+         },
+         "uuid" : "0a224575-1943-4fec-bc54-bf531018fd03"
+      },
+      {
+         "color" : "9f2600",
+         "friction" : 0.250,
+         "name" : "obj_challenge_interactive_ball",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_challengeball.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_challengeball_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_challengeball_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_challengeball_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropZ",
+         "scripted" : {
+            "classname" : "Ball",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/Ball.lua"
+         },
+         "sphere" : {
+            "diameter" : 5
+         },
+         "sticky" : "-Z",
+         "uuid" : "88a73e45-6740-4a60-b3cc-fbe4e010eb9f"
+      },
+      {
+         "box" : {
+            "x" : 8,
+            "y" : 4,
+            "z" : 8
+         },
+         "color" : "9f2600",
+         "density" : 500.0,
+         "name" : "obj_challenge_interactive_ballsocket",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 7
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "animationList" : [
+                     {
+                        "file" : "$CONTENT_DATA/Characters/Char_ballsocket/Animations/ani_char_ballsocket_off.dae",
+                        "name" : "Ballsocket_off"
+                     },
+                     {
+                        "file" : "$CONTENT_DATA/Characters/Char_ballsocket/Animations/ani_char_ballsocket_on.dae",
+                        "name" : "Ballsocket_on"
+                     },
+                     {
+                        "file" : "$CONTENT_DATA/Characters/Char_ballsocket/Animations/ani_char_ballsocket_activate.dae",
+                        "name" : "Ballsocket_activate"
+                     }
+                  ],
+                  "includes" : [
+                     "POSITION",
+                     "UV0",
+                     "NORMAL",
+                     "TANGENTS",
+                     "BLEND_INDICES",
+                     "BLEND_WEIGHTS"
+                  ],
+                  "maxViewDistance" : 1000.0,
+                  "mesh" : "$CONTENT_DATA/Characters/Char_ballsocket/char_ballsocket.dae",
+                  "subMeshMap" : {
+                     "ball_mat" : {
+                        "material" : "SkelAnimDifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_challengeball_active_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_challengeball_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_challengeball_nor.tga"
+                        ]
+                     },
+                     "ballsocket_mat" : {
+                        "material" : "SkelAnimDifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Characters/Char_ballsocket/char_ballsocket_dif.tga",
+                           "$CONTENT_DATA/Characters/Char_ballsocket/char_ballsocket_asg.tga",
+                           "$CONTENT_DATA/Characters/Char_ballsocket/char_ballsocket_nor.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "rotationSet" : "PropYmmZ",
+         "scripted" : {
+            "classname" : "BallTrigger",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/BallTrigger.lua"
+         },
+         "sticky" : "-Y-Z+Z+X-X",
+         "uuid" : "badc4d45-1b75-4528-9451-a46270189190"
+      },
+      {
+         "box" : {
+            "x" : 1,
+            "y" : 1,
+            "z" : 1
+         },
+         "color" : "df7f01",
+         "name" : "obj_challenge_interactive_bigpiston",
+         "physicsMaterial" : "Metal",
+         "piston" : {
+            "defaultRange" : 3,
+            "defaultSpeedLevel" : 2,
+            "force" : 100000000.0,
+            "length" : 129,
+            "speedLevels" : [
+               {
+                  "speed" : 0.50
+               },
+               {
+                  "speed" : 1.0
+               },
+               {
+                  "speed" : 2.0
+               },
+               {
+                  "speed" : 3.0
+               },
+               {
+                  "speed" : 4.0
+               },
+               {
+                  "speed" : 6.0
+               },
+               {
+                  "speed" : 8.0
+               },
+               {
+                  "speed" : 10.0
+               },
+               {
+                  "speed" : 12.0
+               },
+               {
+                  "speed" : 14.0
+               },
+               {
+                  "speed" : 16.0
+               },
+               {
+                  "speed" : 18.0
+               },
+               {
+                  "speed" : 20.0
+               },
+               {
+                  "speed" : 22.0
+               },
+               {
+                  "speed" : 24.0
+               },
+               {
+                  "speed" : 30.0
+               },
+               {
+                  "speed" : 35.0
+               },
+               {
+                  "speed" : 40.0
+               },
+               {
+                  "speed" : 50.0
+               }
+            ]
+         },
+         "previewRotation" : [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ],
+         "qualityLevel" : 0,
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_piston_off.fbx",
+                  "pose0" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_piston_on.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "PoseAnimDifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_piston_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_piston_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_piston_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropZ",
+         "sticky" : "-Z",
+         "uuid" : "dff53b11-2d8d-4044-ad51-59321f117f8e"
+      },
+      {
+         "box" : {
+            "x" : 4,
+            "y" : 1,
+            "z" : 4
+         },
+         "color" : "9f2600",
+         "density" : 500.0,
+         "name" : "obj_challenge_interactive_trigger",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 7
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_challengetrigger_off.fbx",
+                  "pose0" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_challengetrigger_on.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "PoseAnimDifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_challengetrigger_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_challengetrigger_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_challengetrigger_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropYZ",
+         "scripted" : {
+            "classname" : "Trigger",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/Trigger.lua"
+         },
+         "sticky" : "+Z-Z-Y-X+X",
+         "uuid" : "8684ad89-94ad-4f46-b50e-c1aff63893f4"
+      },
+      {
+         "box" : {
+            "x" : 4,
+            "y" : 4,
+            "z" : 4
+         },
+         "color" : "4a4a4a",
+         "density" : 500.0,
+         "name" : "obj_challenge_interactive_light",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 7
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_lights_off.fbx",
+                  "pose0" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_lights_on.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "PoseAnimDifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_light_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_light_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_light_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "Light",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/Light.lua"
+         },
+         "uuid" : "5929670a-fe70-40a7-83e4-45cf179b0aef"
+      },
+      {
+         "box" : {
+            "x" : 4,
+            "y" : 4,
+            "z" : 4
+         },
+         "color" : "3cff34",
+         "density" : 500.0,
+         "name" : "obj_challenge_interactive_arrow_light",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 7
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_arrow_lights.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {
+                           "uv0" : {
+                              "u" : 0.250,
+                              "v" : 1
+                           }
+                        },
+                        "material" : "UVAnimDifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_arrow_light_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_arrow_light_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_arrow_light_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropNegZ",
+         "scripted" : {
+            "classname" : "ArrowLight",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/ArrowLight.lua"
+         },
+         "uuid" : "9b9e4547-0846-42da-b812-9f1a5b22e52f"
+      },
+      {
+         "box" : {
+            "x" : 4,
+            "y" : 4,
+            "z" : 4
+         },
+         "color" : "123456",
+         "density" : 500.0,
+         "name" : "obj_challenge_interactive_starter_block",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 7
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_lights_off.fbx",
+                  "pose0" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_lights_on.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "PoseAnimDifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_challengemode_starter_block_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_challengemode_starter_block_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_challengemode_starter_block_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "ChallengeStarter",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/ChallengeStarter.lua"
+         },
+         "uuid" : "4a9929e9-aa85-4791-89c2-f8799920793f"
+      },
+      {
+         "box" : {
+            "x" : 4,
+            "y" : 4,
+            "z" : 4
+         },
+         "color" : "4b4b4b",
+         "density" : 500.0,
+         "name" : "obj_challenge_interactive_finishblock",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 7
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_finishblock_off.fbx",
+                  "pose0" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_finishblock_on.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "PoseAnimDifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_challenge_interactive_finishblock_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_challenge_interactive_finishblock_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_challenge_interactive_finishblock_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "ChallengeFinisher",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/ChallengeFinisher.lua"
+         },
+         "uuid" : "3da9c71f-9900-48a2-be66-8d1c80f88ac8"
+      },
+      {
+         "box" : {
+            "x" : 30,
+            "y" : 12,
+            "z" : 9
+         },
+         "color" : "808080",
+         "density" : 500.0,
+         "name" : "obj_challenge_interactive_celebrationbot",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 4
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "animationList" : [
+                     {
+                        "file" : "$CONTENT_DATA/Characters/Char_celebrationbot/Animations/ani_char_celebrationbot_start.dae",
+                        "name" : "Celebration_start"
+                     },
+                     {
+                        "file" : "$CONTENT_DATA/Characters/Char_celebrationbot/Animations/ani_char_celebrationbot_loop.dae",
+                        "looping" : true,
+                        "name" : "Celebration_loop"
+                     }
+                  ],
+                  "includes" : [
+                     "POSITION",
+                     "UV0",
+                     "NORMAL",
+                     "TANGENTS",
+                     "BLEND_INDICES",
+                     "BLEND_WEIGHTS"
+                  ],
+                  "maxViewDistance" : 1000.0,
+                  "mesh" : "$CONTENT_DATA/Characters/Char_celebrationbot/char_celebrationbot.dae",
+                  "subMeshList" : [
+                     {
+                        "color" : "ffffff",
+                        "material" : "SkelAnimDifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Characters/Char_celebrationbot/char_celebrationbot_dif.tga",
+                           "$CONTENT_DATA/Characters/Char_celebrationbot/char_celebrationbot_asg.tga",
+                           "$CONTENT_DATA/Characters/Char_celebrationbot/char_celebrationbot_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "CelebrationBot",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/CelebrationBot.lua"
+         },
+         "sticky" : "-Y",
+         "uuid" : "945d6152-fc82-48ec-a113-3896c14e8c5f"
+      },
+      {
+         "color" : "df7f01",
+         "density" : 1250.0,
+         "hull" : {
+            "col" : "$CHALLENGE_DATA/Objects/Collision/obj_challenge_celebrationbotleg.obj",
+            "x" : 12,
+            "y" : 10,
+            "z" : 3
+         },
+         "name" : "obj_challenge_celebrationbotleg",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 4
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CONTENT_DATA/Characters/Char_celebrationbot/char_challenge_celebrationbotleg.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Characters/Char_celebrationbot/char_celebrationbot_dif.tga",
+                           "$CONTENT_DATA/Characters/Char_celebrationbot/char_celebrationbot_asg.tga",
+                           "$CONTENT_DATA/Characters/Char_celebrationbot/char_celebrationbot_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropYNegY",
+         "sticky" : "-Y+Y",
+         "uuid" : "18c148a4-fa2f-4948-95fd-809316f38584"
+      },
+      {
+         "box" : {
+            "x" : 1,
+            "y" : 1,
+            "z" : 1
+         },
+         "color" : "9f2600",
+         "density" : 1250.0,
+         "name" : "obj_challenge_interactive_soundcube",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 4
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_soundcube_off.fbx",
+                  "pose0" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_soundcube_on.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "PoseAnimDifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_soundcube_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_soundcube_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_soundcube_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropYZm",
+         "scripted" : {
+            "classname" : "Soundcube",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/Soundcube.lua"
+         },
+         "sticky" : "-Z-Y+Y-X+X",
+         "uuid" : "474b6aa3-b22f-4509-85b9-b5e281ff05f5"
+      },
+      {
+         "box" : {
+            "x" : 6,
+            "y" : 8,
+            "z" : 1
+         },
+         "color" : "9f2600",
+         "density" : 250.0,
+         "name" : "obj_challenge_interactive_ballspawnfront",
+         "physicsMaterial" : "Metal",
+         "previewRotation" : [ -1, 0, 0, 0, 0, 1, 0, 1, 0 ],
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 4
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_ballspawnfront_on.fbx",
+                  "pose0" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_ballspawnfront_off.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "PoseAnimDifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_ballspawn_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_ballspawn_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_ballspawn_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropNegYNegZ",
+         "simpleInteractive" : {
+            "animationTime" : 0.00010,
+            "sustainedAudio" : ""
+         },
+         "sticky" : "+Y+Z-Z+X-X",
+         "uuid" : "8ec1120b-b272-44e8-9ad2-5b1998cb2477"
+      },
+      {
+         "box" : {
+            "x" : 8,
+            "y" : 8,
+            "z" : 1
+         },
+         "color" : "9f2600",
+         "density" : 250.0,
+         "name" : "obj_challenge_interactive_ballspawnside",
+         "physicsMaterial" : "Metal",
+         "previewRotation" : [ -1, 0, 0, 0, 0, 1, 0, 1, 0 ],
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 4
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_ballspawnside_on.fbx",
+                  "pose0" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_ballspawnside_off.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "PoseAnimDifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_ballspawn_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_ballspawn_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_ballspawn_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropNegYNegZ",
+         "simpleInteractive" : {
+            "animationTime" : 0.00010,
+            "sustainedAudio" : ""
+         },
+         "sticky" : "+Y+Z-Z",
+         "uuid" : "2855df9b-8684-44ae-aaa8-8df0f96dbef6"
+      },
+      {
+         "camera" : {
+            "effect" : "MapInspector - On",
+            "exitAudio" : "event:/props/mapinspector/mi_off"
+         },
+         "color" : "9f2600",
+         "density" : 1250.0,
+         "hull" : {
+            "col" : "$CHALLENGE_DATA/Objects/Collision/obj_challenge_interactive_mapinspector.obj",
+            "x" : 4,
+            "y" : 8,
+            "z" : 4
+         },
+         "name" : "obj_challenge_interactive_mapinspector",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 4
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "mesh" : "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_mapinspector.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_mapinspector_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_mapinspector_asg.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_mapinspector_nor.tga"
+                        ]
+                     },
+                     {
+                        "material" : "DifAsg",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_mapinspector_screen_dif.tga",
+                           "$CHALLENGE_DATA/Objects/Textures/interactive/obj_interactive_mapinspector_screen_asg.tga",
+                           ""
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "rotationSet" : "PropY",
+         "sticky" : "-Y",
+         "uuid" : "6ca42dd6-0f2f-4abe-9aee-e1acb2bfcf40"
+      },
+      {
+         "box" : {
+            "x" : 4,
+            "y" : 9,
+            "z" : 4
+         },
+         "color" : "745540",
+         "density" : 250.0,
+         "name" : "obj_challenge_interactive_observerbot",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 4
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "animationList" : [
+                     {
+                        "file" : "$CHALLENGE_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_idle01.dae",
+                        "looping" : true,
+                        "name" : "obeserbot_loop01"
+                     },
+                     {
+                        "file" : "$CHALLENGE_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_idle02.dae",
+                        "looping" : true,
+                        "name" : "obeserbot_loop02"
+                     },
+                     {
+                        "file" : "$CHALLENGE_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_note.dae",
+                        "name" : "obeserbot_note"
+                     },
+                     {
+                        "file" : "$CHALLENGE_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_misc01.dae",
+                        "name" : "obeserbot_misc01"
+                     },
+                     {
+                        "file" : "$CHALLENGE_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_misc02.dae",
+                        "name" : "obeserbot_misc02"
+                     },
+                     {
+                        "file" : "$CHALLENGE_DATA/Characters/Char_observerbot/Animations/ani_char_observerbot_bpose.dae",
+                        "name" : "obeserbot_bpose"
+                     }
+                  ],
+                  "includes" : [
+                     "POSITION",
+                     "UV0",
+                     "NORMAL",
+                     "TANGENTS",
+                     "BLEND_INDICES",
+                     "BLEND_WEIGHTS"
+                  ],
+                  "maxViewDistance" : 1000.0,
+                  "mesh" : "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot.dae",
+                  "subMeshMap" : {
+                     "observerbot" : {
+                        "material" : "SkelAnimDifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot_dif.tga",
+                           "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot_asg.tga",
+                           "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot_nor.tga"
+                        ]
+                     },
+                     "observerbot_tool" : {
+                        "material" : "SkelAnimDifAsgNor",
+                        "textureList" : [
+                           "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot_tools_dif.tga",
+                           "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot_tools_asg.tga",
+                           "$CHALLENGE_DATA/Characters/Char_observerbot/char_observerbot_tools_nor.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "ObserverBot",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/ObserverBot.lua"
+         },
+         "sticky" : "-Y",
+         "uuid" : "fc3b1e92-1e81-45cf-9cbc-7ddb85604ff6"
+      },
+      {
+         "box" : {
+            "x" : 12,
+            "y" : 6,
+            "z" : 4
+         },
+         "color" : "808080",
+         "density" : 1250.0,
+         "name" : "obj_challenge_interactive_popupaudience",
+         "physicsMaterial" : "Metal",
+         "qualityLevel" : 0,
+         "ratings" : {
+            "friction" : 7
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "animationList" : [
+                     {
+                        "file" : "$CONTENT_DATA/Characters/Char_popupaudience/Animations/ani_char_popupaudience_activate.dae",
+                        "name" : "popupaudience_start"
+                     },
+                     {
+                        "file" : "$CONTENT_DATA/Characters/Char_popupaudience/Animations/ani_char_popupaudience_loop.dae",
+                        "looping" : true,
+                        "name" : "popupaudience_loop"
+                     }
+                  ],
+                  "includes" : [
+                     "POSITION",
+                     "UV0",
+                     "NORMAL",
+                     "TANGENTS",
+                     "BLEND_INDICES",
+                     "BLEND_WEIGHTS"
+                  ],
+                  "maxViewDistance" : 1000.0,
+                  "mesh" : "$CONTENT_DATA/Characters/Char_popupaudience/char_popupaudience.dae",
+                  "subMeshMap" : {
+                     "audience_mat" : {
+                        "material" : "SkelAnimDifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Characters/Char_popupaudience/char_popupaudience_dif.tga",
+                           "$CONTENT_DATA/Characters/Char_popupaudience/char_popupaudience_asg.tga",
+                           "$CONTENT_DATA/Characters/Char_popupaudience/char_popupaudience_nor.tga"
+                        ]
+                     },
+                     "box" : {
+                        "material" : "SkelAnimDifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Characters/Char_popupaudience/char_popupaudience_base_dif.tga",
+                           "$CONTENT_DATA/Characters/Char_popupaudience/char_popupaudience_base_asg.tga",
+                           "$CONTENT_DATA/Characters/Char_popupaudience/char_popupaudience_base_nor.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "rotationSet" : "PropYZ",
+         "scripted" : {
+            "classname" : "PopupAudience",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/PopupAudience.lua"
+         },
+         "sticky" : "-Y+Z-Z+X-X",
+         "uuid" : "dcbab714-d981-4998-9b90-5332e36d3632"
+      },
+      {
+         "box" : {
+            "x" : 4,
+            "y" : 1,
+            "z" : 4
+         },
+         "color" : "df7f01",
+         "flammable" : false,
+         "name" : "obj_interactive_characterspawner",
+         "physicsMaterial" : "Mechanical",
+         "ratings" : {
+            "buoyancy" : 2,
+            "density" : 2,
+            "durability" : 3,
+            "friction" : 3
+         },
+         "renderable" : "$CHALLENGE_DATA/Objects/Renderable/interactive/obj_interactive_characterspawner.rend",
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "CharacterSpawner",
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/CharacterSpawner.lua"
+         },
+         "sticky" : "-Z-Y-X+X",
+         "uuid" : "61b85d08-4087-4d7c-9ddb-64caeb60e447"
+      },
+      {
+         "box" : {
+            "x" : 3,
+            "y" : 2,
+            "z" : 3
+         },
+         "color" : "a71a1a",
+         "flammable" : true,
+         "name" : "obj_challenge_interactive_smallgoal",
+         "physicsMaterial" : "Metal",
+         "ratings" : {
+            "buoyancy" : 2,
+            "density" : 2,
+            "durability" : 3,
+            "friction" : 3
+         },
+         "renderable" : "$CHALLENGE_DATA/Objects/Renderable/interactive/obj_challenge_interactive_smallgoal.rend",
+         "rotationSet" : "PropYZNegX",
+         "scripted" : {
+            "classname" : "Goal",
+            "data" : {
+               "activateEffect" : "SmallGoal - Activate"
+            },
+            "filename" : "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/Goal.lua"
+         },
+         "uuid" : "90109b86-3dcf-44b3-a8e1-28c37122d5a7"
+      }
+      /*,
+      {
+         "box" : {
+            "x" : 1,
+            "y" : 1,
+            "z" : 1
+         },
+         "color" : "222222",
+         "flammable" : false,
+         "name" : "challenge_menu_lock",
+         "physicsMaterial" : "Metal",
+         "renderable" : "$CHALLENGE_DATA/Objects/Renderable/interactive/Menu.rend",
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "Menu",
+            "filename" : "$CHALLENGE_DATA/Scripts/MenuLock.lua"
+         },
+         "showInInventory": false,
+         "sticky" : "-Y",
+         "uuid" : "dbb537e7-0bc1-4815-892a-eb167b466a35"
+      }*/
+   ]
+}

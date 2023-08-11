@@ -1,0 +1,28 @@
+{
+   "toolList" : [
+      {
+         "name" : "",
+			"uuid": "43562d7c-d1a8-4cea-98e0-ad791320729b",
+			"previewRenderable": "$GAME_DATA/Character/Char_Tools/char_lift_preview.rend",
+			"previewRotation": [ 1, 0, 0, 0, 0, -1, 0, 1, 0 ],
+			"script": {
+            "file": "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/ChallengeLift.lua",
+            "data" : {},
+            "class": "ChallengeLift"
+         },
+			"showInInventory": false
+		},
+      {
+         "name" : "",
+         "previewRenderable" : "$GAME_DATA/Character/Char_tools/char_handbook_preview.rend",
+         "previewRotation" : [ 1, 0, 0, 0, 0, -1, 0, 1, 0 ],
+         "script" : {
+            "class" : "InGameMenu",
+            "data" : {},
+            "file" : "$CONTENT_DATA/Scripts/InGameMenu.lua"
+         },
+         "showInInventory" : true,
+         "uuid" : "55abf9f8-5fd5-44c9-bd1e-207ca3bb9864"
+      }
+   ]
+}

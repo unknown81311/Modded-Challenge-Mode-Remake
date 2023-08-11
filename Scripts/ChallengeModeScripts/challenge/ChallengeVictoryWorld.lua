@@ -1,9 +1,9 @@
-dofile( "$CHALLENGE_DATA/Scripts/challenge/ChallengeBaseWorld.lua")
-dofile( "$CHALLENGE_DATA/Scripts/challenge/world_util.lua" )
+dofile( "$CONTENT_DATA/Scripts/ChallengeModeScripts/challenge/ChallengeBaseWorld.lua")
+dofile( "$CONTENT_DATA/Scripts/ChallengeModeScripts/challenge/world_util.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/game/util/Timer.lua" )
 
 ChallengeVictoryWorld = class( ChallengeBaseWorld )
-ChallengeVictoryWorld.terrainScript = "$CHALLENGE_DATA/Scripts/challenge/terrain_challenge.lua"
+ChallengeVictoryWorld.terrainScript = "$CONTENT_DATA/Scripts/challenge/terrain_challenge.lua"
 ChallengeVictoryWorld.enableSurface = false
 ChallengeVictoryWorld.enableAssets = true
 ChallengeVictoryWorld.enableClutter = false
@@ -139,16 +139,16 @@ function ChallengeVictoryWorld.client_onCreate( self )
 	self.cl.watchedCutscene = false
 	self.cl.cutsceneHasFinished = false
 
-	self.cl.approvedGui = sm.gui.createGuiFromLayout( "$CHALLENGE_DATA/Gui/Layouts/Banner_Approved.layout", false, { isHud = true, isInteractive = false, needsCursor = false, hidesHotbar = true } )
+	self.cl.approvedGui = sm.gui.createGuiFromLayout( "$CONTENT_DATA/Gui/Layouts/Banner_Approved.layout", false, { isHud = true, isInteractive = false, needsCursor = false, hidesHotbar = true } )
 	self.cl.approvedTimer = Timer()
 	self.cl.approvedTimer:start( ApprovedTickTime )
 
-	self.cl.stuntmanGui = sm.gui.createGuiFromLayout( "$CHALLENGE_DATA/Gui/Layouts/Stuntman_Unlocked.layout", false, { backgroundAlpha = 0.6 } )
+	self.cl.stuntmanGui = sm.gui.createGuiFromLayout( "$CONTENT_DATA/Gui/Layouts/Stuntman_Unlocked.layout", false, { backgroundAlpha = 0.6 } )
 	self.cl.stuntmanGui:setOnCloseCallback( "cl_onCloseStuntman" )
 	self.cl.stuntmanGui:setButtonCallback( "CollectButton", "cl_onCollectPressed" )
 	self.cl.closedStuntmanGui = not g_showMasterMechanicTrialsReward
 
-	self.cl.finishGui = sm.gui.createGuiFromLayout( "$CHALLENGE_DATA/Gui/Layouts/Victory_Finish.layout" )
+	self.cl.finishGui = sm.gui.createGuiFromLayout( "$CONTENT_DATA/Gui/Layouts/Victory_Finish.layout" )
 	self.cl.finishGui:setButtonCallback( "FinishButton", "cl_onFinishPressed" )
 	self.cl.finishGui:setOnCloseCallback( "cl_onCloseFinish" )
 	self.cl.closedFinishGui = false

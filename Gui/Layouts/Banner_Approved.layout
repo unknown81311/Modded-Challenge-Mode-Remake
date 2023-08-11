@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="Banner" name="VictoryBanner" position_real="0.269531 0.0527778 0.460938 0.194444">
+        <Property key="InheritsAlpha" value="false" />
+        <Widget type="TextBox" skin="TextBox" name="Mechanic" position_real="0.162712 0.171429 0.691525 0.171429">
+            <Property key="FontName" value="SM_HeaderMedium" />
+            <Property key="TextColour" value="1 1 1" />
+            <Property key="TextAlign" value="HCenter Top" />
+            <Property key="WordWrap" value="true" />
+            <Property key="Caption" value="#{MECHANIC_CAPS}" />
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" name="Approved" position_real="0.162712 0.257143 0.691525 0.328571">
+            <Property key="Caption" value="#{APPROVED_CAPS}" />
+            <Property key="FontName" value="SM_HeaderXLarge_Wide" />
+            <Property key="TextAlign" value="Center" />
+            <Property key="TextColour" value="0.991045 1 0.71345" />
+        </Widget>
+    </Widget>
+    <CodeGeneratorSettings />
+</MyGUI>

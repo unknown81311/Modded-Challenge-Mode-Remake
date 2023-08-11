@@ -1,3 +1,7 @@
 {
-   "particleSystemList" : []
+	"particleSystemList": [
+		//// characterspawn ////
+
+		"characterspawn/p_characterspawn01.json"
+	]
 }

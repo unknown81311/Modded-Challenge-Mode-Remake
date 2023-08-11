@@ -1,0 +1,17 @@
+{
+   "lodList" : [
+      {
+         "mesh" : "$GAME_DATA/Mesh/cube.mesh",
+         "subMeshList" : [
+            {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Objects/Textures/blocks/blk_concrete01_dif.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/blocks/blk_concrete01_asg.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/blocks/blk_concrete01_nor.tga"
+               ]
+            }
+         ]
+      }
+   ]
+}

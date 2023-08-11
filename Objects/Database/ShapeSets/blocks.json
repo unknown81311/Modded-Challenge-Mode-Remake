@@ -1,0 +1,49 @@
+{
+	"blockList": [
+		{
+			"uuid": "491b1d4f-3a00-403e-b64f-f9eb7bda7683",
+			"name": "blk_challenge01",
+			"dif": "$CONTENT_DATA/Objects/Textures/blocks/blk_challenge01_dif.tga",
+			"asg": "$CONTENT_DATA/Objects/Textures/blocks/blk_challenge01_asg.tga",
+			"nor": "$CONTENT_DATA/Objects/Textures/blocks/blk_challenge01_nor.tga",
+			"tiling": 16,
+			"color": "606469",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"friction": 7
+			},
+			"density": 250.0,
+			"qualityLevel": 0
+		},
+		{
+			"uuid": "cad3a585-2686-40e2-8eb1-02f5df20a021",
+			"name": "blk_challenge02",
+			"dif": "$CONTENT_DATA/Objects/Textures/blocks/blk_challenge02_dif.tga",
+			"asg": "$CONTENT_DATA/Objects/Textures/blocks/blk_challenge02_asg.tga",
+			"nor": "$CONTENT_DATA/Objects/Textures/blocks/blk_challenge02_nor.tga",
+			"tiling": 16,
+			"color": "303235",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"friction": 4
+			},
+			"density": 250.0,
+			"qualityLevel": 0
+		},
+		{
+			"uuid": "17baf3ba-0b40-4eef-9823-119059d5c12d",
+			"name": "blk_challengeglass",
+			"dif": "$GAME_DATA/Objects/Textures/Blocks/blk_glass_dif.tga",
+			"asg": "$GAME_DATA/Objects/Textures/Blocks/blk_glass_asg.tga",
+			"nor": "$CONTENT_DATA/Objects/Textures/blocks/blk_challengeglass_nor.tga",
+			"tiling": 8,
+			"color": "e4f8ff",
+			"glass": true,
+			"physicsMaterial": "Glass",
+			"ratings": {
+				"friction": 4
+			},
+			"qualityLevel": 0
+		}
+	]
+}

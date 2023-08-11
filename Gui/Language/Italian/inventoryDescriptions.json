@@ -1,0 +1,158 @@
+{
+	"0440ab76-3bf1-4eac-a13b-02c0d919c34c": {
+		"title": "Piattaforma freccia"
+	},
+	"0a224575-1943-4fec-bc54-bf531018fd03": {
+		"description": "Finché la sfida non inizia, il giocatore può mettere giù la piattaforma e costruire lì le proprie creazioni libere.",
+		"title": "Piattaforma di costruzione"
+	},
+	"17baf3ba-0b40-4eef-9823-119059d5c12d": {
+		"title": "Vetro della sfida"
+	},
+	"18c148a4-fa2f-4948-95fd-809316f38584": {
+		"title": "Pedana di Robofestaiolo"
+	},
+	"2855df9b-8684-44ae-aaa8-8df0f96dbef6": {
+		"description": "Un telaio dotato di una freccia che si accende quando viene attivato.",
+		"title": "Telaio di generatore di palla due"
+	},
+	"37a8ec23-2730-4c87-b8c4-7c4efae27e02": {
+		"title": "Telaio di obiettivo"
+	},
+	"43562d7c-d1a8-4cea-98e0-ad791320729b": {
+		"description": "Costruendo sulla piattaforma creerai oggetti che possono muoversi liberamente e non saranno ancorati al terreno. Può essere alzata o abbassata e può raddrizzare creazioni capovolte.",
+		"title": "Piattaforma"
+	},
+	"466020f4-73f8-49f1-8d14-ab3bf38c754e": {
+		"title": "Cartellone Sfida"
+	},
+	"474b6aa3-b22f-4509-85b9-b5e281ff05f5": {
+		"description": "Emette un suono quando viene attivato.",
+		"title": "Cubo a conferma sonora"
+	},
+	"491b1d4f-3a00-403e-b64f-f9eb7bda7683": {
+		"title": "Blocco di sfida uno"
+	},
+	"4a9929e9-aa85-4791-89c2-f8799920793f": {
+		"description": "Collegalo a un attivatore per configurare le condizioni di avvio personalizzate della sfida. L’avviatore di sfida permette di creare sfide che non richiedono una creazione per raggiungere la meta. Deve essere collegato a un attivatore per poter iniziare la sfida.",
+		"title": "Avviatore di sfida"
+	},
+	"50deaf03-3c0a-441d-ae81-005809bc6a57": {
+		"title": "Telaio di pulsante di sfida uno"
+	},
+	"5929670a-fe70-40a7-83e4-45cf179b0aef": {
+		"description": "Utilizzato per comunicare la logica della sfida al giocatore.",
+		"title": "Blocco di luce acceso/spento"
+	},
+	"60502d7c-b78a-44e9-a4ff-6084d2db5554": {
+		"title": "Telaio di pulsante di sfida angolato"
+	},
+	"629cce35-82d8-4aad-ba0b-904779ad226b": {
+		"title": "Telaio di pulsante di sfida due"
+	},
+	"678106f0-f8b1-4487-b83a-7f65e21e834e": {
+		"title": "Parte di rampa 2x8 uno"
+	},
+	"6ca42dd6-0f2f-4abe-9aee-e1acb2bfcf40": {
+		"description": "Fornisce una panoramica della sfida.",
+		"title": "Computer con mappa"
+	},
+	"6da87c22-4273-49e6-b96c-e1d50924a03d": {
+		"title": "Parte di rampa 2x8 due"
+	},
+	"6e4d4863-e437-454c-8e33-d83b93b429c6": {
+		"title": "Parte di rampa 2x8 uno"
+	},
+	"76afd4a5-c190-4f84-b301-1cba11fc3873": {
+		"title": "Rampa 4x4"
+	},
+	"7bbf53fd-2b5e-4717-9b9c-ba8962b611e1": {
+		"description": "Portando qui la tua creazione vincerai la sfida. Collega un input per configurare una condizione di vittoria. Collega gli output per attivare degli eventi di festeggiamento.",
+		"title": "Piattaforma meta"
+	},
+	"84c7d476-4456-4d95-9e36-9106f1d51b90": {
+		"title": "Pulsante di sfida piccolo"
+	},
+	"8684ad89-94ad-4f46-b50e-c1aff63893f4": {
+		"description": "Avverte le creazioni e i giocatori che vi si trovano davanti. Possiede una portata di 64 blocchi e la sua capacità di percezione supera le pareti.",
+		"title": "Sensore grande"
+	},
+	"88a73e45-6740-4a60-b3cc-fbe4e010eb9f": {
+		"description": "È sferica!",
+		"title": "Palla"
+	},
+	"8bbbcaa5-0699-405a-b84d-a80a8dc2be76": {
+		"title": "Pulsante di sfida grande"
+	},
+	"8ec1120b-b272-44e8-9ad2-5b1998cb2477": {
+		"description": "Un telaio dotato di una freccia che si accende quando viene attivato.",
+		"title": "Telaio di generatore di palla uno"
+	},
+	"945d6152-fc82-48ec-a113-3896c14e8c5f": {
+		"description": "Collegalo a un attivatore e attivalo per dare il via al festeggiamento!",
+		"title": "Robofestaiolo"
+	},
+	"971130f1-4d57-441d-8088-12349050358c": {
+		"title": "Rampa 4x4"
+	},
+	"9a49c0e7-9a6b-4e2a-b62d-b0de4d30d91b": {
+		"title": "Rampa 4x8"
+	},
+	"9b9e4547-0846-42da-b812-9f1a5b22e52f": {
+		"description": "Collega in serie per illuminare un percorso.",
+		"title": "Blocco di luce a freccia"
+	},
+	"aac1b4c3-a9cb-46a2-945a-a175a0f9d1df": {
+		"title": "Parte di rampa 2x8 due"
+	},
+	"af130ba7-f0ed-4a5a-97f8-be78b54e972b": {
+		"description": "Genera una palla quando inizia la sfida. Collegalo a un attivatore per controllare la generazione. Se la palla cade dal bordo, ne verrà generata una nuova.",
+		"title": "Generatore di palla"
+	},
+	"b3402155-e8a3-452d-b6fb-55c8d4e4e681": {
+		"description": "Riempila con gli oggetti che vuoi far utilizzare al giocatore durante la sfida.",
+		"title": "Cassa della sfida"
+	},
+	"b5858089-b1f8-4d13-a485-fdaa204d9c6b": {
+		"description": "I giocatori inizieranno su questi durante la sfida.",
+		"title": "Inizio giocatori"
+	},
+	"badc4d45-1b75-4528-9451-a46270189190": {
+		"description": "Fai entrare una palla del colore corrispondente nell’incavatura per attivare.",
+		"title": "Incavatura per palla"
+	},
+	"cad3a585-2686-40e2-8eb1-02f5df20a021": {
+		"title": "Blocco di sfida due"
+	},
+	"d64d1f2a-2577-41d1-ae4a-30c51bda4252": {
+		"title": "Rampa 4x8"
+	},
+	"db16f6bd-efb6-4877-8277-04b08fc1e74e": {
+		"title": "Tubo per palla"
+	},
+	"dcbab714-d981-4998-9b90-5332e36d3632": {
+		"description": "Ti adora!\nPerfetto per festeggiare il completamento di una sfida.",
+		"title": "Pubblico a comparsa"
+	},
+	"dff53b11-2d8d-4044-ad51-59321f117f8e": {
+		"description": "Un pistone considerevolmente lungo e potente, utile per spostare porte di grandi dimensioni e piattaforme durante le sfide.",
+		"title": "Pistone grande"
+	},
+	"e2fcce34-ddb5-4292-9376-7b4472088518": {
+		"title": "Tubo per palla curvo"
+	},
+	"f524517f-21ab-4d73-84e2-e3435c2316f3": {
+		"title": "Telaio di obiettivo angolato"
+	},
+	"f93ab713-ae9f-4a3c-90e8-7d9b8de8a5a6": {
+		"title": "Insegna Manuale"
+	},
+	"fa9de66b-fd92-4d67-bf68-6584937b736d": {
+		"description": "Genera un barattolo esplosivo quando inizia la sfida. Collegalo a un attivatore per controllare la generazione. Se il barattolo si distrugge, ne verrà generato uno nuovo.",
+		"title": "Generatore di barattolo esplosivo"
+	},
+	"fc3b1e92-1e81-45cf-9cbc-7ddb85604ff6": {
+		"description": "Prendi appunti ogni volta che il giocatore costruisce qualcosa.",
+		"title": "Robosservatore"
+	}
+}

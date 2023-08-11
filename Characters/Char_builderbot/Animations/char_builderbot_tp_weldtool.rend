@@ -1,0 +1,28 @@
+{
+	"lodList": [{
+		"animationList" : [
+
+			// Weldtool
+
+			{ "name" : "weldtool_idle", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_idle.dae" , "looping": true },
+			{ "name" : "weldtool_idle_relaxed", 	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_idle.dae" , "looping": true },
+			{ "name" : "weldtool_run_fwd", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_run.dae", "looping" : true },
+			{ "name" : "weldtool_run_bwd", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_run_bwd.dae", "looping" : true },
+			{ "name" : "weldtool_use_into", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_use_into.dae" },
+
+			{ "name" : "weldtool_use_idle", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_use_idle.dae" , "looping": true },
+
+			{ "name" : "weldtool_use_exit", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_weldtool_use_exit.dae" },
+			{ "name" : "weldtool_use_error", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_use_error.dae" },
+
+			{ "name" : "weldtool_pickup", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_pickup.dae" },
+			{ "name" : "weldtool_putdown", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_tool_putdown.dae" }
+
+			//{ "name" : "weldtool_use_lift_into", 	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Weldtool/ani_char_builderbot_weldtool_use_lift_into.dae" },
+			//{ "name" : "weldtool_use_lift_idle", 	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Weldtool/ani_char_builderbot_weldtool_use_idle.dae" , "looping": true },
+			//{ "name" : "weldtool_use_lift_exit", 	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Weldtool/ani_char_builderbot_weldtool_use_lift_exit.dae" }
+
+		],
+		"maxViewDistance": 1000.0
+	}]
+}

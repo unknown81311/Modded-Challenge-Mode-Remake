@@ -1,0 +1,1651 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position_real="0 0 1 1">
+        <Property key="NeedKey" value="true" />
+        <Property key="NeedMouse" value="true" />
+        <Widget type="Widget" skin="PanelEmpty" name="ChallengeBuilderMainPanel" position_real="0.202604 0.158333 0.416667 0.722222">
+            <Widget type="Widget" skin="NonBlurryBackgroundDarkRoundedUpperRight" position_real="0 0 1 0.128205">
+                <Property key="NeedKey" value="false" />
+                <Property key="NeedMouse" value="false" />
+                <Widget type="ImageBox" skin="ImageBox" name="Icon" position_real="0.05 0.31 0.0375 0.4">
+                    <Property key="ImageTexture" value="IconChallengeMode.png" />
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position_real="0.11 0.37 0.83125 0.3">
+                    <Property key="Caption" value="#{CHALLENGE_BUILDER}" />
+                    <Property key="FontName" value="SM_HeaderLarge_Medium" />
+                    <Property key="TextAlign" value="Left VCenter" />
+                </Widget>
+            </Widget>
+            <Widget type="Widget" skin="NonBlurryBackgroundLightRoundedLowerLeft" position_real="0 0.128205 1 0.871795">
+                <Widget type="ItemBox" skin="InventoryItemBox2" name="ChallengeBuilderLevelList" position_real="0.05 0.0588235 0.875 0.882353">
+                    <Widget type="Widget" skin="PanelEmpty" position_real="0 0 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Widget type="Widget" skin="PanelEmpty" name="NewChallengePanel"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="BackgroundPlate"
+                                position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="NewChallengeDefault.png" />
+                            </Widget>
+                            <Widget type="ImageBox" skin="ImageBox" name="BackgroundPlateSelected"
+                                position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="NewChallengeSelected.png" />
+                            </Widget>
+                            <Widget type="TextBox" skin="TextBox" name="Name"
+                                position_real="0.0322581 0.693182 0.935484 0.215909">
+                                <Property key="Caption" value="#{CHALLENGE_BUILDER_NEW_CHALLENGE}" />
+                                <Property key="TextAlign" value="Center" />
+                                <Property key="FontName" value="SM_ButtonTiny" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="ChallengeNew" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_0" position_real="0.255 0.0 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_0" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_0"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_0" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_1" position_real="0.51 0.0 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_1" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_1"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_1" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_2" position_real="0.765 0.0 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_2" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_2"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_2" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_3" position_real="0.0 0.185 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_3" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_3"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_3" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_4" position_real="0.255 0.185 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_4" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_4"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_4" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_5" position_real="0.51 0.185 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_5" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_5"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_5" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_6" position_real="0.765 0.185 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_6" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_6"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_6" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_7" position_real="0.0 0.37 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_7" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_7"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_7" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_8" position_real="0.255 0.37 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_8" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_8"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_8" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_9" position_real="0.51 0.37 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_9" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_9"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_9" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_10" position_real="0.765 0.37 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_10" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_10"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_10" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_11" position_real="0.0 0.5549999999999999 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_11" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_11"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_11" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_12" position_real="0.255 0.5549999999999999 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_12" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_12"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_12" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_13" position_real="0.51 0.5549999999999999 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_13" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_13"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_13" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_14" position_real="0.765 0.5549999999999999 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_14" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_14"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_14" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_15" position_real="0.0 0.74 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_15" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_15"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_15" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_16" position_real="0.255 0.74 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_16" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_16"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_16" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_17" position_real="0.51 0.74 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_17" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_17"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_17" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_18" position_real="0.765 0.74 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_18" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_18"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_18" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_19" position_real="0.0 0.925 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_19" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_19"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_19" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_20" position_real="0.255 0.925 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_20" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_20"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_20" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_21" position_real="0.51 0.925 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_21" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_21"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_21" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_22" position_real="0.765 0.925 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_22" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_22"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_22" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_23" position_real="0.0 1.1099999999999999 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_23" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_23"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_23" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_24" position_real="0.255 1.1099999999999999 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_24" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_24"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_24" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_25" position_real="0.51 1.1099999999999999 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_25" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_25"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_25" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_26" position_real="0.765 1.1099999999999999 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_26" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_26"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_26" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_27" position_real="0.0 1.295 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_27" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_27"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_27" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_28" position_real="0.255 1.295 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_28" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_28"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_28" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_29" position_real="0.51 1.295 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_29" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_29"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_29" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_30" position_real="0.765 1.295 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_30" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_30"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_30" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_31" position_real="0.0 1.48 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_31" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_31"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_31" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_32" position_real="0.255 1.48 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_32" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_32"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_32" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_33" position_real="0.51 1.48 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_33" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_33"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_33" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_34" position_real="0.765 1.48 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_34" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_34"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_34" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_35" position_real="0.0 1.665 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_35" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_35"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_35" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_36" position_real="0.255 1.665 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_36" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_36"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_36" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_37" position_real="0.51 1.665 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_37" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_37"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_37" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_38" position_real="0.765 1.665 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_38" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_38"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_38" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_39" position_real="0.0 1.85 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_39" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_39"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_39" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_40" position_real="0.255 1.85 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_40" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_40"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_40" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_41" position_real="0.51 1.85 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_41" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_41"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_41" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_42" position_real="0.765 1.85 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_42" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_42"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_42" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_43" position_real="0.0 2.035 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_43" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_43"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_43" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_44" position_real="0.255 2.035 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_44" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_44"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_44" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_45" position_real="0.51 2.035 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_45" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_45"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_45" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_46" position_real="0.765 2.035 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_46" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_46"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_46" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_47" position_real="0.0 2.2199999999999998 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_47" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_47"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_47" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_48" position_real="0.255 2.2199999999999998 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_48" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_48"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_48" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_49" position_real="0.51 2.2199999999999998 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_49" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_49"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_49" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_50" position_real="0.765 2.2199999999999998 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_50" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_50"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_50" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_51" position_real="0.0 2.405 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_51" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_51"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_51" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_52" position_real="0.255 2.405 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_52" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_52"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_52" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_53" position_real="0.51 2.405 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_53" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_53"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_53" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_54" position_real="0.765 2.405 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_54" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_54"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_54" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_55" position_real="0.0 2.59 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_55" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_55"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_55" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_56" position_real="0.255 2.59 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_56" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_56"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_56" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_57" position_real="0.51 2.59 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_57" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_57"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_57" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_58" position_real="0.765 2.59 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_58" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_58"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_58" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_59" position_real="0.0 2.775 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_59" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_59"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_59" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_60" position_real="0.255 2.775 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_60" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_60"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_60" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_61" position_real="0.51 2.775 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_61" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_61"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_61" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_62" position_real="0.765 2.775 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_62" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_62"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_62" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_63" position_real="0.0 2.96 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_63" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_63"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_63" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_64" position_real="0.255 2.96 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_64" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_64"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_64" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_65" position_real="0.51 2.96 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_65" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_65"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_65" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_66" position_real="0.765 2.96 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_66" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_66"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_66" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_67" position_real="0.0 3.145 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_67" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_67"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_67" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_68" position_real="0.255 3.145 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_68" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_68"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_68" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_69" position_real="0.51 3.145 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_69" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_69"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_69" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_70" position_real="0.765 3.145 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_70" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_70"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_70" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_71" position_real="0.0 3.33 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_71" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_71"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_71" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_72" position_real="0.255 3.33 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_72" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_72"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_72" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_73" position_real="0.51 3.33 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_73" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_73"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_73" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_74" position_real="0.765 3.33 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_74" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_74"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_74" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_75" position_real="0.0 3.515 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_75" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_75"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_75" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_76" position_real="0.255 3.515 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_76" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_76"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_76" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_77" position_real="0.51 3.515 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_77" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_77"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_77" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_78" position_real="0.765 3.515 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_78" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_78"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_78" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_79" position_real="0.0 3.7 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_79" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_79"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_79" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_80" position_real="0.255 3.7 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_80" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_80"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_80" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_81" position_real="0.51 3.7 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_81" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_81"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_81" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_82" position_real="0.765 3.7 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_82" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_82"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_82" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_83" position_real="0.0 3.885 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_83" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_83"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_83" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_84" position_real="0.255 3.885 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_84" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_84"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_84" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_85" position_real="0.51 3.885 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_85" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_85"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_85" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_86" position_real="0.765 3.885 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_86" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_86"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_86" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_87" position_real="0.0 4.07 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_87" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_87"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_87" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_88" position_real="0.255 4.07 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_88" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_88"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_88" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_89" position_real="0.51 4.07 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_89" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_89"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_89" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_90" position_real="0.765 4.07 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_90" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_90"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_90" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_91" position_real="0.0 4.255 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_91" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_91"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_91" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_92" position_real="0.255 4.255 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_92" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_92"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_92" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_93" position_real="0.51 4.255 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_93" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_93"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_93" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_94" position_real="0.765 4.255 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_94" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_94"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_94" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_95" position_real="0.0 4.4399999999999995 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_95" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_95"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_95" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_96" position_real="0.255 4.4399999999999995 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_96" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_96"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_96" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_97" position_real="0.51 4.4399999999999995 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_97" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_97"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_97" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_98" position_real="0.765 4.4399999999999995 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_98" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_98"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_98" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    <Widget type="Widget" skin="PanelEmpty" name="ChallengeItem_99" position_real="0.0 4.625 0.25 0.18">
+                        <Property key="NeedMouse" value="true" />
+                        <Property key="NeedKey" value="true" />
+                        <Property key="Visible" value="false" />
+                        <Widget type="Widget" skin="PanelEmpty"
+                            position_real="0 0 0.885714 0.814815">
+                            <Widget type="ImageBox" skin="ImageBox" name="Preview_99" position_real="0 0 1 1">
+                                <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                                <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder_99"
+                                    position_real="0 0 1 1" />
+                            </Widget>
+                        </Widget>
+                        <Widget type="Button" skin="PanelEmpty" name="Challenge_99" position_real="0 0 1 1"/>
+                    </Widget>
+                    
+                    
+                </Widget>
+                <Widget type="ScrollBar" skin="InventoryVSlider" name="ChallengeBuilderLevelScroll" position_real="0.93 0.0588235 0.0375 0.882353" />
+            </Widget>
+        </Widget>
+
+        <Widget type="Widget" skin="BackgroundMenuChallenge_builderdetails" name="ChallengeBuilderInfoPanel" position_real="0.629687 0.158333 0.15625 0.722222">
+            <Widget type="ImageBox" skin="ImageBox" position_real="0.1 0.0512821 0.8 0.184615">
+                <Property key="ImageTexture" value="PreviewFrameFallback.png" />
+                <Property key="NeedKey" value="false" />
+                <Property key="NeedMouse" value="false" />
+                <Widget type="ImageBox" skin="ImageBox" name="ChallengeIcon" position_real="0.0416667 0.0694444 0.916667 0.861111">
+                    <Property key="ImageTexture" value="" />
+                    <Property key="NeedKey" value="false" />
+                    <Property key="NeedMouse" value="false" />
+                </Widget>
+            </Widget>
+            <Widget type="Widget" skin="SearchBarBackground" name="ChallengeName" position_real="0.1 0.261538 0.8 0.0512821">
+                <Widget type="TextBox" skin="TextBox" name="DefaultText_Title" position_real="0.05 0.125 0.916667 0.75">
+                    <Property key="Caption" value="#{CHALLENGE_BUILDER_CHALLENGE_NAME}" />
+                    <Property key="TextAlign" value="Left VCenter" />
+                    <Property key="TextColour" value="0.29803921568 0.29803921568 0.29803921568" />
+                    <Property key="FontName" value="SM_TextSmall" />
+                    <UserString key="FontName" value="SM_TextSmall" />
+                </Widget>
+                <Widget type="EditBox" skin="EditBoxEmpty" name="EditText_Title" position_real="0.05 0.125 0.916667 0.75">
+                    <Property key="Caption" value="" />
+                    <Property key="TextAlign" value="Left VCenter" />
+                    <Property key="TextColour" value="1 1 1" />
+                    <Property key="FontName" value="SM_TextSmall" />
+                    <UserString key="FontName" value="SM_TextSmall" />
+                </Widget>
+            </Widget>
+            <Widget type="Widget" skin="SearchBarBackground" name="ChallengeDescription" position_real="0.1 0.325641 0.8 0.251282">
+                <Widget type="TextBox" skin="TextBox" name="DefaultText_Description" position_real="0.05 0.0510204 0.916667 0.897959">
+                    <Property key="Caption" value="#{DESCRIPTION}" />
+                    <Property key="TextAlign" value="Left Top" />
+                    <Property key="TextColour" value="0.29803921568 0.29803921568 0.29803921568" />
+                    <Property key="MultiLine" value="true" />
+                    <Property key="FontName" value="SM_TextSmall" />
+                    <UserString key="FontName" value="SM_TextSmall" />
+                </Widget>
+                <Widget type="EditBox" skin="EditBoxEmpty" name="EditText_Description" position_real="0.05 0.0510204 0.916667 0.897959">
+                    <Property key="Caption" value="" />
+                    <Property key="TextAlign" value="Left Top" />
+                    <Property key="TextColour" value="1 1 1" />
+                    <Property key="MultiLine" value="true" />
+                    <Property key="FontName" value="SM_TextSmall" />
+                    <UserString key="FontName" value="SM_TextSmall" />
+                </Widget>
+            </Widget>
+            <Widget type="Button" skin="ActiveButton" name="AddToChallengePack" position_real="0.08 0.596154 0.84 0.0666667">
+                <Property key="Caption" value="#{CHALLENGE_BUILDER_ADD}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SecondaryButton" name="ChallengeModeMenuPack" position_real="0.1 0.682051 0.8 0.0512821">
+                <Property key="Caption" value="RETURN" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SecondaryButton" name="Play" position_real="0.1 0.758974 0.8 0.0512821">
+                <Property key="Caption" value="#{PLAY}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="HaveToBeatText" position_real="0.1 0.811538 0.8 0.0307692">
+                <Property key="Caption" value="#{CHALLENGE_BUILDER_HAVE_TO_BEAT_LINE_1}" />
+                <Property key="FontName" value="SM_TextTiny" />
+                <Property key="TextColour" value="0.57 0.57 0.57" />
+                <Property key="TextAlign" value="HCenter Bottom" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="HaveToBeatText2" position_real="0.1 0.846154 0.8 0.0307692">
+                <Property key="Caption" value="#{CHALLENGE_BUILDER_HAVE_TO_BEAT_LINE_2}" />
+                <Property key="FontName" value="SM_TextTiny" />
+                <Property key="TextColour" value="0.57 0.57 0.57" />
+                <Property key="TextAlign" value="HCenter Top" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="RecordContainer" position_real="0.1 0.823077 0.8 0.0269231">
+                <Widget type="TextBox" skin="TextBox" name="RecordTime" position_real="0.5125 0 0.4875 1.14286">
+                    <Property key="Caption" value="0d 0h 0h" />
+                    <Property key="FontName" value="SM_LabelTiny" />
+                    <Property key="TextAlign" value="Right VCenter" />
+                    <Property key="TextColour" value="1 0.8156863 0.2745098" />
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" name="RecordTimeLabel" position_real="0.075 0 0.4375 1">
+                    <Property key="Caption" value="#{PLAYTIME}" />
+                    <Property key="FontName" value="SM_LabelTiny" />
+                    <Property key="TextAlign" value="Left VCenter" />
+                    <Property key="TextColour" value="0.57 0.57 0.57" />
+                </Widget>
+                <Widget type="ImageBox" skin="ImageBox" name="RecordIcon" position_real="0 0.0952381 0.0666667 0.857143">
+                    <Property key="ImageTexture" value="IconStopwatch.png" />
+                </Widget>
+            </Widget>
+            <Widget type="Button" skin="StyledButtonLarge" name="Build" position_real="0.0833333 0.880769 0.826667 0.0884615">
+                <Property key="Caption" value="#{BUILD}" />
+                <Property key="FontName" value="SM_Button" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
+
+        <Widget type="ImageBox" skin="ImageBox" name="BackgroundImage" position_real="0 0.885 1 0.115">
+            <Property key="ImageTexture" value="blank.png" />
+        </Widget>
+    </Widget>
+</MyGUI>

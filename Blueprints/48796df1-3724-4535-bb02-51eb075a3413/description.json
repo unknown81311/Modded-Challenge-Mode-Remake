@@ -1,0 +1,7 @@
+{
+   "description" : "Large vertical cube that that rotates back and forth.\nWhen the green logic gate is pulsed the cube starts its motion.\nWhen the red logic gate is pulsed the cube stops its motion.\nBlue logic gate toggles based on the cube's back and forth motion.\nCyan logic gate is active while the cube is active (useful for activating arrow light blocks).",
+   "localId" : "48796df1-3724-4535-bb02-51eb075a3413",
+   "name" : "Large Moving Cube",
+   "type" : "Blueprint",
+   "version" : 0
+}

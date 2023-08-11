@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position_real="0 0 1 1">
+        <Property key="NeedKey" value="true" />
+        <Property key="NeedMouse" value="true" />
+        <Widget type="Widget" skin="PanelEmpty" name="MainPanel" position_real="0 0 1 1">
+            <Property key="NeedMouse" value="false" />
+            <Property key="NeedKey" value="false" />
+            <Widget type="Button" skin="SelectionFieldBox" name="Background"
+                position_real="0 0 1 0.888889">
+                <Widget type="ImageBox" skin="ImageBox" name="Preview"
+                    position_real="0 0 0.285714 1">
+                    <Property key="ImageTexture" value="challenge_missing_icon_small.png" />
+                    <Widget type="Widget" skin="HighlightSelectionBox" name="PreviewSelectBorder"
+                        position_real="0 0 1.07143 1" />
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" name="Name"
+                    position_real="0.326531 0 0.693878 1">
+                    <Property key="Caption" value="#{CHALLENGE_BUILDER_CHALLENGE_PACK_NAME}" />
+                    <Property key="TextAlign" value="Left VCenter" />
+                    <Property key="FontName" value="SM_ListItem" />
+                </Widget>
+                <Widget type="Widget" skin="HighlightSelectionBox" name="SelectBorder"
+                    position_real="0 0 1 1" />
+            </Widget>
+        </Widget>
+        
+    </Widget>
+</MyGUI>

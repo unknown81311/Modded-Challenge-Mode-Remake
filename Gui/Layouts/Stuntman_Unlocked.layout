@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position_real="0 0 1 1">
+        <Widget type="Widget" skin="Unlock" name="UnlockBack" position_real="0.236719 0.222222 0.526563 0.469444">
+            <Property key="InheritsAlpha" value="false" />
+            <Widget type="ImageBox" skin="ImageBox" position_real="0.284866 0.0769231 0.41543 0.828402">
+                <Property key="ImageTexture" value="gui_challengemode_unlock_dress.png" />
+            </Widget>
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" name="UnlockedText" position_real="0.40625 0.7 0.1875 0.0416667">
+            <Property key="InheritsAlpha" value="false" />
+            <Property key="Caption" value="#{UNLOCKED_CAPS}" />
+            <Property key="TextAlign" value="Center" />
+            <Property key="FontName" value="SM_HeaderLarge_Medium" />
+            <Property key="TextColour" value="1 1 1" />
+            <Property key="TextShadow" value="true" />
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" name="StuntmanOutfitText" position_real="0.292969 0.736111 0.390625 0.0444444">
+            <Property key="InheritsAlpha" value="false" />
+            <Property key="Caption" value="#{CHALLENGE_STUNTMAN_OUTFIT}" />
+            <Property key="TextAlign" value="Center" />
+            <Property key="TextColour" value="0.991045 1 0.71345" />
+            <Property key="FontName" value="SM_HeaderXLarge_Wide" />
+            <Property key="TextShadow" value="true" />
+        </Widget>
+        <Widget type="Button" skin="StyledButtonLarge" name="CollectButton" position_real="0.414062 0.805556 0.171875 0.0638889">
+            <Property key="InheritsAlpha" value="false" />
+            <Property key="Caption" value="#{COLLECT_CAPS}" />
+            <Property key="TextAlign" value="Center" />
+            <Property key="FontName" value="SM_ButtonLarge" />
+            <Property key="TextShadow" value="true" />
+            <Property key="TextShadowColour" value="0.933333 0.8 0.447059" />
+            <Property key="TextColour" value="0.203922 0.207843 0.223529" />
+        </Widget>
+    </Widget>
+    <CodeGeneratorSettings />
+</MyGUI>

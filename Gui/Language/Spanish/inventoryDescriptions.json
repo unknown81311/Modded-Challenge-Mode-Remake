@@ -1,0 +1,158 @@
+{
+	"0440ab76-3bf1-4eac-a13b-02c0d919c34c": {
+		"title": "Plataforma de flecha"
+	},
+	"0a224575-1943-4fec-bc54-bf531018fd03": {
+		"description": "Antes de que el desafío empiece, el jugador puede poner el ascensor para construir aquí. Las creaciones sueltas que haya en la plataforma de construcción les permitirán construir sobre ellas.",
+		"title": "Plataforma de construcción"
+	},
+	"17baf3ba-0b40-4eef-9823-119059d5c12d": {
+		"title": "Cristal de desafío"
+	},
+	"18c148a4-fa2f-4948-95fd-809316f38584": {
+		"title": "Puesto de fiestabot"
+	},
+	"2855df9b-8684-44ae-aaa8-8df0f96dbef6": {
+		"description": "Un marco con una flecha que se ilumina al activarse.",
+		"title": "Marco de generador de bolas 2"
+	},
+	"37a8ec23-2730-4c87-b8c4-7c4efae27e02": {
+		"title": "Marco de objetivo"
+	},
+	"43562d7c-d1a8-4cea-98e0-ad791320729b": {
+		"description": "Construye en el ascensor para crear construcciones de movimiento libre que no estén unidas a la tierra. Puede ser elevado y bajado, así como elevar creaciones que se dieron la vuelta.",
+		"title": "Elevador"
+	},
+	"466020f4-73f8-49f1-8d14-ab3bf38c754e": {
+		"title": "Cartel de desafío"
+	},
+	"474b6aa3-b22f-4509-85b9-b5e281ff05f5": {
+		"description": "Emite un sonido al activarse.",
+		"title": "Cubo de sonido de confirmación"
+	},
+	"491b1d4f-3a00-403e-b64f-f9eb7bda7683": {
+		"title": "Desafío de bloques 1"
+	},
+	"4a9929e9-aa85-4791-89c2-f8799920793f": {
+		"description": "Conéctalo a un disparador para personalizar las condiciones del comienzo del desafío. Si el iniciador se usa, el jugador solo tiene que llegar al objetivo.",
+		"title": "Iniciador del desafío"
+	},
+	"50deaf03-3c0a-441d-ae81-005809bc6a57": {
+		"title": "Estructura de botón de desafío 1"
+	},
+	"5929670a-fe70-40a7-83e4-45cf179b0aef": {
+		"description": "Se usa para comunicar la lógica del desafío al jugador.",
+		"title": "Bloque de iluminación On / Off"
+	},
+	"60502d7c-b78a-44e9-a4ff-6084d2db5554": {
+		"title": "Esquina de estructura de botón de desafío"
+	},
+	"629cce35-82d8-4aad-ba0b-904779ad226b": {
+		"title": "Estructura de botón de desafío 2"
+	},
+	"678106f0-f8b1-4487-b83a-7f65e21e834e": {
+		"title": "Rampa (2x8) parte 1"
+	},
+	"6ca42dd6-0f2f-4abe-9aee-e1acb2bfcf40": {
+		"description": "Ofrece una vista general del desafío.",
+		"title": "Ordenador de mapas"
+	},
+	"6da87c22-4273-49e6-b96c-e1d50924a03d": {
+		"title": "Rampa (2x8) parte 2"
+	},
+	"6e4d4863-e437-454c-8e33-d83b93b429c6": {
+		"title": "Rampa (2x8) parte 1"
+	},
+	"76afd4a5-c190-4f84-b301-1cba11fc3873": {
+		"title": "Rampa (4x4)"
+	},
+	"7bbf53fd-2b5e-4717-9b9c-ba8962b611e1": {
+		"description": "El que traiga aquí tu creación gana el desafío. Conéctalo a una entrada para establecer una condición de victoria. Conéctalo a salidas para activar eventos de celebración.",
+		"title": "Plataforma de objetivo"
+	},
+	"84c7d476-4456-4d95-9e36-9106f1d51b90": {
+		"title": "Botón de desafío pequeño"
+	},
+	"8684ad89-94ad-4f46-b50e-c1aff63893f4": {
+		"description": "Reacciona ante las creaciones y jugadores que tenga delante. Rango: 64 bloques. Reacciona a través de los muros.",
+		"title": "Sensor grande"
+	},
+	"88a73e45-6740-4a60-b3cc-fbe4e010eb9f": {
+		"description": "¡Es redonda!",
+		"title": "Bola"
+	},
+	"8bbbcaa5-0699-405a-b84d-a80a8dc2be76": {
+		"title": "Botón de desafío grande"
+	},
+	"8ec1120b-b272-44e8-9ad2-5b1998cb2477": {
+		"description": "Un marco con una flecha que se ilumina al activarse.",
+		"title": "Marco de generador de bolas 1"
+	},
+	"945d6152-fc82-48ec-a113-3896c14e8c5f": {
+		"description": "¡Conéctalo a un disparador y actívalo para empezar la celebración!",
+		"title": "Fiestabot"
+	},
+	"971130f1-4d57-441d-8088-12349050358c": {
+		"title": "Rampa (4x4)"
+	},
+	"9a49c0e7-9a6b-4e2a-b62d-b0de4d30d91b": {
+		"title": "Rampa (4x8)"
+	},
+	"9b9e4547-0846-42da-b812-9f1a5b22e52f": {
+		"description": "Se conecta en serie para iluminar un sendero.",
+		"title": "Bloque de flecha iluminada"
+	},
+	"aac1b4c3-a9cb-46a2-945a-a175a0f9d1df": {
+		"title": "Rampa (2x8) parte 2"
+	},
+	"af130ba7-f0ed-4a5a-97f8-be78b54e972b": {
+		"description": "Libera una bola cuando empiece el desafío. Conéctalo a un disparador para controlar la generación de bolas. Aparecerá una nueva si la bola se cae por el borde.",
+		"title": "Generador de bolas"
+	},
+	"b3402155-e8a3-452d-b6fb-55c8d4e4e681": {
+		"description": "Llénalo con los objetos que quieras que construyan los jugadores en tu desafío.",
+		"title": "Cofre de desafío"
+	},
+	"b5858089-b1f8-4d13-a485-fdaa204d9c6b": {
+		"description": "Los jugadores empezará aquí cuando jueguen a los desafíos.",
+		"title": "Punto inicial"
+	},
+	"badc4d45-1b75-4528-9451-a46270189190": {
+		"description": "Lleva una bola del mismo color a la ranura para activarla.",
+		"title": "Ranura de bolas"
+	},
+	"cad3a585-2686-40e2-8eb1-02f5df20a021": {
+		"title": "Desafío de bloques 2"
+	},
+	"d64d1f2a-2577-41d1-ae4a-30c51bda4252": {
+		"title": "Rampa (4x8)"
+	},
+	"db16f6bd-efb6-4877-8277-04b08fc1e74e": {
+		"title": "Tubería de bolas"
+	},
+	"dcbab714-d981-4998-9b90-5332e36d3632": {
+		"description": "¡Te quieren con locura!\nPerfecto para celebrar la finalización de un desafío.",
+		"title": "Público espontáneo"
+	},
+	"dff53b11-2d8d-4044-ad51-59321f117f8e": {
+		"description": "Un pistón muy grande y poderoso, útil para mover grandes puertas y plataformas en los desafíos.",
+		"title": "Pistón grande"
+	},
+	"e2fcce34-ddb5-4292-9376-7b4472088518": {
+		"title": "Codo de tubería de bolas"
+	},
+	"f524517f-21ab-4d73-84e2-e3435c2316f3": {
+		"title": "Esquina de marco de objetivo"
+	},
+	"f93ab713-ae9f-4a3c-90e8-7d9b8de8a5a6": {
+		"title": "Señal de manual"
+	},
+	"fa9de66b-fd92-4d67-bf68-6584937b736d": {
+		"description": "Libera un bote explosivo cuando empiece el desafío. Conéctalo a un disparador para controlar la generación de bolas. Aparecerá uno nuevo si el bote se cae por el borde.",
+		"title": "Generador de botes explosivos"
+	},
+	"fc3b1e92-1e81-45cf-9cbc-7ddb85604ff6": {
+		"description": "Lleva registro de todo lo que construye el jugador.",
+		"title": "Observabot"
+	}
+}

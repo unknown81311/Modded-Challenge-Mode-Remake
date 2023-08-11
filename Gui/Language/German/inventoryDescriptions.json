@@ -1,0 +1,158 @@
+{
+	"0440ab76-3bf1-4eac-a13b-02c0d919c34c": {
+		"title": "Pfeilplattform"
+	},
+	"0a224575-1943-4fec-bc54-bf531018fd03": {
+		"description": "Solange die Herausforderung noch nicht gestartet ist, kann der Spieler hier die Hebevorrichtung absetzen und bauen. Solange die Herausforderung noch nicht begonnen hat, können Spieler hier ihre Konstruktionen bauen.",
+		"title": "Bauplattform"
+	},
+	"17baf3ba-0b40-4eef-9823-119059d5c12d": {
+		"title": "Herausforderungsglas"
+	},
+	"18c148a4-fa2f-4948-95fd-809316f38584": {
+		"title": "Fuß für Jubel-Bot"
+	},
+	"2855df9b-8684-44ae-aaa8-8df0f96dbef6": {
+		"description": "Ein Rahmen mit einem Pfeil, der beim Auslösen aufleuchtet.",
+		"title": "Ball-Spawner (Rahmen Zwei)"
+	},
+	"37a8ec23-2730-4c87-b8c4-7c4efae27e02": {
+		"title": "Zielrahmen"
+	},
+	"43562d7c-d1a8-4cea-98e0-ad791320729b": {
+		"description": "Darauf kannst du frei bewegliche Konstruktionen bauen, die nicht auf dem Boden verankert sind. Kann hoch- oder heruntergefahren werden und umgestürzte Konstruktionen aufstellen.",
+		"title": "Hebevorrichtung"
+	},
+	"466020f4-73f8-49f1-8d14-ab3bf38c754e": {
+		"title": "Herausforderungstafel"
+	},
+	"474b6aa3-b22f-4509-85b9-b5e281ff05f5": {
+		"description": "Erzeugt einen Ton, wenn er ausgelöst wird.",
+		"title": "Bestätigungston-Würfel"
+	},
+	"491b1d4f-3a00-403e-b64f-f9eb7bda7683": {
+		"title": "Herausforderungsblock Eins"
+	},
+	"4a9929e9-aa85-4791-89c2-f8799920793f": {
+		"description": "Durch eine Verbindung mit einem Auslöser kannst du maßgeschneiderte Startbedingungen festlegen. Wenn du einen Herausforderungsstarter verwendest, muss nur der Spieler das Ziel erreichen.",
+		"title": "Herausforderungsstarter"
+	},
+	"50deaf03-3c0a-441d-ae81-005809bc6a57": {
+		"title": "Herausforderungsknopf (Rahmen Eins)"
+	},
+	"5929670a-fe70-40a7-83e4-45cf179b0aef": {
+		"description": "Kommuniziert die Logik der Herausforderung an den Spieler.",
+		"title": "Lichtblock an/aus"
+	},
+	"60502d7c-b78a-44e9-a4ff-6084d2db5554": {
+		"title": "Herausforderungsknopf (Rahmenecke)"
+	},
+	"629cce35-82d8-4aad-ba0b-904779ad226b": {
+		"title": "Herausforderungsknopf (Rahmen Zwei)"
+	},
+	"678106f0-f8b1-4487-b83a-7f65e21e834e": {
+		"title": "Rampe 2x8 (erster Teil)"
+	},
+	"6ca42dd6-0f2f-4abe-9aee-e1acb2bfcf40": {
+		"description": "Zeigt eine Übersicht der Herausforderung.",
+		"title": "Kartencomputer"
+	},
+	"6da87c22-4273-49e6-b96c-e1d50924a03d": {
+		"title": "Rampe 2x8 (zweiter Teil)"
+	},
+	"6e4d4863-e437-454c-8e33-d83b93b429c6": {
+		"title": "Rampe 2x8 (erster Teil)"
+	},
+	"76afd4a5-c190-4f84-b301-1cba11fc3873": {
+		"title": "Rampe 4x4"
+	},
+	"7bbf53fd-2b5e-4717-9b9c-ba8962b611e1": {
+		"description": "Wenn du deine Konstruktion hierher bringst, gewinnst du die Herausforderung. Verbinde einen Eingang, um die Bedingung für das Gewinnen festzulegen. Verbinde Ausgänge, um Jubelereignisse auszulösen.",
+		"title": "Zielplattform"
+	},
+	"84c7d476-4456-4d95-9e36-9106f1d51b90": {
+		"title": "Herausforderungsknopf (klein)"
+	},
+	"8684ad89-94ad-4f46-b50e-c1aff63893f4": {
+		"description": "Erfasst Konstruktionen und Spieler vor ihnen. Reichweite: 64 Blocks. Erfassung durch Wände hindurch.",
+		"title": "Großer Sensor"
+	},
+	"88a73e45-6740-4a60-b3cc-fbe4e010eb9f": {
+		"description": "Es ist rund!",
+		"title": "Ball"
+	},
+	"8bbbcaa5-0699-405a-b84d-a80a8dc2be76": {
+		"title": "Herausforderungsknopf (groß)"
+	},
+	"8ec1120b-b272-44e8-9ad2-5b1998cb2477": {
+		"description": "Ein Rahmen mit einem Pfeil, der beim Auslösen aufleuchtet.",
+		"title": "Ball-Spawner (Rahmen Eins)"
+	},
+	"945d6152-fc82-48ec-a113-3896c14e8c5f": {
+		"description": "Verbinde ihn mit einem Auslöser und aktiviere so die Siegesfeier!",
+		"title": "Jubel-Bot"
+	},
+	"971130f1-4d57-441d-8088-12349050358c": {
+		"title": "Rampe 4x4"
+	},
+	"9a49c0e7-9a6b-4e2a-b62d-b0de4d30d91b": {
+		"title": "Rampe 4x8"
+	},
+	"9b9e4547-0846-42da-b812-9f1a5b22e52f": {
+		"description": "Verbinde mehrere davon, um einen Pfad anzuzeigen.",
+		"title": "Pfeil-Lichtblock"
+	},
+	"aac1b4c3-a9cb-46a2-945a-a175a0f9d1df": {
+		"title": "Rampe 2x8 (zweiter Teil)"
+	},
+	"af130ba7-f0ed-4a5a-97f8-be78b54e972b": {
+		"description": "Erschafft einen Ball, wenn die Herausforderung beginnt. Verbinde ihn mit einem Auslöser, um das Spawnen zu kontrollieren. Ein neuer Ball taucht auf, wenn der andere über den Rand rollt.",
+		"title": "Ball-Spawner"
+	},
+	"b3402155-e8a3-452d-b6fb-55c8d4e4e681": {
+		"description": "Füll sie mit den Gegenständen, die der Spieler in deiner Herausforderung verwenden soll.",
+		"title": "Herausforderungstruhe"
+	},
+	"b5858089-b1f8-4d13-a485-fdaa204d9c6b": {
+		"description": "Spieler starten hier, wenn sie deine Herausforderung spielen.",
+		"title": "Spieler-Startpunkt"
+	},
+	"badc4d45-1b75-4528-9451-a46270189190": {
+		"description": "Leg einen Ball derselben Farbe in die Mulde, um diese zu aktivieren.",
+		"title": "Ballmulde"
+	},
+	"cad3a585-2686-40e2-8eb1-02f5df20a021": {
+		"title": "Herausforderungsblock Zwei"
+	},
+	"d64d1f2a-2577-41d1-ae4a-30c51bda4252": {
+		"title": "Rampe 4x8"
+	},
+	"db16f6bd-efb6-4877-8277-04b08fc1e74e": {
+		"title": "Ballrohr"
+	},
+	"dcbab714-d981-4998-9b90-5332e36d3632": {
+		"description": "Sie lieben dich!\nPerfekt geeignet, um den Abschluss einer Herausforderung zu feiern.",
+		"title": "Pop-up-Publikum"
+	},
+	"dff53b11-2d8d-4044-ad51-59321f117f8e": {
+		"description": "Mit diesem langen und leistungsstarken Kolben kannst du große Türen und Plattformen in Herausforderungen bewegen.",
+		"title": "Großer Kolben"
+	},
+	"e2fcce34-ddb5-4292-9376-7b4472088518": {
+		"title": "Ballrohr (Krümmung)"
+	},
+	"f524517f-21ab-4d73-84e2-e3435c2316f3": {
+		"title": "Zielrahmenecke"
+	},
+	"f93ab713-ae9f-4a3c-90e8-7d9b8de8a5a6": {
+		"title": "Handbuch-Schild"
+	},
+	"fa9de66b-fd92-4d67-bf68-6584937b736d": {
+		"description": "Erschafft einen explosiven Kanister, wenn die Herausforderung beginnt. Verbinde ihn mit einem Auslöser, um das Spawnen zu kontrollieren. Ein neuer Kanister taucht auf, wenn der andere zerstört wird.",
+		"title": "Spawner für explosive Kanister"
+	},
+	"fc3b1e92-1e81-45cf-9cbc-7ddb85604ff6": {
+		"description": "Macht sich immer dann Notizen, wenn der Spieler etwas baut.",
+		"title": "Beobachter-Bot"
+	}
+}

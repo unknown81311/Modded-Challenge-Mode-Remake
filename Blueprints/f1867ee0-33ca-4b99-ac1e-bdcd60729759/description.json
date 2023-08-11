@@ -1,0 +1,7 @@
+{
+   "description" : "Large push-button, activated with a heavy impact.\nGreen logic gate is active when the button is active.\nRed logic gate is active when the buton is not active.",
+   "localId" : "f1867ee0-33ca-4b99-ac1e-bdcd60729759",
+   "name" : "Button Large",
+   "type" : "Blueprint",
+   "version" : 0
+}

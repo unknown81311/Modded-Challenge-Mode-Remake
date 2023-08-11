@@ -1,7 +1,7 @@
-dofile( "$CHALLENGE_DATA/Scripts/challenge/ChallengeBaseWorld.lua")
-dofile( "$CHALLENGE_DATA/Scripts/challenge/world_util.lua" )
-dofile( "$CHALLENGE_DATA/Scripts/game/challenge_shapes.lua" )
-dofile( "$CHALLENGE_DATA/Scripts/game/challenge_tools.lua" )
+dofile( "$CONTENT_DATA/Scripts/ChallengeModeScripts/challenge/ChallengeBaseWorld.lua")
+dofile( "$CONTENT_DATA/Scripts/ChallengeModeScripts/challenge/world_util.lua" )
+dofile( "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/challenge_shapes.lua" )
+dofile( "$CONTENT_DATA/Scripts/ChallengeModeScripts/game/challenge_tools.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/game/managers/WaterManager.lua" )
 
 ChallengeWorld = class( ChallengeBaseWorld )
@@ -12,7 +12,7 @@ ChallengeWorld.enableClutter = false
 ChallengeWorld.enableNodes = true
 ChallengeWorld.enableCreations = true
 ChallengeWorld.enableHarvestables = true
-ChallengeWorld.enableKinematics = false
+ChallengeWorld.enableKinematics = true
 ChallengeWorld.cellMinX = -32
 ChallengeWorld.cellMaxX = 32
 ChallengeWorld.cellMinY = -32
@@ -34,8 +34,6 @@ function ChallengeWorld.server_onCreate( self )
 	self.challengeStarters = {}
 
 	self.enableHealth = getSettingValue( self.data.settings, "enable_health" )
-
-	sm.event.sendToGame("server_worldReadyForPlayers")
 end
 
 function ChallengeWorld.client_onCreate( self )
@@ -215,13 +213,20 @@ function ChallengeWorld.server_onFixedUpdate( self )
 end
 
 function ChallengeWorld.server_onCellCreated( self, x, y )
-	print("CELL CREATED")
-	if self.loaded_cells == nil then self.loaded_cells = 1 else self.loaded_cells = self.loaded_cells + 1 end
+	print("CELL CREATED", x, y)
+	--if self.loaded_cells == nil then self.loaded_cells = 1 else self.loaded_cells = self.loaded_cells + 1 end
 
 	self.waterManager:sv_onCellLoaded( x, y )
-	if self.loaded_cells == 1 then
+	--print(self.loaded_cells)
+	--if self.loaded_cells == (65 * 65) then
+	if x == 0 and y == 0 then
 		ChallengeWorld.server_onCellCreatedFinish( self, x, y )
+
+		sm.event.sendToGame("server_worldReadyForPlayers")
+
+		self.loadingWorld = false
 	end
+	--end
 end
 
 function ChallengeWorld.server_onCellCreatedFinish( self, x, y )
@@ -359,7 +364,7 @@ function ChallengeWorld.server_onCellCreatedFinish( self, x, y )
 	self.killAreaTriggerNX = sm.areaTrigger.createBox( halfSize, position, rotation, filter )
 	self.killAreaTriggerNX:bindOnEnter( "trigger_onEnterKillBox" )
 
-	sm.event.sendToGame( "server_onCellLoadComplete", { world = self.world, x = x, y = y } )
+	sm.event.sendToGame( "server_onCellLoadComplete", { world = self.world } )
 
 	if g_tutorial then
 		self.tutorialIntroTimer = 0
@@ -376,6 +381,7 @@ function ChallengeWorld.server_onCellCreatedFinish( self, x, y )
 end
 
 function ChallengeWorld.server_onCellLoaded( self, x, y )
+	--print("CELL LOADED", x, y)
 	self.waterManager:sv_onCellReloaded( x, y )
 	self:server_onCellCreatedFinish( x, y )
 end
@@ -400,7 +406,7 @@ end
 function ChallengeWorld.server_spawnCharacter( self, params )
 	print("World: spawnCharacter")
 	for _, player in ipairs( params.players ) do
-		createCharacterOnSpawner( self.world, player, self.playerSpawners, sm.vec3.new( 2, 2, 9.7 ), self.enableHealth, params.build )
+		CreateCharacterOnSpawner( self.world, player, self.playerSpawners, sm.vec3.new( 2, 2, 9.7 ), self.enableHealth, params.build )
 		self:server_loadSavedInventory( player )
 		self.network:sendToClients( "client_spawned", { player = player, playCutscene = params.playCutscene } )
 	end

@@ -1,0 +1,7 @@
+{
+   "description" : "Vertical support that rotates at a constant rate.",
+   "localId" : "c562e53a-14ae-4c3d-a0f9-86d76602189a",
+   "name" : "Rotating Support",
+   "type" : "Blueprint",
+   "version" : 0
+}

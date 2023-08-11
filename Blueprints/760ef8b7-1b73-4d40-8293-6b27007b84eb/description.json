@@ -1,0 +1,8 @@
+{
+   "description" : "The standard spawn point and build zone for challenge mode.",
+   "fileId" : 0,
+   "localId" : "760ef8b7-1b73-4d40-8293-6b27007b84eb",
+   "name" : "Start Point",
+   "type" : "Blueprint",
+   "version" : 0
+}

@@ -1,0 +1,55 @@
+{
+   "Cinematic - Challengemodecomplete" : {
+      "effectList" : [
+         {
+            "cameraTrack" : [
+               {
+                  "FOV" : 90.0,
+                  "duration" : 3.0,
+                  "easing" : "easeInOutCirc",
+                  "jumpCut" : false,
+                  "label" : "\"Event - Challengemodecomplete\"",
+                  "overrideFOV" : true,
+                  "position" : [ 1.442119598388672, 24.00329971313477, -24.99036979675293 ],
+                  "rotation" : [ -85.28468322753906, -1.017777550606225e-12, 180.0 ],
+                  "tangents" : [
+                     {
+                        "position" : [ 0.0, 24.23137855529785, -11.32743072509766 ],
+                        "rotation" : [ -80.32025146484375, -4.071110581895659e-13, -180.0 ]
+                     },
+                     {
+                        "position" : [ 0.0, 25.43915748596191, -5.928712844848633 ],
+                        "rotation" : [ -80.32025146484375, -4.071110581895659e-13, -180.0 ]
+                     }
+                  ]
+               },
+               {
+                  "FOV" : 30.0,
+                  "duration" : 2.0,
+                  "easing" : "linear",
+                  "jumpCut" : false,
+                  "label" : "",
+                  "overrideFOV" : true,
+                  "position" : [ 0.0, 23.70405769348145, -3.649932861328125 ],
+                  "rotation" : [ -85.28469085693359, -8.142222790094578e-13, -180.0 ],
+                  "tangents" : []
+               }
+            ],
+            "type" : "cameraTrack"
+         },
+         {
+            "delay" : 0.0,
+            "event" : "challengemodecomplete.celebrate",
+            "type" : "luaEvent"
+         }
+      ]
+   },
+   "Cinematic - Challengemodecomplete_audio" : {
+      "effectList" : [
+         {
+            "audio" : [ "event:/ui/challenge/complete" ],
+            "type" : "audio"
+         }
+      ]
+   }
+}

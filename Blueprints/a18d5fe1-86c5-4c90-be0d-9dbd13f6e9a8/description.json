@@ -1,0 +1,7 @@
+{
+   "description" : "Large platform that extends and contracts.\nWhen the green logic gate is activated the platform is extended.",
+   "localId" : "a18d5fe1-86c5-4c90-be0d-9dbd13f6e9a8",
+   "name" : "Large Moving Platform",
+   "type" : "Blueprint",
+   "version" : 0
+}

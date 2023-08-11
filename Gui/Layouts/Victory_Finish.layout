@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position_real="0 0 1 1">
+        <Widget type="Button" skin="StyledButtonLarge" name="FinishButton" position_real="0.414062 0.805556 0.171875 0.0638889">
+            <Property key="InheritsAlpha" value="false" />
+            <Property key="Caption" value="#{CHALLENGE_FINISH}" />
+            <Property key="TextAlign" value="Center" />
+            <Property key="FontName" value="SM_ButtonLarge" />
+            <Property key="TextColour" value="0.203922 0.207843 0.223529" />
+            <Property key="TextShadow" value="true" />
+            <Property key="TextShadowColour" value="0.933333 0.8 0.447059" />
+        </Widget>
+    </Widget>
+    <CodeGeneratorSettings />
+</MyGUI>

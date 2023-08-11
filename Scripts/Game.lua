@@ -18,19 +18,25 @@ end
 function Game.server_initializeChallengeGame( self )
     local items = LoadChallengeData()
     local pack = items.packs[1]
-    pack.startLevelIndex = 1
-    ChallengeGame.network = self.network
-    ChallengeGame.data = pack
     sm.challenge.setChallengeUuid(pack.uuid)
-    --for _,player in pairs(sm.player.getAllPlayers()) do
-    --    local character = sm.character.createCharacter( player, self.sv.saved.world, sm.vec3.new( 0, 0, 5 ), 0, 0 )
-	--    player:setCharacter( character )
-    --end
+    
+    pack.startLevelIndex = 1
+    ChallengeGame.data = pack
+    ChallengeGame.network = self.network
+    ChallengeGame.world = self.sv.saved.world
+    
+    sm.game.setLimitedInventory( ChallengeGame.enableLimitedInventory )
+    sm.game.setEnableRestrictions( ChallengeGame.enableRestrictions )
+    sm.game.setEnableAmmoConsumption( ChallengeGame.enableAmmoConsumption )
+    sm.game.setEnableFuelConsumption( ChallengeGame.enableFuelConsumption )
+    sm.game.setEnableUpgrade( ChallengeGame.enableUpgrade )
+    
     self.network:sendToClients("client_initializeChallengeGame")
     self:server_updateGameState("Play")
+    
     ChallengeGame.server_onCreate( ChallengeGame )
-    print(ChallengeGame.play.levelList[ChallengeGame.play.currentLevelIndex].data)
-    self.respawn_all = true
+    --print(ChallengeGame.play.levelList[ChallengeGame.play.currentLevelIndex].data)
+    --self.respawn_all = true
 end
 
 function Game.client_initializeChallengeGame( self )
@@ -154,7 +160,7 @@ end
 
 function Game.server_onCellLoadComplete( self, data )
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
-        ChallengeGame.server_onCellLoadComplete( ChallengeGame )
+        ChallengeGame.server_onCellLoadComplete( ChallengeGame, data )
     end
 end
 
@@ -230,9 +236,9 @@ function Game.client_onChallengeReset( self )
     end
 end
 
-function Game.client_onChallengeStarted( self )
+function Game.client_onChallengeStarted( self, params )
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
-        ChallengeGame.client_onChallengeStarted(ChallengeGame)
+        ChallengeGame.client_onChallengeStarted(ChallengeGame, params)
     end
 end
 
@@ -242,9 +248,9 @@ function Game.client_onChallengeCompleted( self )
     end
 end
 
-function Game.client_sessionStarted( self )
+function Game.client_sessionStarted( self, id )
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
-        ChallengeGame.client_sessionStarted(ChallengeGame)
+        ChallengeGame.client_sessionStarted(ChallengeGame, id)
     end
 end
 

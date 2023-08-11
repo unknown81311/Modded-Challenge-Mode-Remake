@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" align="Default" name="BackPanel" position_real="0 0 0.520312 0.677778">
+        <Property key="NeedKey" value="false" />
+        <Widget type="Widget" skin="BackgroundInteractableUltraWide" name="UpgradeBackground" position_real="0 0 1 1">
+            <Property key="NeedKey" value="false" />
+            <Widget type="TextBox" skin="TextBox" position_real="0.1997 0.286885 0.600601 0.0532787">
+                <Property key="Caption" value="#{PLAYER_START_TITLE}" />
+                <Property key="FontName" value="SM_HeaderLarge_Wide" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_client_toiletOn" position_real="0.315315 0.418033 0.0810811 0.0696721">
+                <Property key="Caption" value="#{ON}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_client_toiletOff" position_real="0.399399 0.418033 0.0810811 0.0696721">
+                <Property key="Caption" value="#{OFF}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="enable_client_toiletText" position_real="0.045045 0.409836 0.27027 0.0819672">
+                <Property key="FontName" value="SM_TextLabel" />
+                <Property key="TextAlign" value="Left VCenter" />
+                <Property key="Caption" value="#{CHALLENGE_CLIENT_TOILET}" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_liftOn" position_real="0.315315 0.504098 0.0810811 0.0696721">
+                <Property key="Caption" value="#{ON}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_liftOff" position_real="0.399399 0.504098 0.0810811 0.0696721">
+                <Property key="Caption" value="#{OFF}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="enable_liftText" position_real="0.045045 0.495902 0.27027 0.0819672">
+                <Property key="FontName" value="SM_TextLabel" />
+                <Property key="TextAlign" value="Left VCenter" />
+                <Property key="Caption" value="#{CHALLENGE_LIFT}" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_sledgehammerOn" position_real="0.315315 0.590164 0.0810811 0.0696721">
+                <Property key="Caption" value="#{ON}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_sledgehammerOff" position_real="0.399399 0.590164 0.0810811 0.0696721">
+                <Property key="Caption" value="#{OFF}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="enable_sledgehammerText" position_real="0.045045 0.581967 0.27027 0.0819672">
+                <Property key="FontName" value="SM_TextLabel" />
+                <Property key="TextAlign" value="Left VCenter" />
+                <Property key="Caption" value="#{CHALLENGE_SLEDGEHAMMER}" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_connecttoolOn" position_real="0.315315 0.67623 0.0810811 0.0696721">
+                <Property key="Caption" value="#{ON}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_connecttoolOff" position_real="0.399399 0.67623 0.0810811 0.0696721">
+                <Property key="Caption" value="#{OFF}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="enable_connecttoolText" position_real="0.045045 0.668033 0.27027 0.0819672">
+                <Property key="FontName" value="SM_TextLabel" />
+                <Property key="TextAlign" value="Left VCenter" />
+                <Property key="Caption" value="#{CHALLENGE_CONNECTTOOL}" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_painttoolOn" position_real="0.315315 0.762295 0.0810811 0.0696721">
+                <Property key="Caption" value="#{ON}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_painttoolOff" position_real="0.399399 0.762295 0.0810811 0.0696721">
+                <Property key="Caption" value="#{OFF}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="enable_painttoolText" position_real="0.045045 0.754098 0.27027 0.0819672">
+                <Property key="FontName" value="SM_TextLabel" />
+                <Property key="TextAlign" value="Left VCenter" />
+                <Property key="Caption" value="#{CHALLENGE_PAINTTOOL}" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_weldtoolOn" position_real="0.315315 0.848361 0.0810811 0.0696721">
+                <Property key="Caption" value="#{ON}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_weldtoolOff" position_real="0.399399 0.848361 0.0810811 0.0696721">
+                <Property key="Caption" value="#{OFF}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="enable_weldtoolText" position_real="0.045045 0.840164 0.27027 0.0819672">
+                <Property key="FontName" value="SM_TextLabel" />
+                <Property key="TextAlign" value="Left VCenter" />
+                <Property key="Caption" value="#{CHALLENGE_WELDTOOL}" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_handbookOn" position_real="0.795796 0.418033 0.0810811 0.0696721">
+                <Property key="Caption" value="#{ON}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_handbookOff" position_real="0.87988 0.418033 0.0810811 0.0696721">
+                <Property key="Caption" value="#{OFF}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="enable_handbookText" position_real="0.525526 0.409836 0.27027 0.0819672">
+                <Property key="FontName" value="SM_TextLabel" />
+                <Property key="TextAlign" value="Left VCenter" />
+                <Property key="Caption" value="#{CHALLENGE_HANDBOOK}" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_spudgunOn" position_real="0.795796 0.504098 0.0810811 0.0696721">
+                <Property key="Caption" value="#{ON}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_spudgunOff" position_real="0.87988 0.504098 0.0810811 0.0696721">
+                <Property key="Caption" value="#{OFF}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="enable_spudgunText" position_real="0.525526 0.495902 0.27027 0.0819672">
+                <Property key="FontName" value="SM_TextLabel" />
+                <Property key="TextAlign" value="Left VCenter" />
+                <Property key="Caption" value="#{CHALLENGE_SPUDGUN}" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_ammo_consumptionOn" position_real="0.795796 0.590164 0.0810811 0.0696721">
+                <Property key="Caption" value="#{ON}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_ammo_consumptionOff" position_real="0.87988 0.590164 0.0810811 0.0696721">
+                <Property key="Caption" value="#{OFF}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="enable_ammo_consumptionText" position_real="0.525526 0.581967 0.27027 0.0819672">
+                <Property key="FontName" value="SM_TextLabel" />
+                <Property key="TextAlign" value="Left VCenter" />
+                <Property key="Caption" value="#{CHALLENGE_AMMO}" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_fuel_consumptionOn" position_real="0.795796 0.67623 0.0810811 0.0696721">
+                <Property key="Caption" value="#{ON}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_fuel_consumptionOff" position_real="0.87988 0.67623 0.0810811 0.0696721">
+                <Property key="Caption" value="#{OFF}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="enable_fuel_consumptionText" position_real="0.525526 0.668033 0.27027 0.0819672">
+                <Property key="FontName" value="SM_TextLabel" />
+                <Property key="TextAlign" value="Left VCenter" />
+                <Property key="Caption" value="#{CHALLENGE_FUEL}" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_healthOn" position_real="0.795796 0.762295 0.0810811 0.0696721">
+                <Property key="Caption" value="#{ON}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="Button" skin="SettingsButton" name="enable_healthOff" position_real="0.87988 0.762295 0.0810811 0.0696721">
+                <Property key="Caption" value="#{OFF}" />
+                <Property key="FontName" value="SM_ButtonSmall" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" name="enable_healthText" position_real="0.525526 0.754098 0.27027 0.0819672">
+                <Property key="FontName" value="SM_TextLabel" />
+                <Property key="TextAlign" value="Left VCenter" />
+                <Property key="Caption" value="#{CHALLENGE_HEALTH}" />
+            </Widget>
+            <Widget type="ImageBox" skin="ImageBox" position_real="0.417417 0.0409836 0.165165 0.22541">
+                <Property key="ImageTexture" value="icon_player_spawner.png" />
+            </Widget>
+            <Widget type="Widget" skin="WhiteSkin" name="Separator1" position_real="0.048048 0.493852 0.423423 0.00204918">
+                <Property key="Colour" value="0.315789 0.315789 0.315789" />
+            </Widget>
+            <Widget type="Widget" skin="WhiteSkin" name="Separator2" position_real="0.048048 0.579918 0.423423 0.00204918">
+                <Property key="Colour" value="0.315789 0.315789 0.315789" />
+            </Widget>
+            <Widget type="Widget" skin="WhiteSkin" name="Separator3" position_real="0.048048 0.665984 0.423423 0.00204918">
+                <Property key="Colour" value="0.315789 0.315789 0.315789" />
+            </Widget>
+            <Widget type="Widget" skin="WhiteSkin" name="Separator4" position_real="0.048048 0.75 0.423423 0.00204918">
+                <Property key="Colour" value="0.315789 0.315789 0.315789" />
+            </Widget>
+            <Widget type="Widget" skin="WhiteSkin" name="Separator5" position_real="0.048048 0.838115 0.423423 0.00204918">
+                <Property key="Colour" value="0.315789 0.315789 0.315789" />
+            </Widget>
+            <Widget type="Widget" skin="WhiteSkin" name="Separator6" position_real="0.528529 0.493852 0.423423 0.00204918">
+                <Property key="Colour" value="0.315789 0.315789 0.315789" />
+            </Widget>
+            <Widget type="Widget" skin="WhiteSkin" name="Separator7" position_real="0.528529 0.579918 0.423423 0.00204918">
+                <Property key="Colour" value="0.315789 0.315789 0.315789" />
+            </Widget>
+            <Widget type="Widget" skin="WhiteSkin" name="Separator8" position_real="0.528529 0.665984 0.423423 0.00204918">
+                <Property key="Colour" value="0.315789 0.315789 0.315789" />
+            </Widget>
+            <Widget type="Widget" skin="WhiteSkin" name="Separator9" position_real="0.528529 0.75 0.423423 0.00204918">
+                <Property key="Colour" value="0.315789 0.315789 0.315789" />
+            </Widget>
+        </Widget>
+    </Widget>
+    <CodeGeneratorSettings />
+</MyGUI>

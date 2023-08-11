@@ -1,5 +1,5 @@
-dofile("$GAME_DATA/Scripts/game/Lift.lua")
-dofile("challenge_shapes.lua")
+dofile "$GAME_DATA/Scripts/game/Lift.lua"
+dofile "$CONTENT_DATA/Scripts/game/challenge_shapes.lua"
 
 ChallengeLift = class( Lift )
 

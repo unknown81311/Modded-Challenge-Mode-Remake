@@ -2,7 +2,7 @@
 
 BuilderbotCharacter = class( nil )
 
-local movementEffects = "$CHALLENGE_DATA/Character/Char_builderbot/builderbot_movement_effects.json"
+local movementEffects = "$CONTENT_DATA/Character/Char_builderbot/builderbot_movement_effects.json"
 
 function BuilderbotCharacter.server_onCreate( self ) end
 

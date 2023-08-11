@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget name="MainPanel" skin="PanelEmpty" type="Widget" position_real="0 0 0.207813 0.111111">
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="false" />
+        <Widget name="Time" skin="TextBox" type="TextBox" position_real="0 0.25 1 0.375">
+            <Property key="TextAlign" value="Center" />
+            <Property key="FontName" value="SM_NumberHuge" />
+            <Property key="Caption" value="00:00:00" />
+            <Property key="TextColour" value="1 1 1" />
+            <Property key="TextShadow" value="true" />
+            <Property key="TextShadowColour" value="0 0 0 0.4" />
+            <Property key="NeedKey" value="false" />
+            <Property key="NeedMouse" value="false" />
+        </Widget>
+    </Widget>
+    <CodeGeneratorSettings />
+</MyGUI>

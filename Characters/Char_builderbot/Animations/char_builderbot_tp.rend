@@ -1,0 +1,61 @@
+{
+	"lodList": [{
+		"mesh": "$CONTENT_DATA/Characters/Char_builderbot/char_builderbot.dae",
+		"includes" : ["POSITION", "UV0", "NORMAL", "TANGENTS", "BLEND_INDICES", "BLEND_WEIGHTS"],
+		"subMeshMap": {
+            "body_mat": {
+                "custom": {
+                },
+                "material": "DifAsgNor",
+                "textureList": [
+					"$CONTENT_DATA/Characters/Char_builderbot/char_builderbot_dif.tga",
+					"$CONTENT_DATA/Characters/Char_builderbot/char_builderbot_asg.tga",
+					"$CONTENT_DATA/Characters/Char_builderbot/char_builderbot_nor.tga"
+                ]
+            },
+            "arm_mat": {
+                "custom": {
+                
+                },
+                "material": "DifAsgNor",
+                "textureList": [
+					"$CONTENT_DATA/Characters/Char_builderbot/char_builderbot_arm_dif.tga",
+					"$CONTENT_DATA/Characters/Char_builderbot/char_builderbot_arm_asg.tga",
+					"$CONTENT_DATA/Characters/Char_builderbot/char_builderbot_arm_nor.tga"
+                ]
+            }
+        },
+
+		"animationList" : [
+
+			// Override tools
+            
+			{ "name" : "crowbar_use", 					"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Interact/ani_char_builderbot_int_object_remove.dae" },          
+			{ "name" : "smallhammer_use", 				"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Interact/ani_char_builderbot_int_object_place.dae" },		        
+			{ "name" : "impactdriver_use", 				"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Tools/ani_char_builderbot_painttool_use.dae" },
+	
+			// Movement
+
+			{ "name" : "idle", 					"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Idle/ani_char_builderbot_lom_idle.dae", "looping" : true },
+			
+			{ "name" : "levitate_up", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Levitate/aniadd_char_builderbot_levitate_up.dae", "looping" : true },
+			{ "name" : "levitate_down", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Levitate/aniadd_char_builderbot_levitate_down.dae", "looping" : true },
+			           
+			{ "name" : "run", 					"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Run/ani_char_builderbot_lom_run_fwd.dae", "looping" : true },
+			{ "name" : "run_left", 				"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Run/ani_char_builderbot_lom_run_left.dae", "looping" : true },
+			{ "name" : "run_right", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Run/ani_char_builderbot_lom_run_right.dae", "looping" : true },
+            
+			{ "name" : "run_bwd", 				"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Run/ani_char_builderbot_lom_run_bwd.dae", "looping" : true },
+			{ "name" : "run_bwd_left", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Run/ani_char_builderbot_lom_run_bwdleft.dae", "looping" : true },
+			{ "name" : "run_bwd_right", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Run/ani_char_builderbot_lom_run_bwdright.dae", "looping" : true },
+            
+			{ "name" : "shuffle_left", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Shuffle/ani_char_builderbot_lom_shuffle_left.dae", "looping" : true },
+			{ "name" : "shuffle_right", 		"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Shuffle/ani_char_builderbot_lom_shuffle_right.dae", "looping" : true },
+            		
+			{ "name" : "sprint", 			"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Sprint/ani_char_builderbot_lom_sprint_fwd.dae", "looping": true },
+			{ "name" : "sprint_left_45", 	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Sprint/ani_char_builderbot_lom_sprint_fwd_left45.dae", "looping": true },
+			{ "name" : "sprint_right_45", 	"file" : "$CONTENT_DATA/Characters/Char_builderbot/Animations/Thirdperson/Locomotion/Sprint/ani_char_builderbot_lom_sprint_fwd_right45.dae", "looping": true }
+		],
+		"maxViewDistance": 1000.0
+	}]
+}

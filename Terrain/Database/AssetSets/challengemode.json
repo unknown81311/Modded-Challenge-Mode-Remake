@@ -1,0 +1,1630 @@
+{
+   "assetListRenderable" : [
+      {
+         "col" : "$CONTENT_DATA/Terrain/Collision/Challengemode/env_challengemode_buildplatform_col.obj",
+         "name" : "env_challengemode_buildplatform",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_buildplatform.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_buildplatform_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_buildplatform_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_buildplatform_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "53ea6ac7-97a8-46da-8cb3-6aca86d482ef"
+      },
+      {
+         "name" : "env_challengemode_arm00",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_arm00.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "b2068fd7-daa1-4460-9b2f-6c840a755174"
+      },
+      {
+         "name" : "env_challengemode_arm01",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_arm01.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "9de6df6c-7cf6-4943-8fb3-353071b22f55"
+      },
+      {
+         "name" : "env_challengemode_arm02",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_arm02.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "fee2d2bd-352b-41e0-9b86-719b0546026e"
+      },
+      {
+         "name" : "env_challengemode_arm03",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_arm03.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "fa244645-4eb3-4bee-afdb-4ab9d0121b7a"
+      },
+      {
+         "name" : "env_challengemode_arm03",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_armrail.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "4ed50caf-d156-46c2-a338-e7a058b0d618"
+      },
+      {
+         "name" : "env_challengemode_armposed01",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_armposed01.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "9b555ab0-485e-4b2b-9809-e41d83bbf7fe"
+      },
+      {
+         "name" : "env_challengemode_armposed02",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_armposed02.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "1b86608d-0094-4402-a1ec-ee5b63e59f59"
+      },
+      {
+         "name" : "env_challengemode_armposed03",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_armposed03.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "ac57a0c5-96b4-4631-8cec-b66d80d29e03"
+      },
+      {
+         "name" : "env_challengemode_armposed04",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_armposed04.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "94c08bae-aad8-4573-b527-7c3b62410a38"
+      },
+      {
+         "name" : "env_challengemode_armposed05",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_armposed05.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "0217f9bb-5779-4b37-9519-763346dec47c"
+      },
+      {
+         "name" : "env_challengemode_armposed06",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_armposed06.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "eb0dd883-c4a7-4d0f-8223-5d743471178f"
+      },
+      {
+         "name" : "env_challengemode_armposed07",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_armposed07.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {},
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "c3f782fb-133d-4c01-b275-b4f245863cc3"
+      },
+      {
+         "defaultColors" : {
+            "mat1" : "571005",
+            "mat2" : "ff9300",
+            "mat3" : "161a1c",
+            "mat4" : "161a1c"
+         },
+         "name" : "env_challengemode_base_walls",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_base_walls.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {
+                           "color" : "mat1"
+                        },
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_base_walls_lm.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {
+                           "color" : "mat2"
+                        },
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_base_walls_lm.tga"
+                        ]
+                     },
+                     "mat3" : {
+                        "custom" : {
+                           "color" : "mat3"
+                        },
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_shinymetal_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_shinymetal_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_base_walls_lm.tga"
+                        ]
+                     },
+                     "mat4" : {
+                        "custom" : {
+                           "color" : "mat4"
+                        },
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_shinymetal_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_shinymetal_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_base_walls_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "f0e20b95-369e-44cf-a4bc-6508730f9cc6"
+      },
+      {
+         "name" : "env_challengemode_pannelwalls",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_pannelwalls.fbx",
+                  "subMeshMap" : {
+                     "mat5" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_panelwalls_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_panelwalls_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_panelwalls_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_pannelwalls_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "b4472517-0334-43b8-bc64-9c09e518fc7a"
+      },
+      {
+         "name" : "env_challengemode_sidebanners",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_sidebanners.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidebanners_lm.tga"
+                        ]
+                     },
+                     "mat3" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_banner_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_banner_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_banner_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidebanners_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "16c50f94-eb8c-421f-a37e-482cd8b281b8"
+      },
+      {
+         "name" : "env_challengemode_sidecranes",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_sidecranes.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidecranes_lm.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidecranes_lm.tga"
+                        ]
+                     },
+                     "mat3" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_floodlight_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_floodlight_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_floodlight_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidecranes_lm.tga"
+                        ]
+                     },
+                     "mat4" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_banner_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_banner_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_banner_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidecranes_lm.tga"
+                        ]
+                     },
+                     "mat5" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armgripper_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armgripper_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armgripper_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidecranes_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "7bbcabbe-931c-4137-9fd1-4473d8ef9546"
+      },
+      {
+         "name" : "env_challengemode_roofcrane",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_roofcrane.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_roofcrane_lm.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_roofcrane_lm.tga"
+                        ]
+                     },
+                     "mat3" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armgripper_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armgripper_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armgripper_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_roofcrane_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "f60624f4-7a4d-472a-b9bf-efe7b4dc903f"
+      },
+      {
+         "name" : "env_challengemode_frontpanels",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_frontpanels.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_frontpanels_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_frontpanels_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_frontpanels_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_frontpanels_lm.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "3b4fadaf-8ecf-4f11-af20-803ec55b4feb"
+      },
+      {
+         "defaultColors" : {
+            "mat1" : "571005",
+            "mat2" : "161a1c"
+         },
+         "name" : "env_challengemode_base_pit",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_base_pit.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {
+                           "color" : "mat1"
+                        },
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_base_pit_lm.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {
+                           "color" : "mat2"
+                        },
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_shinymetal_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_shinymetal_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_trim_metal_genereic_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_base_pit_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "3e3bc057-216a-4f94-a58a-7a7a6c7e39a0"
+      },
+      {
+         "name" : "env_challengemode_roof",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_roof.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_roof_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_roof_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_roof_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_roof_lm.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "7351ba0c-7c4e-4e7b-9706-cb746fd29a45"
+      },
+      {
+         "name" : "env_challengemode_building",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_building.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_building_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_building_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_building_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_building_lm.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_buildingpanel_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_buildingpanel_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_buildingpanel_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_building_panel_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "8fee30bb-0e90-45d3-9c48-6ee6a461c12c"
+      },
+      {
+         "defaultColors" : {
+            "paintedmetal" : "a71a1aff"
+         },
+         "name" : "env_challengemode_building_door",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_building_door.fbx",
+                  "subMeshList" : [
+                     {
+                        "color" : "paintedmetal",
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_building_door_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_building_door_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_building_door_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_building_door_lm.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "b7418eb9-d1dd-455e-a411-d28c133fa9ef"
+      },
+      {
+         "name" : "env_challengemode_frontbuilding",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_frontbuilding.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_frontbuilding_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_frontbuilding_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_frontbuilding_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_frontbuilding_lm.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "9e438321-f3fc-4063-89d3-76be4397dde3"
+      },
+      {
+         "name" : "env_challengemode_frontbuildingdetail",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_frontbuildingdetail.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_frontbuildingdetail_lm.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armgripper_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armgripper_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armgripper_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_frontbuildingdetail_lm.tga"
+                        ]
+                     },
+                     "mat3" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_frontbuildingdetail_lm.tga"
+                        ]
+                     },
+                     "mat4" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_banner_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_banner_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_banner_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_frontbuildingdetail_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "9cc97a2c-8841-45ae-881e-32efec9cd0f2"
+      },
+      {
+         "name" : "env_challengemode_ramp",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_ramp.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_ramp_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_ramp_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_ramp_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_building_ramp_lm.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "aeca4710-aaf6-4e33-b74f-54692c84d003"
+      },
+      {
+         "name" : "env_challengemode_ballintake",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_ballintake.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_ballintake_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_ballintake_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_ballintake_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_ballintake_lm.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "5436a96a-db74-4eda-a427-aad8a154dffc"
+      },
+      {
+         "defaultColors" : {
+            "mat1" : "571005",
+            "mat2" : "ff9300",
+            "mat3" : "161a1c",
+            "mat4" : "161a1c"
+         },
+         "name" : "env_challengemode_base_walls",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_base_walls.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {
+                           "color" : "mat1"
+                        },
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_base_walls_cb_lm.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {
+                           "color" : "mat2"
+                        },
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_base_walls_cb_lm.tga"
+                        ]
+                     },
+                     "mat3" : {
+                        "custom" : {
+                           "color" : "mat3"
+                        },
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_base_walls_cb_lm.tga"
+                        ]
+                     },
+                     "mat4" : {
+                        "custom" : {
+                           "color" : "mat4"
+                        },
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_base_walls_cb_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "46d34d3b-33c4-4dbf-9032-603dbecd4bb0"
+      },
+      {
+         "name" : "env_challengemode_pannelwalls",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_pannelwalls.fbx",
+                  "subMeshMap" : {
+                     "mat5" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_panelwalls_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_pannelwalls_cb_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "8fa94170-8f0a-47d2-958e-aa71af796f03"
+      },
+      {
+         "name" : "env_challengemode_sidebanners",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_sidebanners.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidebanners_cb_lm.tga"
+                        ]
+                     },
+                     "mat3" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_banner_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidebanners_cb_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "c367db9f-bbe4-4697-a270-5990ee6a60a3"
+      },
+      {
+         "name" : "env_challengemode_sidecranes",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_sidecranes.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidecranes_cb_lm.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidecranes_cb_lm.tga"
+                        ]
+                     },
+                     "mat3" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_floodlight_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidecranes_cb_lm.tga"
+                        ]
+                     },
+                     "mat4" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_banner_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidecranes_cb_lm.tga"
+                        ]
+                     },
+                     "mat5" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armgripper_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_sidecranes_cb_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "d0adcf33-c9a8-4393-a819-d838abff794a"
+      },
+      {
+         "name" : "env_challengemode_roofcrane",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_roofcrane.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_roofcrane_cb_lm.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_roofcrane_cb_lm.tga"
+                        ]
+                     },
+                     "mat3" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armgripper_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_roofcrane_cb_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "6cd3d9a5-facb-4193-aad3-89936902a487"
+      },
+      {
+         "name" : "env_challengemode_frontpanels",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_frontpanels.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_frontpanels_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_frontpanels_cb_lm.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "7262212a-e063-4f64-88e3-5bb20bf266a6"
+      },
+      {
+         "defaultColors" : {
+            "mat1" : "571005",
+            "mat2" : "161a1c"
+         },
+         "name" : "env_challengemode_base_pit",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_base_pit.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {
+                           "color" : "mat1"
+                        },
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_tiled_challengemode_cleanmetal_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_base_pit_cb_lm.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {
+                           "color" : "mat2"
+                        },
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/t_trim_metal_genereic_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_base_pit_cb_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "b23d0d32-447c-4881-80b7-6975af8bf478"
+      },
+      {
+         "name" : "env_challengemode_roof",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_roof.fbx",
+                  "subMeshList" : [
+                     {
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_roof_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_roof_cb_lm.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "7ea6a93e-9278-46b9-bd2f-c32551529eb6"
+      },
+      {
+         "name" : "env_challengemode_building",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_building.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_building_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_building_cb_lm.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_buildingpanel_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_building_panel_cb_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "05166e34-6728-4012-a55e-8e6077b0b5e6"
+      },
+      {
+         "defaultColors" : {
+            "paintedmetal" : "a71a1aff"
+         },
+         "name" : "env_challengemode_building_door",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_building_door.fbx",
+                  "subMeshList" : [
+                     {
+                        "color" : "paintedmetal",
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_building_door_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_building_door_cb_lm.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "1d723938-4eed-42bb-b207-76167dda6c80"
+      },
+      {
+         "name" : "env_challengemode_frontbuilding",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_frontbuilding.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_frontbuilding_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_frontbuilding_cb_lm.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "c5deeec5-f98d-435d-a4c3-3282db220111"
+      },
+      {
+         "name" : "env_challengemode_frontbuildingdetail",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_frontbuildingdetail.fbx",
+                  "subMeshMap" : {
+                     "mat1" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_arms_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_frontbuildingdetail_cb_lm.tga"
+                        ]
+                     },
+                     "mat2" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armgripper_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_frontbuildingdetail_cb_lm.tga"
+                        ]
+                     },
+                     "mat3" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_armextra_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_frontbuildingdetail_cb_lm.tga"
+                        ]
+                     },
+                     "mat4" : {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_banner_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_frontbuildingdetail_cb_lm.tga"
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "uuid" : "54e5700b-5b43-4032-8367-d67df2f65bb5"
+      },
+      {
+         "name" : "env_challengemode_ramp",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_ramp.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_ramp_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_building_ramp_cb_lm.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "84f1fee7-fdbd-431c-8126-f090331b9a3f"
+      },
+      {
+         "name" : "env_challengemode_ballintake",
+         "physics" : {
+            "mass" : 100000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "UV1", "TANGENT" ],
+                  "maxViewDistance" : 4294967295,
+                  "mesh" : "$CONTENT_DATA/Terrain/Mesh/Challengemode/env_challengemode_ballintake.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {},
+                        "material" : "Background_DifAsgNor_LightMap",
+                        "textureList" : [
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_dif.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_challengebuilder_asg.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Challengemode/env_challengemode_ballintake_nor.tga",
+                           "$CONTENT_DATA/Terrain/Textures/Lightmaps/env_challengemode_ballintake_cb_lm.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "8cd94a1e-6a94-4aab-bd69-f95540ac93f1"
+      },
+      {
+         "col" : "$CONTENT_DATA/Terrain/Collision/Challengemode/env_challengemode_builderground_col.obj",
+         "name" : "env_challengemode_builderground",
+         "physics" : {
+            "mass" : 100.0,
+            "material" : "Glass"
+         },
+         "renderable" : "$CONTENT_DATA/Objects/Renderable/interactive/Menu.rend",
+         "uuid" : "688b6f02-3831-496b-9f80-8808bd5ff180"
+      },
+      {
+         "name" : "env_challengemode_water",
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION" ],
+                  "mesh" : "$SURVIVAL_DATA/Effects/Meshes/Water/16x16.fbx",
+                  "subMeshMap" : {
+                     "water_bot_mat" : {
+                        "material" : "Water",
+                        "textureList" : [
+                           "$SURVIVAL_DATA/Effects/Textures/Water/water_underside_color_dif.tga",
+                           "$SURVIVAL_DATA/Effects/Textures/Water/water_low_nor.tga",
+                           "$SURVIVAL_DATA/Effects/Textures/Water/water_low_nor.tga",
+                           "$SURVIVAL_DATA/Effects/Textures/Water/water_caustics_gra.tga"
+                        ]
+                     },
+                     "water_top_mat" : {
+                        "material" : "Water",
+                        "textureList" : [
+                           "$SURVIVAL_DATA/Effects/Textures/Water/water_color_dif.tga",
+                           "$SURVIVAL_DATA/Effects/Textures/Water/water_high_nor.tga",
+                           "$SURVIVAL_DATA/Effects/Textures/Water/water_high_nor.tga",
+                           "$SURVIVAL_DATA/Effects/Textures/Water/water_caustics_gra.tga"
+                        ]
+                     }
+                  }
+               }
+            ],
+            "streaming" : false
+         },
+         "uuid" : "3d3d7066-e163-4754-9455-55eed2c60193"
+      }
+   ]
+}
