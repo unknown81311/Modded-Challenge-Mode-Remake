@@ -32,6 +32,7 @@ end
 
 function Player._server_onCreate( self )
 	if self.state == States.To("Play") then
+		ChallengePlayer.network = self.network
 		ChallengePlayer.server_onCreate( ChallengePlayer )
 		ChallengePlayer.server_ready = true
 	end
@@ -39,6 +40,7 @@ end
 
 function Player._client_onCreate( self )
 	if self.state == States.To("Play") then
+		ChallengePlayer.network = self.network
 		ChallengePlayer.client_onCreate( ChallengePlayer )
 		self.network:sendToServer("_server_onCreate")
 	end
@@ -99,6 +101,7 @@ function Player.server_onFixedUpdate( self, timeStep )
 
 	if self.state == States.To("Play") then
 		if ChallengePlayer.server_ready == true then
+			ChallengePlayer.network = self.network
 			ChallengePlayer.server_onFixedUpdate( ChallengePlayer, timeStep )
 		end
 	end
@@ -165,12 +168,13 @@ end
 function Player.server_onInventoryChanges( self, inventory, changes )
     --changes = { { uuid = Uuid, difference = integer, tool = Tool }, .. }
 	if self.state == States.To("Play") then
-		ChallengePlayer.server_onInventoryChanges( ChallengePlayer, inventory, changes )
+		self.network:sendToClient( self.player, "cl_n_onInventoryChanges", { container = container, changes = changes } )
 	end
 end
 
 function Player.client_onInteract( self, character, state )
 	if self.state == States.To("Play") then
+		ChallengePlayer.network = self.network
 		ChallengePlayer.client_onInteract( ChallengePlayer, character, state )
 	end
 end
