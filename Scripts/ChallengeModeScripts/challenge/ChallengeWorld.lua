@@ -196,6 +196,7 @@ function ChallengeWorld.server_onFixedUpdate( self )
 				if container:hasChanged( self.tutorialChestTick ) then
 					self.tutorialChest = self.chest
 					self.tutorialStage = "FindSeat"
+					print("C")
 					self.network:sendToClients( "client_onStopTutorialArrow" )
 				end
 			else
@@ -210,6 +211,7 @@ function ChallengeWorld.server_onFixedUpdate( self )
 		if self.tutorialSeat then
 			self.tutorialSeatTick = sm.game.getCurrentTick()
 			self.tutorialStage = "Seat"
+			print("A")
 			self.network:sendToClients( "client_onSetTutorialArrow", { target = self.tutorialSeat } )
 		else
 			-- End the tutorial
@@ -219,6 +221,7 @@ function ChallengeWorld.server_onFixedUpdate( self )
 		if self.tutorialSeat == nil or not sm.exists( self.tutorialSeat ) or self.tutorialSeat.body:hasChanged( self.tutorialSeatTick ) then
 			-- End the tutorial
 			self.tutorialStage = "Done"
+			print("B")
 			self.network:sendToClients( "client_onStopTutorialArrow" )
 		end
 	end

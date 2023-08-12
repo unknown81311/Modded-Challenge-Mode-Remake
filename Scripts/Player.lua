@@ -36,6 +36,7 @@ end
 
 function Player.cl_n_onEvent( self, data )
 	ChallengePlayer.network = self.network
+	ChallengePlayer.player = self.player
 	BasePlayer.cl_n_onEvent(ChallengePlayer, data)
 end
 
@@ -60,6 +61,7 @@ end
 function Player._client_onCreate( self )
 	if self.state == States.To("Play") then
 		ChallengePlayer.network = self.network
+		ChallengePlayer.player = self.player
 		ChallengePlayer.client_onCreate( ChallengePlayer )
 		self.network:sendToServer("_server_onCreate")
 	end

@@ -557,7 +557,7 @@ end
 function ChallengeGame.client_onCreate( self )
 	print("ChallengeGame.client_onCreate")
 
-	sm.localPlayer.setLockedControls( false )
+	pcall(sm.localPlayer.setLockedControls, false )
 
 	g_effectManager = EffectManager()
 	g_effectManager:cl_onCreate()

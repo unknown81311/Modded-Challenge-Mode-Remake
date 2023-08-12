@@ -467,12 +467,14 @@ end
 
 function Game.client_onNextPressed( self )
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
+        ChallengeGame.network = self.network
         ChallengeGame.client_onNextPressed(ChallengeGame)
     end
 end
 
 function Game.client_onResetPressed( self )
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
+        ChallengeGame.network = self.network
         ChallengeGame.client_onResetPressed(ChallengeGame)
     end
 end
