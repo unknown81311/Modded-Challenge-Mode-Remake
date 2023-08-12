@@ -163,6 +163,7 @@ end
 
 function Player.server_onMelee( self, position, attacker, damage, power, direction, normal )
 	if self.state == States.To("Play") then
+		ChallengePlayer.network = self.network
 		ChallengePlayer.server_onMelee( ChallengePlayer, position, attacker, damage, power, direction, normal  )
 	end
 end

@@ -608,9 +608,9 @@ function Game.server_onNextPressed( self, data, channel )
     end
 end
 
-function Game.server_onResetPressed( self, data, channel )
+function Game.server_onResetPressed( self, data )
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
-        ChallengeGame.server_onResetPressed( ChallengeGame )
+        ChallengeGame.server_onResetPressed( ChallengeGame, data )
     end
 end
 
