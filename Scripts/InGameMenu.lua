@@ -130,6 +130,12 @@ function InGameMenu.loadAnimations( self )
 	self.animationsLoaded = true
 end
 
+function InGameMenu.client_onFixedUpdate( self, dt )	
+	if sm.exists(self.menu) and not self.menu:isActive() and sm.exists(self.blur) and self.blur:isActive() then
+		self:client_CloseMenu()
+	end
+end
+
 function InGameMenu.client_onUpdate( self, dt )
     if sm.exists(self.tool) then
         local isSprinting =  self.tool:isSprinting()
@@ -305,7 +311,7 @@ function split_string (inputstr, sep)
     end
     local t={}
     for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
-            table.insert(t, str)
+        table.insert(t, str)
     end
     return t
 end
@@ -328,8 +334,9 @@ function InGameMenu.client_OpenMenu( self )
     self.menu = sm.gui.createGuiFromLayout("$CONTENT_DATA/Gui/Layouts/InGameMenu.layout")
     self.menu:setVisible("ChallengeBuilderPanel", true)
     self.menu:setVisible("StopTest_CBP", self.test_running)
+	self.menu:setVisible("Save_CBP", not self.test_running)
 	self.menu:setVisible("SaveAndTest_CBP", not self.test_running)
-    self.menu:setOnCloseCallback( "client_CloseMenu" )
+    --self.menu:setOnCloseCallback( "client_CloseMenu" )
     self.menu:setButtonCallback( "Resume_CBP", "client_CloseMenu" )
     self.menu:setButtonCallback( "Reset_CBP", "client_sendEvent" )
     self.menu:setButtonCallback( "Restart_CBP", "client_sendEvent" )
@@ -352,8 +359,8 @@ function InGameMenu.client_OpenMenu( self )
         backgroundAlpha = 0.3,
     })
     self.blur:setImage("BackgroundImage", "$CONTENT_DATA/Gui/t_mapinspectorscreen_gradient.png")
-    self.blur:open()
     self.menu:open()
+	self.blur:open()
 end
 
 function InGameMenu.client_exitToMenu( self, button )
@@ -381,25 +388,28 @@ function InGameMenu.server_sendEvent( self, button )
 	--	return
 	--end
 	--print("_server_on"..target)
+	print(target)
     sm.event.sendToGame("_server_on"..target)
 end
 
 function InGameMenu.client_CloseMenu( self )
-    if sm.exists(self.menu ) then
+    if sm.exists(self.menu) then
         self.menu:close()
         self.menu:destroy()
+	end
+	if sm.exists(self.blur) then
         self.blur:close()
         self.blur:destroy()
-        self.ToggleOnOff = false
-        self.currentSwing = 1
-        local params = { name = self.swingExits[1] }
-        sm.audio.play("Handbook - Turn page", sm.localPlayer.getPlayer():getCharacter():getWorldPosition())
-        self:client_startLocalEvent( params )
-        self.pendingRaycastFlag = true
-        self.nextAttackFlag = false
-        self.attackCooldownTimer = self.swingCooldowns[self.currentSwing]
-        self.AnimationEnded = false
-    end
+	end
+	self.ToggleOnOff = false
+	self.currentSwing = 1
+	local params = { name = self.swingExits[1] }
+	sm.audio.play("Handbook - Turn page", sm.localPlayer.getPlayer():getCharacter():getWorldPosition())
+	self:client_startLocalEvent( params )
+	self.pendingRaycastFlag = true
+	self.nextAttackFlag = false
+	self.attackCooldownTimer = self.swingCooldowns[self.currentSwing]
+	self.AnimationEnded = false
 end
 
 function InGameMenu.client_onEquip( self )

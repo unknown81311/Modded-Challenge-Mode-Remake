@@ -14,7 +14,7 @@ function Player.server_updateGameState( self, State, caller )
     elseif type(State) == "number" then
         self.state = State
     end
-	self.network:sendToClients("client_updateGameState")
+	self.network:sendToClients("client_updateGameState", self.state)
 
 	if self.state == States.To("Play") then
 		ChallengePlayer.player = self.player
@@ -26,7 +26,7 @@ function Player.server_updateGameState( self, State, caller )
 end
 
 function Player.client_updateGameState( self, State, caller )
-	if not sm.isServerMode() or caller ~= nil then return end
+	if sm.isServerMode() or caller ~= nil then return end
 	if type(State) == "string" then
         self.state = States.To(State)
     elseif type(State) == "number" then

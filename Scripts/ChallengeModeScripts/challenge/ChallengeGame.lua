@@ -156,7 +156,7 @@ function ChallengeGame.server_onPlayerJoined( self, player )
 		
 
 		--sm.event.sendToWorld( self.activeWorld, "server_spawnNewCharacter", { players = { player } } )
-		self.activeWorld:loadCell( 0, 0, player, "server_spawnNewCharacter", { players = { player } } )
+		self.activeWorld:loadCell( 0, 0, player, "sv_createPlayerCharacter" )
 		
 		self.network:sendToClients( "client_sessionStarted", { sessionID = self.server_sessionID } )
 		if self.server_challengeCompleted then
@@ -556,6 +556,8 @@ end
 
 function ChallengeGame.client_onCreate( self )
 	print("ChallengeGame.client_onCreate")
+
+	sm.localPlayer.setLockedControls( false )
 
 	g_effectManager = EffectManager()
 	g_effectManager:cl_onCreate()

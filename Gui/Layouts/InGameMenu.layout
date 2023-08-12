@@ -78,6 +78,14 @@
             <Property key="FontName" value="SM_Button" />
             <Property key="TextAlign" value="Center" />
         </Widget>
+        <Widget type="Widget" skin="PanelEmpty" position_real="0.0895522 0.712454 0.813433 0.0750916">
+            <Property key="Alpha" value="0.5" />
+            <Widget type="TextBox" skin="SettingsButton" name="Save_EMPTY" position_real="0 0 1 1">
+                <Property key="Caption" value="#{MENU_INGAME_SAVE}" />
+                <Property key="FontName" value="SM_Button" />
+                <Property key="TextAlign" value="Center" />
+            </Widget>
+        </Widget>
         <Widget type="Button" skin="SettingsButton" name="Save_CBP" position_real="0.0895522 0.712454 0.813433 0.0750916">
             <Property key="Caption" value="#{MENU_INGAME_SAVE}" />
             <Property key="FontName" value="SM_Button" />

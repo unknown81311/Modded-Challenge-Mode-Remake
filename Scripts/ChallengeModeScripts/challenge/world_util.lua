@@ -31,7 +31,7 @@ function findSteering( collection )
 	return nil
 end
 
-function CreateCharacterOnSpawner( world, player, playerSpawners, defaultPosition, enableHealth, build )
+function CreateCharacterOnSpawner( world, player, playerSpawners, defaultPosition, enableHealth )
 	local spawnPosition = defaultPosition
 	local yaw = 0
 	local pitch = 0

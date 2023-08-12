@@ -28,8 +28,8 @@ function Game.server_onCreate( self )
     self:server_updateGameState("PackMenu")
 end
 
-function Game.client_initializeMenu( self )
-    if self.MenuInstance == nil then
+function Game.client_initializeMenu( self, force )
+    if self.MenuInstance == nil or force == true then
         self.MenuInstance = {
             blur = {
                 gui = nil,
@@ -72,7 +72,7 @@ function Game.client_initializePackMenu( self, force )
         self.ChallengeData = LoadChallengeData()
     end
     
-    self:client_initializeMenu()
+    self:client_initializeMenu(force)
     self:client_initializeBackground()
 
     if not sm.isHost then
@@ -87,7 +87,6 @@ function Game.client_initializePackMenu( self, force )
         self.MenuInstance.pack.gui:open()
     else
         sm.localPlayer.setLockedControls( true )
-
         if sm.exists(self.MenuInstance.pack.gui) and force ~= true then
             self.MenuInstance.pack.gui:open()
         else
@@ -104,6 +103,18 @@ function Game.client_initializePackMenu( self, force )
         end
         self.MenuInstance.pack.ChallengeModeMenuPack_LOADED( self.MenuInstance.pack )
     end
+end
+
+function Game.server_exitToMenu( self )
+    if sm.exists(ChallengeGame.world) then
+        ChallengeGame.world:destroy()
+        ChallengeGame.world = nil
+    end
+    if not sm.exists(self.sv.saved.world) then
+        self.sv.saved.world = sm.world.createWorld( "$CONTENT_DATA/Scripts/World.lua", "World" )
+    end
+    self.respawn_all = 2
+    self:server_updateGameState("PackMenu")
 end
 
 function Game.client_initializeLevelMenu( self, force )
@@ -266,8 +277,6 @@ end
 function Game.server_updateGameState( self, State, caller )
     -- Block Player Calls
     if not sm.isServerMode() or caller ~= nil then return end
-    -- print
-    print("NEW STATE", State)
     -- Update Self
     if type(State) == "string" then
         self.state = States.To(State)
@@ -278,10 +287,14 @@ function Game.server_updateGameState( self, State, caller )
     self.network:sendToClients("client_updateGameState", State)
     -- Init items
     if self.state == States.To("PackMenu") then
-        self.network:sendToClients("client_initializePackMenu")
+        self.network:sendToClients("client_initializePackMenu", true)
+    elseif self.state == States.To("LevelMenu") then
+
+    else
+        
     end
     -- Update World Script
-    sm.event.sendToWorld(self.sv.saved.world, "server_updateGameState", state)
+    sm.event.sendToWorld(self.sv.saved.world, "server_updateGameState", State)
     -- Update Player Scripts
     self:server_updateAllPlayerStates()
 end
@@ -311,8 +324,7 @@ function Game.server_onPlayerJoined( self, player, isNewPlayer )
         self.network:sendToClient(player, "client_updateGameState", State)
         -- Init menu
         if player ~= sm.host then
-            print("Loading Menu For:", player:getName(), player.id)
-            self.network:sendToClient(player,"client_initializePackMenu")
+            self.network:sendToClient(player, "client_initializePackMenu")
         end
     end
 
@@ -322,11 +334,11 @@ function Game.server_onPlayerJoined( self, player, isNewPlayer )
 end
 
 function Game.sv_createPlayerCharacter( self, world, x, y, player, params )
-    local character = sm.character.createCharacter( player, world, sm.vec3.new( 0, 0, 5 ), 0, 0 )
-	player:setCharacter( character )
-
     if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
-        ChallengeGame.sv_createPlayerCharacter( ChallengeGame )
+        sm.event.sendToWorld( world, "server_spawnCharacter", { players = { player }, playCutscene = false})
+    else
+        local character = sm.character.createCharacter( player, world, sm.vec3.new( 0, 0, 5 ), 0, 0 )
+	    player:setCharacter( character )
     end
 end
 
@@ -383,6 +395,10 @@ function Game.server_onFixedUpdate( self, timeStep )
         --     end
         -- end
     end
+end
+
+function Game.server_spawnNewCharacter( self, params, caller )
+    sm.event.sendToWorld(ChallengeGame.world, "server_spawnNewCharacter", params)
 end
 
 function Game.server_worldReadyForPlayers( self )
@@ -521,7 +537,52 @@ function Game.client_onRefresh( self )
     end
 end
 
+function Game._server_onReset( self )
+    if self.state == States.To("Play") or self.state == States.To("PlayBuild") then
+        ChallengeGame.server_onReset(ChallengeGame)
+    end
+end
+
+function Game._server_onRestart( self )
+    if self.state == States.To("Play") or self.state == States.To("PlayBuild") then
+        ChallengeGame.server_onRestart(ChallengeGame)
+    end
+end
+
+function Game._server_onSaveLevel( self )
+    if self.state == States.To("Build") then
+        ChallengeGame.server_onSaveLevel(ChallengeGame)
+    end
+end
+
+function Game._server_onTestLevel( self )
+    if self.state == States.To("Build") then
+        self:server_updateGameState("PlayBuild")
+        ChallengeGame.server_onTestLevel(ChallengeGame)
+    end
+end
+
+function Game._server_onStopTest( self )
+    if self.state == States.To("PlayBuild") then
+        self:server_updateGameState("Build")
+        ChallengeGame.server_onStopTest(ChallengeGame)
+    end
+end
+
 function Game.client_onFixedUpdate( self, timeStep )
+    if self.state == States.To("PackMenu") then
+        if sm.exists(self.MenuInstance.pack.gui) then
+            if not self.MenuInstance.pack.gui:isActive() then
+                self.MenuInstance.pack.gui:open()
+            end
+        end
+    elseif self.state == States.To("LevelMenu") then
+        if sm.exists(self.MenuInstance.level.gui) then
+            if not self.MenuInstance.level.gui:isActive() then
+                self.MenuInstance.level.gui:open()
+            end
+        end
+    end
     --if self.state == States.To("Play") or self.state == States.To("PlayBuild") or self.state == States.To("Build") then
         --ChallengeGame.client_onFixedUpdate( ChallengeGame )
     --end

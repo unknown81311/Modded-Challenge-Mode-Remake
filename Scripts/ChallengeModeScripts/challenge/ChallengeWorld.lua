@@ -426,7 +426,7 @@ function ChallengeWorld.server_spawnCharacter( self, params )
 	if self.waitingForDeath == true then return end
 	print("World: spawnCharacter")
 	for _, player in ipairs( params.players ) do
-		CreateCharacterOnSpawner( self.world, player, self.playerSpawners, sm.vec3.new( 2, 2, 9.7 ), self.enableHealth, params.build )
+		CreateCharacterOnSpawner( self.world, player, self.playerSpawners, sm.vec3.new( 2, 2, 9.7 ), self.enableHealth )
 		self:server_loadSavedInventory( player )
 		self.network:sendToClients( "client_spawned", { player = player, playCutscene = params.playCutscene } )
 	end
