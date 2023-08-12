@@ -4,7 +4,7 @@ Player = class( nil )
 function Player.server_onCreate( self )
 	print("Player.server_onCreate")
 	self.start = sm.game.getCurrentTick()
-	sm.event.sendToGame("server_playerScriptReady")
+	sm.event.sendToGame("server_playerScriptReady", self.player)
 end
 
 function Player.server_updateGameState( self, State, caller )
@@ -14,6 +14,7 @@ function Player.server_updateGameState( self, State, caller )
     elseif type(State) == "number" then
         self.state = State
     end
+	self.network:sendToClients("client_updateGameState")
 
 	if self.state == States.To("Play") then
 		ChallengePlayer.player = self.player
@@ -22,6 +23,19 @@ function Player.server_updateGameState( self, State, caller )
 		ChallengePlayer.server_ready = false
 		self.network:sendToClient(self.player, "_client_onCreate")
     end
+end
+
+function Player.client_updateGameState( self, State, caller )
+	if not sm.isServerMode() or caller ~= nil then return end
+	if type(State) == "string" then
+        self.state = States.To(State)
+    elseif type(State) == "number" then
+        self.state = State
+    end
+end
+
+function Player.client_getMode( self, tool )
+	sm.event.sendToTool( tool, "client_setMode", self.state)
 end
 
 function Player.cl_n_onInventoryChanges( self, data )

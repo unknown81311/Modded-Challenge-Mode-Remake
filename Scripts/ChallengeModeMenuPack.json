@@ -2,15 +2,15 @@
     "buttons":[
         {
             "name": "ExitChallengePack",
-            "method": "client_CloseMenu"
+            "method": "client_pack_CloseMenu"
         },
         {
             "name": "SelectChallengePack",
-            "method": "client_SelectPack"
+            "method": "client_pack_SelectPack"
         },
         {
             "name": "ChallengeBuilder",
-            "method": "client_OpenGui"
+            "method": "client_pack_OpenGui"
         }
     ],
     "text": [

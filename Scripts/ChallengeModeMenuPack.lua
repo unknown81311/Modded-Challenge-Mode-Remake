@@ -52,8 +52,9 @@ if _G["ChallengeModeMenuPack_LoadFunctions"] == nil then
             self.network:sendToServer("server_initializeChallengeGame", uuid)
         end
 
-        self.client_OpenGui= function( self, button )
-            self:client_newGui(button)
+        self.client_OpenGui = function( self, button )
+            --local uuid = self.challenge_packs[self.selected_index+1].uuid
+            --self:client_initializeLevelMenu()
         end
     end
 end
@@ -63,7 +64,6 @@ if _G["ChallengeModeMenuPack_UnLoadFunctions"] == nil then
         self.ChallengeModeMenuPack_LOADED = nil
         self.client_OpenGui = nil
         self.client_SelectPack = nil
-        self.server_EnableControls = nil
         self.client_CloseMenu = nil
         self.client_DeselectAll = nil
         self.client_SelectChallenge = nil

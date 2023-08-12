@@ -27,13 +27,11 @@ function Create( xMin, xMax, yMin, yMax, seed, data )
 	bounds.yMin = yMin
 	bounds.yMax = yMax
 
-	print("BOUNDS", bounds)
 	creations = data.levelCreations
 	if data.tiles then
 		tiles = {}
 		for _,tile in ipairs( data.tiles ) do
 			local uid = sm.terrainTile.getTileUuid( tile )
-			print(uid)
 			tiles[tostring(uid)] = tile
 		end
 	end

@@ -99,7 +99,8 @@ function removeFromArray( t, fnShouldRemove )
 	return t;
 end
 
-function reverse_ipairs( a )
+function Reverse_ipairs( a )
+	if a == nil then a = {} end
 	function iter( a, i )
 		i = i - 1
 		local v = a[i]

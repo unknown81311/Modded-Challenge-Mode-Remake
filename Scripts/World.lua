@@ -54,7 +54,7 @@ function World.client_onCollision( self, objectA, objectB, position, pointVeloci
 end
 
 function World.server_onCellCreated( self, x, y )
-    print("CREATED", x, y)
+    --print("CREATED", x, y)
 end
 
 function World.server_onCellLoaded( self, x, y )

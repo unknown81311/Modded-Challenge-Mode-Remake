@@ -1,11 +1,12 @@
 dofile("$CONTENT_DATA/Scripts/ChallengeModeMenuPack.lua")
+dofile("$CONTENT_DATA/Scripts/ChallengeBuilder.lua")
 
-sm.old = { challenge = sm.challenge }
+sm.old = { challenge = sm.challenge, world = { createWorld = sm.world.createWorld } }
 
 sm.challenge = {
     private = {
         hasStarted = false,
-        uuid = tostring(sm.uuid.getNil())
+        uuid = nil
     },
     setChallengeUuid = function(uuid)
         sm.challenge.private.uuid = tostring(uuid)
@@ -39,6 +40,22 @@ sm.challenge = {
     end,
     isMasterMechanicTrial = function() return false end
 }
+
+sm.world.private = {
+    storage = nil,
+    target = nil
+}
+sm.world.setTargetWorld = function( world )
+    sm.world.private.target = world
+end
+sm.world.isTargetWorld = function( world )
+    return sm.world.private.target == world
+end
+sm.world.createWorld = function( filename, classname, terrainParams, seed )
+    local nworld = sm.old.world.createWorld( filename, classname, terrainParams, seed )
+    sm.world.setTargetWorld(nworld)
+    return nworld
+end
 
 sm.gui.exitToMenu = function()
     

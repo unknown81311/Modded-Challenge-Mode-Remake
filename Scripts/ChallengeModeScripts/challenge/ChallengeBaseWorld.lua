@@ -4,11 +4,13 @@ dofile( "$SURVIVAL_DATA/Scripts/game/survival_projectiles.lua" )
 ChallengeBaseWorld = class( nil )
 
 function ChallengeBaseWorld.server_onCreate( self )
+	if self.waitingForDeath == true then return end
 	self.pesticideManager = PesticideManager()
 	self.pesticideManager:sv_onCreate()
 end
 
 function ChallengeBaseWorld.client_onCreate( self )
+	if self.waitingForDeath == true then return end
 	if self.pesticideManager == nil then
 		assert( not sm.isHost )
 		self.pesticideManager = PesticideManager()
@@ -17,14 +19,17 @@ function ChallengeBaseWorld.client_onCreate( self )
 end
 
 function ChallengeBaseWorld.server_onFixedUpdate( self )
+	if self.waitingForDeath == true then return end
 	self.pesticideManager:sv_onWorldFixedUpdate( self )
 end
 
 function ChallengeBaseWorld.cl_n_pesticideMsg( self, msg )
+	if self.waitingForDeath == true then return end
 	self.pesticideManager[msg.fn]( self.pesticideManager, msg )
 end
 
 function ChallengeBaseWorld.server_onProjectileFire( self, firePos, fireVelocity, _, attacker, projectileUuid )
+	if self.waitingForDeath == true then return end
 	if isAnyOf( projectileUuid, g_potatoProjectiles ) then
 		local units = sm.unit.getAllUnits()
 		for i, unit in ipairs( units ) do
@@ -36,14 +41,17 @@ function ChallengeBaseWorld.server_onProjectileFire( self, firePos, fireVelocity
 end
 
 function ChallengeBaseWorld.server_onInteractableCreated( self, interactable )
+	if self.waitingForDeath == true then return end
 	g_unitManager:sv_onInteractableCreated( interactable )
 end
 
 function ChallengeBaseWorld.server_onInteractableDestroyed( self, interactable )
+	if self.waitingForDeath == true then return end
 	g_unitManager:sv_onInteractableDestroyed( interactable )
 end
 
 function ChallengeBaseWorld.server_onProjectile( self, hitPos, hitTime, hitVelocity, _, attacker, damage, userData, hitNormal, target, projectileUuid )
+	if self.waitingForDeath == true then return end
 	-- Notify units about projectile hit
 	if isAnyOf( projectileUuid, g_potatoProjectiles ) then
 		local units = sm.unit.getAllUnits()
@@ -75,5 +83,6 @@ function ChallengeBaseWorld.server_onProjectile( self, hitPos, hitTime, hitVeloc
 end
 
 function ChallengeBaseWorld.server_onCollision( self, objectA, objectB, collisionPosition, objectAPointVelocity, objectBPointVelocity, collisionNormal )
+	if self.waitingForDeath == true then return end
 	g_unitManager:sv_onWorldCollision( self, objectA, objectB, collisionPosition, objectAPointVelocity, objectBPointVelocity, collisionNormal )
 end

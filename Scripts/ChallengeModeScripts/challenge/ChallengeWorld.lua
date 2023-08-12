@@ -21,6 +21,13 @@ ChallengeWorld.cellMaxY = 32
 ChallengeWorld.audioPosition = sm.vec3.new( 0, 258, 162 )
 
 function ChallengeWorld.server_onCreate( self )
+	if not sm.world.isTargetWorld(self.world) then
+		sm.event.sendToGame("sve_destroyWorld", self.world)
+		self.waitingForDeath = true
+		self.network:sendToClients("client_waitingForDeath")
+		return
+	end
+
 	ChallengeBaseWorld.server_onCreate( self )
 	self.waterManager = WaterManager()
 	self.waterManager:sv_onCreate( self )
@@ -36,7 +43,12 @@ function ChallengeWorld.server_onCreate( self )
 	self.enableHealth = getSettingValue( self.data.settings, "enable_health" )
 end
 
+function ChallengeWorld.client_waitingForDeath( self )
+	self.waitingForDeath = true
+end
+
 function ChallengeWorld.client_onCreate( self )
+	if self.waitingForDeath == true then return end
 	ChallengeBaseWorld.client_onCreate( self )
 	if self.waterManager == nil then
 		assert( not sm.isHost )
@@ -56,6 +68,7 @@ function ChallengeWorld.client_onCreate( self )
 end
 
 function ChallengeWorld.server_onFixedUpdate( self )
+	if self.waitingForDeath == true then return end
 	ChallengeBaseWorld.server_onFixedUpdate( self )
 
 	--if true then return end
@@ -64,7 +77,7 @@ function ChallengeWorld.server_onFixedUpdate( self )
 
 	-- Clean up picked up items from dropped items
 	local currentTick = sm.game.getCurrentTick() 
-	for idx, droppedItem in reverse_ipairs( g_droppedItems ) do
+	for idx, droppedItem in Reverse_ipairs( g_droppedItems ) do
 		if currentTick > droppedItem.tick and not sm.exists( droppedItem.hvs ) then
 			table.remove( g_droppedItems, idx )
 		end
@@ -213,23 +226,26 @@ function ChallengeWorld.server_onFixedUpdate( self )
 end
 
 function ChallengeWorld.server_onCellCreated( self, x, y )
-	print("CELL CREATED", x, y)
+	if self.waitingForDeath == true then return end
+	--print("CELL CREATED", x, y)
 	--if self.loaded_cells == nil then self.loaded_cells = 1 else self.loaded_cells = self.loaded_cells + 1 end
 
-	self.waterManager:sv_onCellLoaded( x, y )
 	--print(self.loaded_cells)
 	--if self.loaded_cells == (65 * 65) then
 	if x == 0 and y == 0 then
-		ChallengeWorld.server_onCellCreatedFinish( self, x, y )
+		sm.event.sendToGame("server_worldReadyForPlayers", self.world)
 
-		sm.event.sendToGame("server_worldReadyForPlayers")
+		ChallengeWorld.server_onCellCreatedFinish( self, x, y )
 
 		self.loadingWorld = false
 	end
+
+	self.waterManager:sv_onCellLoaded( x, y )
 	--end
 end
 
 function ChallengeWorld.server_onCellCreatedFinish( self, x, y )
+	if self.waitingForDeath == true then return end
 
 	if self.challengeStarters == nil then self.challengeStarters = {} end
 	if self.playerSpawners == nil then self.playerSpawners = {} end
@@ -381,17 +397,20 @@ function ChallengeWorld.server_onCellCreatedFinish( self, x, y )
 end
 
 function ChallengeWorld.server_onCellLoaded( self, x, y )
+	if self.waitingForDeath == true then return end
 	--print("CELL LOADED", x, y)
 	self.waterManager:sv_onCellReloaded( x, y )
 	self:server_onCellCreatedFinish( x, y )
 end
 
 function ChallengeWorld.server_onCellUnloaded( self, x, y )
+	if self.waitingForDeath == true then return end
 	self.waterManager:sv_onCellUnloaded( x, y )
 end
 
 -- (Event) Called from Game
 function ChallengeWorld.server_spawnNewCharacter( self, params )
+	if self.waitingForDeath == true then return end
 	if self.tutorialStage == "Chest" and self.tutorialChest then
 		self.network:sendToClients( "client_onSetTutorialArrow", { target = self.tutorialChest } )
 	elseif self.tutorialStage == "Seat" and self.tutorialSeat then
@@ -404,6 +423,7 @@ end
 
 
 function ChallengeWorld.server_spawnCharacter( self, params )
+	if self.waitingForDeath == true then return end
 	print("World: spawnCharacter")
 	for _, player in ipairs( params.players ) do
 		CreateCharacterOnSpawner( self.world, player, self.playerSpawners, sm.vec3.new( 2, 2, 9.7 ), self.enableHealth, params.build )
@@ -413,7 +433,7 @@ function ChallengeWorld.server_spawnCharacter( self, params )
 end
 
 function ChallengeWorld.server_loadSavedInventory( self, player )
-
+	if self.waitingForDeath == true then return end
 	-- Set starting items if no items exist
 	if g_inventoriesPlayMode[player.id] == nil then
 		local inventoryList = {}
@@ -431,8 +451,11 @@ function ChallengeWorld.server_loadSavedInventory( self, player )
 		print( tool_handbook )
 		print( tool_spudgun )
 		
-		local index = 2
-		inventoryList[1] = { uuid = sm.uuid.new("55abf9f8-5fd5-44c9-bd1e-207ca3bb9864"), quantity = 1 }
+		local index = 1
+		if player == sm.host then
+			index = 2
+			inventoryList[1] = { uuid = sm.uuid.new("55abf9f8-5fd5-44c9-bd1e-207ca3bb9864"), quantity = 1 }
+		end
 
 		if getSettingValue( self.data.settings, "enable_handbook" ) then
 			inventoryList[index] = { uuid = tool_handbook, quantity = 1 }
@@ -494,6 +517,7 @@ end
 
 -- (Event) Called from Game
 function ChallengeWorld.server_loadWorldContent( self, data )
+	if self.waitingForDeath == true then return end
 	print("World: loadWorldContent")
 	self.allowAutoSave = true
 	
@@ -527,6 +551,7 @@ function ChallengeWorld.server_loadWorldContent( self, data )
 end
 
 function ChallengeWorld.server_saveWorldContent( self, playerCreationBodies )
+	if self.waitingForDeath == true then return end
 	print("World: saveWorldContent")
 	
 	local players = sm.player.getAllPlayers()
@@ -574,6 +599,7 @@ function ChallengeWorld.server_saveWorldContent( self, playerCreationBodies )
 end
 
 function ChallengeWorld.server_startChallenge( self )
+	if self.waitingForDeath == true then return end
 	self.challengeStarted = true
 	self.allowAutoSave = false
 	restrictAllBodies()
@@ -730,6 +756,7 @@ function ChallengeWorld.trigger_onEnterKillBox( self, trigger, results )
 end
 
 function ChallengeWorld.server_onProjectile( self, hitPos, hitTime, hitVelocity, _, attacker, damage, userData, hitNormal, target, projectileUuid )
+	if self.waitingForDeath == true then return end
 	ChallengeBaseWorld.server_onProjectile( self, hitPos, hitTime, hitVelocity, _, attacker, damage, userData, hitNormal, target, projectileUuid )
 	local EPSILON = 2.2204460492503131e-016
 	local function sign( value )
@@ -753,16 +780,19 @@ function ChallengeWorld.server_onProjectile( self, hitPos, hitTime, hitVelocity,
 end
 
 function ChallengeWorld.server_challengeStarted( self )
+	if self.waitingForDeath == true then return end
 	self.network:sendToClients( "client_challengeStarted" )
 end
 
 function ChallengeWorld.server_challengeCompleted( self )
+	if self.waitingForDeath == true then return end
 	self.network:sendToClients( "client_challengeCompleted" )
 end
 
 -- [[ Client ]]
 
 function ChallengeWorld.client_onDestroy( self )
+	if self.waitingForDeath == true then return end
 	if self.arrow ~= nil then
 		self.arrow:stop()
 		self.arrow = nil
@@ -771,7 +801,7 @@ function ChallengeWorld.client_onDestroy( self )
 end
 
 function ChallengeWorld.client_onSetTutorialArrow( self, params )
-
+	if self.waitingForDeath == true then return end
 	if self.arrow ~= nil then
 		self.arrow:stop()
 		self.arrow = nil
@@ -786,6 +816,7 @@ function ChallengeWorld.client_onSetTutorialArrow( self, params )
 end
 
 function ChallengeWorld.client_onStopTutorialArrow( self )
+	if self.waitingForDeath == true then return end
 	if self.arrow ~= nil then
 		self.arrow:stop()
 		self.arrow = nil
@@ -793,11 +824,15 @@ function ChallengeWorld.client_onStopTutorialArrow( self )
 end
 
 function ChallengeWorld.client_onFixedUpdate( self )
+	if self.waitingForDeath == true then return end
 	self.waterManager:cl_onFixedUpdate()
 end
 
 function ChallengeWorld.client_onUpdate( self, dt )
-	g_effectManager:cl_onWorldUpdate( self )
+	if self.waitingForDeath == true then return end
+	if g_effectManager ~= nil then
+		g_effectManager:cl_onWorldUpdate( self )
+	end
 
 	if self.arrow ~= nil then
 		if self.arrowTarget and sm.exists( self.arrowTarget ) then
@@ -811,16 +846,23 @@ function ChallengeWorld.client_onUpdate( self, dt )
 end
 
 function ChallengeWorld.client_onCellLoaded( self, x, y )
+	if self.waitingForDeath == true then return end
 	self.waterManager:cl_onCellLoaded( x, y )
+	if g_effectManager ~= nil then
 	g_effectManager:cl_onWorldCellLoaded( self, x, y )
+	end
 end
 
 function ChallengeWorld.client_onCellUnloaded( self, x, y )
+	if self.waitingForDeath == true then return end
 	self.waterManager:cl_onCellUnloaded( x, y )
+	if g_effectManager ~= nil then
 	g_effectManager:cl_onWorldCellUnloaded( self, x, y )
+	end
 end
 
 function ChallengeWorld.client_falling( self, character )
+	if self.waitingForDeath == true then return end
 	if character == sm.localPlayer.getPlayer().character then
 		print( "Player fall" )
 		sm.audio.play( "Challenge - Fall" )
@@ -828,6 +870,7 @@ function ChallengeWorld.client_falling( self, character )
 end
 
 function ChallengeWorld.client_spawned( self, params )
+	if self.waitingForDeath == true then return end
 	if params.player == sm.localPlayer.getPlayer() then
 		sm.effect.playEffect( "Supervisor - Fail", self.audioPosition )
 		if g_effectManager and params.playCutscene then
@@ -837,6 +880,7 @@ function ChallengeWorld.client_spawned( self, params )
 end
 
 function ChallengeWorld.client_challengeStarted( self )
+	if self.waitingForDeath == true then return end
 	if self.startedEffectTriggered then
 		return
 	end
@@ -847,6 +891,7 @@ function ChallengeWorld.client_challengeStarted( self )
 end
 
 function ChallengeWorld.client_challengeCompleted( self )
+	if self.waitingForDeath == true then return end
 	if self.completedEffectTriggered then
 		return
 	end

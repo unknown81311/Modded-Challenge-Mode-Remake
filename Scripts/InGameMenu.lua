@@ -287,13 +287,11 @@ function InGameMenu.client_onEquippedUpdate( self, primaryState, secondaryState,
 		self.Ready = true
 	end
 	if primaryState == 0 and self.Ready == true and self.ToggleOnOff then
-		print("Opened")
         self.Ready = false
 		self.WasButtonClickedLocally = true
         self:client_OpenMenu()
 	end
     if primaryState == 0 and self.Ready == true and not self.ToggleOnOff then
-		print("Closed")
         self.Ready = false
 		self.WasButtonClickedLocally = true
         self:client_CloseMenu()
@@ -313,8 +311,8 @@ function split_string (inputstr, sep)
 end
 
 function InGameMenu.client_setMode( self, mode )
-	self.test_running = mode == 2
-	self.play_running = mode == 3
+	self.test_running = mode == 3 or mode == 4
+	self.play_running = mode == 2
 	if sm.exists(self.menu) then
 		self.menu:setVisible("ChallengeBuilderPanel", not self.play_running)
 		self.menu:setVisible("ChallengePanel", self.play_running)

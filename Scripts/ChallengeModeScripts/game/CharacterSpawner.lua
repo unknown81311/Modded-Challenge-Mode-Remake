@@ -52,7 +52,7 @@ function CharacterSpawner.server_onCreate( self )
 end
 
 function CharacterSpawner.sv_refreshSpawns( self )
-	for i, v in reverse_ipairs( self.spawnedUnits ) do
+	for i, v in Reverse_ipairs( self.spawnedUnits ) do
 		if not sm.exists( v ) then
 			table.remove( self.spawnedUnits, i )
 		end
