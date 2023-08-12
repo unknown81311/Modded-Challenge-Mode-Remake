@@ -34,6 +34,11 @@ function Player.client_updateGameState( self, State, caller )
     end
 end
 
+function Player.cl_n_onEvent( self, data )
+	ChallengePlayer.network = self.network
+	BasePlayer.cl_n_onEvent(ChallengePlayer, data)
+end
+
 function Player.client_getMode( self, tool )
 	sm.event.sendToTool( tool, "client_setMode", self.state)
 end
@@ -168,14 +173,14 @@ end
 
 function Player.server_onCollisionCrush( self )
 	if self.state == States.To("Play") then
-		ChallengePlayer.server_onCollisionCrush( ChallengePlayer )
+		--ChallengePlayer.server_onCollisionCrush( ChallengePlayer )
 	end
 end
 
 function Player.server_onShapeRemoved( self, items )
     --items = { { uuid = uuid, amount = integer, type = string }, .. }
 	if self.state == States.To("Play") then
-		ChallengePlayer.server_onShapeRemoved( ChallengePlayer, items )
+		--ChallengePlayer.server_onShapeRemoved( ChallengePlayer, items )
 	end
 end
 
