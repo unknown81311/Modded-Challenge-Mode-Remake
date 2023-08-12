@@ -20,7 +20,7 @@ if _G["ChallengeModeMenuPack_LoadFunctions"] == nil then
                     self.gui:setVisible("SelectBorder_"..index, false)
                     self.gui:setText("LeftValue_"..index, "0")
                     self.gui:setText("RightValue_"..index, ""..#challenge.levelList)
-                    self.gui:setButtonCallback( "ChallengeButton_"..index, "client_SelectChallenge" )
+                    self.gui:setButtonCallback( "ChallengeButton_"..index, "client_pack_SelectChallenge" )
                 end
                 self.gui:open()
             end
@@ -56,17 +56,5 @@ if _G["ChallengeModeMenuPack_LoadFunctions"] == nil then
             --local uuid = self.challenge_packs[self.selected_index+1].uuid
             --self:client_initializeLevelMenu()
         end
-    end
-end
-
-if _G["ChallengeModeMenuPack_UnLoadFunctions"] == nil then
-    _G["ChallengeModeMenuPack_UnLoadFunctions"] = function( self )
-        self.ChallengeModeMenuPack_LOADED = nil
-        self.client_OpenGui = nil
-        self.client_SelectPack = nil
-        self.client_CloseMenu = nil
-        self.client_DeselectAll = nil
-        self.client_SelectChallenge = nil
-        print("Unloaded Player Functions PACK")
     end
 end
