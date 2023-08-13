@@ -71,22 +71,20 @@ end
 
 if _G.States == nil then
     _G.States = {
-        To = function ( string )
-            if string == "PackMenu" then return 0
-            elseif string == "LevelMenu" then return 1
-            elseif string == "Play" then return 2
-            elseif string == "BuildPlay" then return 3
-            elseif string == "Build" then return 4
-            end
-        end,
-        From = function ( Int )
-            if Int == 0 then return "PackMenu"
-            elseif string == 1 then return "LevelMenu"
-            elseif string == 2 then return "Play"
-            elseif string == 3 then return "BuildPlay"
-            elseif string == 4 then return "Build"
-            end
-        end
+        To = {
+            ["PackMenu"]=0,
+            ["LevelMenu"]=1,
+            ["Play"]=2,
+            ["BuildPlay"]=3,
+            ["Build"]=4
+        },
+        From = {
+            ["PackMenu"]=0,
+            ["LevelMenu"]=1,
+            ["Play"]=2,
+            ["BuildPlay"]=3,
+            ["Build"]=4
+        }
     }
 end
 
