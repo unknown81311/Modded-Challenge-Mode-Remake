@@ -89,6 +89,8 @@ function Game.client_initializePackMenu( self, force )
         sm.localPlayer.setLockedControls( true )
         if sm.exists(self.MenuInstance.pack.gui) and force ~= true then
             self.MenuInstance.pack.gui:open()
+            self.lockingShape = sm.shape.createPart(sm.uuid.new("9f0f56e8-2c31-4d83-996c-d00a9b296c3f"), sm.vec3.zero(), nil, false, true)
+            sm.event.sendToPlayer(sm.localPlayer.getPlayer(),"client_setlockInteractable",self.lockingShape)
         else
             _G["ChallengeModeMenuPack_LoadFunctions"](self.MenuInstance.pack)
             self.MenuInstance.pack.gui = sm.gui.createGuiFromLayout("$CONTENT_DATA/Gui/Layouts/ChallengeModeMenuPack.layout")
@@ -165,6 +167,18 @@ function Game.client_level_OpenGui( self )
     self:client_initializePackMenu(true)
 end
 
+function Game.client_play_level( self )
+    local pack = self.MenuInstance.level.challenge_levels[self.MenuInstance.level.selected_index+1]
+    print(pack)
+    self.network:sendToServer("server_initializeChallengeGame", {pack = pack})
+
+
+    -- --self.MenuInstance.blur.gui:close()
+    -- self.MenuInstance.level.gui:close()
+    -- --self.MenuInstance.pack.gui:open()
+    -- self:client_initializePackMenu(true)
+end
+
 function Game.client_level_SelectChallenge( self, button )
     self.MenuInstance.level.client_SelectChallenge( self.MenuInstance.level, button )
 end
@@ -211,20 +225,21 @@ function Game.server_shutDownMenu( self )
     sm.localPlayer.setLockedControls( false )
 end
 
-function Game.server_initializeChallengeGame( self, uuid )
+function Game.server_initializeChallengeGame( self, data )
     self.network:sendToClients("server_shutDownMenu")
-    
-    local pack
-    for _,p in pairs(self.ChallengeData.packs) do
-        if p.uuid == uuid then
-            pack = p
-            break
+    local pack = data.pack
+    if not data.pack then
+        for _,p in pairs(self.ChallengeData.packs) do
+            if p.uuid == data.uuid then
+                pack = p
+                break
+            end
         end
     end
 
     sm.challenge.setChallengeUuid(pack.uuid)
     
-    pack.startLevelIndex = 1
+    pack.startLevelIndex = data.index or 1
     ChallengeGame.data = pack
     ChallengeGame.network = self.network
     ChallengeGame.world = self.sv.saved.world
@@ -237,8 +252,8 @@ function Game.server_initializeChallengeGame( self, uuid )
     
     self.network:sendToClients("client_initializeChallengeGame")
     self:server_updateGameState("Play")
-    
-    ChallengeGame.server_onCreate( ChallengeGame )
+
+    ChallengeGame.server_onCreate( ChallengeGame, {levelList=pack} )
     --print(ChallengeGame.play.levelList[ChallengeGame.play.currentLevelIndex].data)
     --self.respawn_all = true
 end
@@ -279,16 +294,16 @@ function Game.server_updateGameState( self, State, caller )
     if not sm.isServerMode() or caller ~= nil then return end
     -- Update Self
     if type(State) == "string" then
-        self.state = States.To[State]
+        self.state = States[State]
     elseif type(State) == "number" then
         self.state = State
     end
     -- Send to all Clients
     self.network:sendToClients("client_updateGameState", State)
     -- Init items
-    if self.state == States.To.PackMenu then
+    if self.state == States.PackMenu then
         self.network:sendToClients("client_initializePackMenu", true)
-    elseif self.state == States.To.LevelMenu then
+    elseif self.state == States.LevelMenu then
 
     else
         
@@ -304,7 +319,7 @@ function Game.client_updateGameState( self, State, caller )
     if caller ~= nil or sm.isServerMode() then return end
     -- Update Self
     if type(State) == "string" then
-        self.state = States.To[State]
+        self.state = States[State]
     elseif type(State) == "number" then
         self.state = State
     end
@@ -315,7 +330,7 @@ function Game.server_onPlayerJoined( self, player, isNewPlayer )
     if sm.host == nil then
         sm.host = sm.player.getAllPlayers()[1]
     end
-    if self.state == States.To.PackMenu or self.state == States.To.LevelMenu then
+    if self.state == States.PackMenu or self.state == States.LevelMenu then
         if not sm.exists( self.sv.saved.world ) then
             sm.world.loadWorld( self.sv.saved.world )
         end
@@ -328,13 +343,13 @@ function Game.server_onPlayerJoined( self, player, isNewPlayer )
         end
     end
 
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onPlayerJoined( ChallengeGame, player, isNewPlayer )
     end
 end
 
 function Game.sv_createPlayerCharacter( self, world, x, y, player, params )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         sm.event.sendToWorld( world, "server_spawnCharacter", { players = { player }, playCutscene = false})
     else
         local character = sm.character.createCharacter( player, world, sm.vec3.new( 0, 0, 5 ), 0, 0 )
@@ -345,7 +360,7 @@ end
 --self:server_initializeChallengeGame()
 
 function Game.server_onFixedUpdate( self, timeStep )
-    if self.state == States.To.PackMenu or self.state == States.To.LevelMenu then
+    if self.state == States.PackMenu or self.state == States.LevelMenu then
         if #self.worldDestroyQueue > 0 then
             self.respawn_all = 1
         end
@@ -368,7 +383,7 @@ function Game.server_onFixedUpdate( self, timeStep )
             end
             self.respawn_all = 0
         end
-    elseif self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    elseif self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onFixedUpdate(ChallengeGame, timeStep)
         -- if self.respawn_all then
         --     if ChallengeGame.world ~= nil and sm.exists(ChallengeGame.world) then
@@ -406,295 +421,295 @@ function Game.server_worldReadyForPlayers( self )
 end
 
 function Game.server_onCellLoadComplete( self, data )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onCellLoadComplete( ChallengeGame, data )
     end
 end
 
 function Game.server_getLevelData( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_getLevelData( ChallengeGame )
     end
 end
 
 function Game.server_getLevelUuid( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_getLevelUuid( ChallengeGame )
     end
 end
 
 function Game.server_onFinishedLoadContent( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onFinishedLoadContent( ChallengeGame )
     end
 end
 
 function Game.server_onChallengeStarted( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onChallengeStarted(ChallengeGame)
     end
 end
 
 function Game.server_onChallengeCompleted( self, param )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onChallengeCompleted(ChallengeGame, param)
     end
 end
 
 function Game.sv_e_respawn( self, params )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.sv_e_respawn(ChallengeGame, params)
     end
 end
 
 function Game.setupMessageGui( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.setupMessageGui(ChallengeGame)
     end
 end
 
 function Game.setupHUD( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.setupHUD(ChallengeGame)
     end
 end
 
 function Game.client_showMessage( self, params )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.client_showMessage(ChallengeGame, params)
     end
 end
 
 function Game.client_onNextPressed( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.network = self.network
         ChallengeGame.client_onNextPressed(ChallengeGame)
     end
 end
 
 function Game.client_onResetPressed( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.network = self.network
         ChallengeGame.client_onResetPressed(ChallengeGame)
     end
 end
 
 function Game.client_onChallengeReset( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.client_onChallengeReset(ChallengeGame)
     end
 end
 
 function Game.client_onChallengeStarted( self, params )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.client_onChallengeStarted(ChallengeGame, params)
     end
 end
 
 function Game.client_onChallengeCompleted( self, params )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.client_onChallengeCompleted(ChallengeGame, params)
     end
 end
 
 function Game.client_sessionStarted( self, id )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.client_sessionStarted(ChallengeGame, id)
     end
 end
 
 function Game.cl_e_leaveGame( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         --ChallengeGame.cl_e_leaveGame(ChallengeGame)
     end
 end
 
 function Game.client_onCreate( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.client_onCreate( ChallengeGame )
     end
 end
 
 function Game.server_onDestroy( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onDestroy( ChallengeGame )
     end
 end
 
 function Game.client_onDestroy( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.client_onDestroy( ChallengeGame )
     end
 end
 
 function Game.server_onRefresh( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onRefresh( ChallengeGame )
     end
 end
 
 function Game.client_onRefresh( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         --ChallengeGame.client_onRefresh( ChallengeGame )
     end
 end
 
 function Game._server_onReset( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild then
+    if self.state == States.Play or self.state == States.PlayBuild then
         ChallengeGame.server_onReset(ChallengeGame)
     end
 end
 
 function Game._server_onRestart( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild then
+    if self.state == States.Play or self.state == States.PlayBuild then
         ChallengeGame.server_onRestart(ChallengeGame)
     end
 end
 
 function Game._server_onSaveLevel( self )
-    if self.state == States.To.Build then
+    if self.state == States.Build then
         ChallengeGame.server_onSaveLevel(ChallengeGame)
     end
 end
 
 function Game._server_onTestLevel( self )
-    if self.state == States.To.Build then
+    if self.state == States.Build then
         self:server_updateGameState("PlayBuild")
         ChallengeGame.server_onTestLevel(ChallengeGame)
     end
 end
 
 function Game._server_onStopTest( self )
-    if self.state == States.To.PlayBuild then
+    if self.state == States.PlayBuild then
         self:server_updateGameState("Build")
         ChallengeGame.server_onStopTest(ChallengeGame)
     end
 end
 
 function Game.client_onFixedUpdate( self, timeStep )
-    if self.state == States.To.PackMenu then
+    if self.state == States.PackMenu then
         if sm.exists(self.MenuInstance.pack.gui) then
             if not self.MenuInstance.pack.gui:isActive() then
                 self.MenuInstance.pack.gui:open()
             end
         end
-    elseif self.state == States.To.LevelMenu then
+    elseif self.state == States.LevelMenu then
         if sm.exists(self.MenuInstance.level.gui) then
             if not self.MenuInstance.level.gui:isActive() then
                 self.MenuInstance.level.gui:open()
             end
         end
     end
-    --if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    --if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         --ChallengeGame.client_onFixedUpdate( ChallengeGame )
     --end
 end
 
 function Game.client_onUpdate( self, deltaTime )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.client_onUpdate( ChallengeGame, deltaTime )
     end
 end
 
 function Game.client_onClientDataUpdate( self, data, channel )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.client_onClientDataUpdate( ChallengeGame )
     end
 end
 
 function Game.server_onNextPressed( self, data, channel )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onNextPressed( ChallengeGame )
     end
 end
 
 function Game.server_onResetPressed( self, data )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onResetPressed( ChallengeGame, data )
     end
 end
 
 function Game.server_onFinishPressed( self, data, channel )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onFinishPressed( ChallengeGame )
     end
 end
 
 function Game.server_start( self, player )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_start( ChallengeGame )
     end
 end
 
 function Game.server_onPlayerLeft( self, player )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         --ChallengeGame.server_onPlayerLeft( ChallengeGame )
     end
 end
 
 function Game.server_onReset( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onReset( ChallengeGame )
     end
 end
 
 function Game.server_onRestart( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onRestart( ChallengeGame )
     end
 end
 
 function Game.server_onSaveLevel( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onSaveLevel( ChallengeGame )
     end
 end
 
 function Game.server_onTestLevel( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onTestLevel( ChallengeGame )
     end
 end
 
 function Game.server_onStopTest( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_onStopTest( ChallengeGame )
     end
 end
 
 function Game.client_onLoadingScreenLifted( self )
     sm.event.sendToPlayer(sm.localPlayer.getPlayer(), "_client_onLoadingScreenLifted")
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.client_onLoadingScreenLifted( ChallengeGame )
     end
 end
 
 function Game.sv_loadVictoryLevel( self )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.sv_loadVictoryLevel( ChallengeGame )
     end
 end
 
 function Game.client_onLanguageChange( self, language )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.client_onLanguageChange( ChallengeGame )
     end
 end
 
 function Game.server_loadLevel( self, loadJsonData, loadSaveData )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_loadLevel( ChallengeGame, loadJsonData, loadSaveData )
     end
 end
 
 function Game.server_loadJsonData( self, language )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_loadJsonData( ChallengeGame )
     end
 end
 
 function Game.server_loadSaveData( self, language )
-    if self.state == States.To.Play or self.state == States.To.PlayBuild or self.state == States.To.Build then
+    if self.state == States.Play or self.state == States.PlayBuild or self.state == States.Build then
         ChallengeGame.server_loadSaveData( ChallengeGame )
     end
 end

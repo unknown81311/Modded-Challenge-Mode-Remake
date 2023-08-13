@@ -70,21 +70,12 @@ if _G.ChallengePlayer == nil then
 end
 
 if _G.States == nil then
-    _G.States = {
-        To = {
-            ["PackMenu"]=0,
-            ["LevelMenu"]=1,
-            ["Play"]=2,
-            ["BuildPlay"]=3,
-            ["Build"]=4
-        },
-        From = {
-            ["PackMenu"]=0,
-            ["LevelMenu"]=1,
-            ["Play"]=2,
-            ["BuildPlay"]=3,
-            ["Build"]=4
-        }
+    _G.States = _G.States or {
+        ["PackMenu"]=0,
+        ["LevelMenu"]=1,
+        ["Play"]=2,
+        ["BuildPlay"]=3,
+        ["Build"]=4
     }
 end
 

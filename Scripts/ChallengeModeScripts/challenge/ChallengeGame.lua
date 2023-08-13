@@ -13,8 +13,10 @@ ChallengeGame.enableAmmoConsumption = false
 ChallengeGame.enableFuelConsumption = false
 ChallengeGame.enableUpgrade = true
 
-function ChallengeGame.server_onCreate( self )
+function ChallengeGame.server_onCreate( self, pack )
 	print( "ChallengeGame.server_onCreate" )
+	print(pack and sm.json.writeJsonString(pack))
+	self.data = pack
 	g_disableScrapHarvest = true
 
 	g_unitManager = UnitManager()
@@ -36,6 +38,7 @@ function ChallengeGame.server_onCreate( self )
 		self.build.level = {}
 		self.build.level.uuid = self.data.uuid
 		self.build.level.data = self.data.data
+		print(self.build.level.data)
 		resolveContentPaths( self.build.level.data )
 		self.build.level.data.tiles[#self.build.level.data.tiles + 1] = "$CONTENT_DATA/Terrain/Tiles/challengebuilder_env_DT.tile"
 

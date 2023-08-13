@@ -15,7 +15,7 @@ end
 function World.server_updateGameState( self, state, caller )
     if not sm.isServerMode() or caller ~= nil then return end
     if type(state) == "string" then
-        self.state = States.To[state]
+        self.state = States[state]
     elseif type(state) == "number" then
         self.state = state
     end

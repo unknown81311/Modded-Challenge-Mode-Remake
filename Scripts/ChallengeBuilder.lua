@@ -15,6 +15,7 @@ _G["ChallengeBuilder_LoadFunctions"] = function( self )
         end
         self.gui:setButtonCallback( "ChallengeNew", "client_level_NewChallenge" )
         self.gui:setButtonCallback( "ChallengeModeMenuPack", "client_level_OpenGui")
+        self.gui:setButtonCallback( "Play", "client_play_level")
         self.gui:setVisible("BackgroundPlateSelected", false)
         self.gui:open()
     end
